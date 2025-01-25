@@ -10,16 +10,20 @@
   "shades_vibrant": [],
   "light_dark": [
     {
-      "name": "Pink",
-      "value": "#dd4462"
+      "name": "Red",
+      "value": "#f31a4e"
     },
     {
       "name": "Blue",
-      "value": "#4467dd"
+      "value": "$19b1f3"
     },
     {
-      "name": "Gold",
-      "value": "#fbbe25"
+      "name": "Yellow",
+      "value": "#feba0c"
+    },
+     {
+      "name": "Green",
+      "value": "#25cf50"
     }
   ],
   "standalone": []
