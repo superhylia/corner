@@ -44,7 +44,7 @@
     },
     {
       "name": "Red Subdued",
-      "value": "#ce5769"
+      "value": "#dd3059"
     },
     {
       "name": "Blue",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Blue Subdued",
-      "value": "#4d6cc8"
+      "value": "#2fa8dd"
     },
     {
       "name": "Yellow",
@@ -60,7 +60,7 @@
     },
     {
       "name": "Yellow Subdued",
-      "value": "#f1c15b"
+      "value": "#e6af24"
     },
     {
       "name": "Green",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Green Subdued",
-      "value": "#f1c15b"
+      "value": "#36be58"
     }
   ]
 }
