@@ -1,5 +1,5 @@
 export const url = process.env.URL || 'http://localhost:8080';
-export const siteName = 'Hylia's Corner';
+export const siteName = 'Hylia\'s Corner';
 export const siteDescription = 'i talk or something';
 export const siteType = 'Person'; // schema
 export const locale = 'en_EN';
