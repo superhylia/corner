@@ -1,7 +1,7 @@
 ---
 title: 'Eleventy Excellent demo branches'
 category: note
-date: 2023-10-30
+date: 2025-1-22
 ---
 
 I have created a few [demo branches for Eleventy Excellent](https://eleventy-excellent.netlify.app/blog/demo-pages/).
