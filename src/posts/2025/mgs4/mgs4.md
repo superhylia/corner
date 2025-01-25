@@ -3,7 +3,7 @@ title: 'Metal Gear Solid 4: Guns of the Patriots: The Petals Live On'
 description: "Peak?"
 date: 2025-01-22
 tags: ['games', 'feature']
-image: '/assets/images/gallery/asturias-1.jpg'
+image: 'posts/2055/mgs4/metal-gear-solid-4-snake-and-ocelot.webp'
 alt: 'A picturesque valley showcasing majestic mountains and lush forests, creating a serene and captivating landscape'
 credit: A photo I took.
 ---
