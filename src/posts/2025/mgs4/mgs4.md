@@ -6,7 +6,7 @@ tags: ['games', 'feature']
 image: '/posts/2025/mgs4/metal-gear-solid-4-snake-and-ocelot.webp'
 alt: 'A picturesque valley showcasing majestic mountains and lush forests, creating a serene and captivating landscape'
 credit: Limited Edition artwork by the legend Yoji Shinkawa.
-bskyurl: 
+bskyurl: https://bsky.app/profile/superhylia.bsky.social/post/3lgkj5zgqsc2y
 ---
 
 ![MGS4](https://www.creativeuncut.com/gallery-06/art/mgs4-limited-box.jpg)
