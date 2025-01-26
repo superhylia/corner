@@ -24,7 +24,6 @@ schema: BlogPosting
           <a class="button" href="/tags/{{ tag }}" data-small-button> {{ tag }} </a>
         {% endif %}{% endfor %}
       {% endif %}
-     <span>{{ content | readingTime }} reading time</span>
     </p>
 
     {{ content | safe }}
