@@ -25,7 +25,7 @@ schema: BlogPosting
         {% endif %}
        {% endfor %}
       {% endif %}
-      <span>{{ post | readingtime }} to read</span>
+      <span>{{ content | readingtime }} to read</span>
     </p>
 
     {{ content | safe }}
