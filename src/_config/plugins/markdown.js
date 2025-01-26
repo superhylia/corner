@@ -3,6 +3,7 @@ import markdownItAttrs from 'markdown-it-attrs';
 import markdownItPrism from 'markdown-it-prism';
 import markdownItAnchor from 'markdown-it-anchor';
 import markdownItClass from '@toycode/markdown-it-class';
+import markdownItTocDoneRight from 'markdown-it-toc-done-right';
 import markdownItLinkAttributes from 'markdown-it-link-attributes';
 import {full as markdownItEmoji} from 'markdown-it-emoji';
 import markdownItFootnote from 'markdown-it-footnote';
@@ -31,6 +32,15 @@ export const markdownLib = markdownIt({
   .use(markdownItClass, {
     ol: 'list',
     ul: 'list'
+  })
+  .use(markdownItTocDoneRight, {
+    placeholder: `{:toc}`,
+    slugify: slugifyString,
+    containerId: 'toc',
+    listClass: 'toc-list',
+    itemClass: 'toc-item',
+    linkClass: 'toc-link',
+    listType: 'ol'
   })
   .use(markdownItLinkAttributes, [
     {
