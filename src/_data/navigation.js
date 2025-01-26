@@ -5,12 +5,12 @@ export default {
       url: '/about/'
     },
     {
-      text: 'Docs',
-      url: '/get-started/'
+      text: 'What I Do',
+      url: '/what-i-do/'
     },
     {
-      text: 'Built with',
-      url: '/built-with/'
+      text: 'Portfolio',
+      url: '/portfolio/'
     },
     {
       text: 'Blog',
