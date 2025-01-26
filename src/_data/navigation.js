@@ -9,12 +9,20 @@ export default {
       url: '/what-i-do/'
     },
     {
+      text: 'Now',
+      url: '/now/'
+    },
+    {
       text: 'Portfolio',
       url: '/portfolio/'
     },
     {
       text: 'Blog',
       url: '/blog/'
+    },
+    {
+      text: '🔍',
+      url: '/Search/'
     }
   ],
   bottom: [
