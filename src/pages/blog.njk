@@ -32,6 +32,11 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
 		{% endeach %}
 	</custom-masonry>
 
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections["blog_" + page.lang] %} {% for post in postslist %} {%
+    include "partials/blog-loop.njk" %} {% endfor %}
+  </ul>
+
   <!-- set collection to paginate -->
   {% set collectionToPaginate = collections.posts %}
   <!-- set target pagination settings in meta.js -->
