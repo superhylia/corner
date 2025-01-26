@@ -17,6 +17,8 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
     {% svg "divider/edgy", null, "seperator" %}
   </header>
 
+  <input type="text" id="search" autocomplete="off" placeholder="Search..." />
+  <ul id="results"></ul>
   <script src="/assets/scripts/search.js" async defer></script>
 
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
