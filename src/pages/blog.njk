@@ -17,6 +17,11 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
     {% svg "divider/edgy", null, "seperator" %}
   </header>
 
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections["blog_" + page.lang] %} {% for post in postslist %} {%
+    include "partials/blog-loop.njk" %} {% endfor %}
+  </ul>
+
   <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
     <p>This blog has a pagination of <strong>{{ pagination.size }}</strong> posts per page.<br>
       The pagination is only shown if there are more posts ({{ collections.posts.length }}) than items per
@@ -32,10 +37,7 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
 		{% endeach %}
 	</custom-masonry>
 
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections["blog_" + page.lang] %} {% for post in postslist %} {%
-    include "partials/blog-loop.njk" %} {% endfor %}
-  </ul>
+
 
   <!-- set collection to paginate -->
   {% set collectionToPaginate = collections.posts %}
