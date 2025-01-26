@@ -29,6 +29,8 @@ export const blog = {
   // RSS feed
   name: 'My Web Development Blog',
   description: 'Tell the word what you are writing about in your blog. It will show up on feed readers.',
+  toc: 'Table of contents',
+  skipToc: 'Skip table of contents',
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
     {
