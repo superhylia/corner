@@ -1,6 +1,6 @@
 ---
 title: 'Metal Gear Solid 4: Guns of the Patriots: The Petals Live On'
-description: "*Guns of the Patriots* is "Metal Gear" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it."
+description: '"*Guns of the Patriots* is "Metal Gear" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it."'
 date: 2024-01-11
 tags: ['games', 'feature']
 image: '/posts/2025/mgs4/metal-gear-solid-4-snake-and-ocelot.webp'
