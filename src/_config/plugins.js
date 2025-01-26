@@ -4,7 +4,6 @@ import rss from '@11ty/eleventy-plugin-rss';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import webc from '@11ty/eleventy-plugin-webc';
 import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
-import {readingtime} from '@myxotod/eleventy-plugin-readingtime';
 
 // custom
 import {markdownLib} from './plugins/markdown.js';
@@ -23,7 +22,6 @@ export default {
   syntaxHighlight,
   webc,
   eleventyImageTransformPlugin,
-  readingtime,
   markdownLib,
   drafts,
   htmlConfig,
