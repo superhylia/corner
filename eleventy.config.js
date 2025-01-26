@@ -54,7 +54,7 @@ export default async function (eleventyConfig) {
     useTransform: true
   });
 
-  eleventyConfig.addPlugin(readingtime, {
+  eleventyConfig.addPlugin(plugins.readingtime, {
     wordsPerMinute: 200,
     suffixDisplay: true,
     suffixText: 'min',
