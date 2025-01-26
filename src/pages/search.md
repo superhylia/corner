@@ -8,6 +8,6 @@ permalink: /search/index.html
 
 Enter text below to begin your search or search by tags.
 
-<input type="text" id="search" autocomplete="off" placeholder="Search..." />
+<input type="text" id="search" autocomplete="on" placeholder="Search..." />
 <ul id="results"></ul>
 <script src="/assets/scripts/search.js" async defer></script>
