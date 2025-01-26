@@ -54,6 +54,15 @@ export default async function (eleventyConfig) {
     useTransform: true
   });
 
+  eleventyConfig.addPlugin(readingtime, {
+    wordsPerMinute: 200,
+    suffixDisplay: true,
+    suffixText: 'min',
+    prefixDisplay: true,
+    prefixText: '~',
+    verbose: false
+  });
+
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
     widths: ['auto'],
