@@ -15,6 +15,7 @@ schema: BlogPosting
     <p class="meta | cluster gutter-xs-s">
       <!-- date -->
       {% set definedDate = date %} {% include "partials/date.njk" %}
+      <span> | {{ content | readingtime }} to read</span>
       {%
         if tags.length >
         1
@@ -25,7 +26,6 @@ schema: BlogPosting
         {% endif %}
        {% endfor %}
       {% endif %}
-      <span>{{ content | readingtime }} to read</span>
     </p>
 
     {{ content | safe }}
