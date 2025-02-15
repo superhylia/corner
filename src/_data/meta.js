@@ -26,8 +26,8 @@ export const opengraph_default_alt =
   "I make too many things to list, so here's something I did not make but like a lot. Please play Kingdom Hearts II. It's peak."; // alt text for default meta image"
 export const blog = {
   // RSS feed
-  name: 'My Web Development Blog',
-  description: 'Tell the word what you are writing about in your blog. It will show up on feed readers.',
+  name: 'Hylia\'s Corner: A Blog',
+  description: 'Scribbles and essays about creating something in the world (and guilty pleasures).',
   toc: 'Table of contents',
   skipToc: 'Skip table of contents',
   // feed links are looped over in the head. You may add more to the array.
