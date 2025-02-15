@@ -16,6 +16,7 @@
       "name": "Mono",
       "description": "Monospace font for code and preformatted text.",
       "value": [
+        "Azaret Mono",
         "ui-monospace",
         "Cascadia Code",
         "Source Code Pro",
