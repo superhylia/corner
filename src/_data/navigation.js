@@ -5,14 +5,6 @@ export default {
       url: '/about/'
     },
     {
-      text: 'What I Do',
-      url: '/what-i-do/'
-    },
-    {
-      text: 'Now',
-      url: '/now/'
-    },
-    {
       text: 'Portfolio',
       url: '/portfolio/'
     },
