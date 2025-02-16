@@ -35,5 +35,5 @@
   font-weight: 900;
   src:
     local(''),
-    url('/assets/fonts/instrument_sans/InstrumentSans-Bold.ttf') format('ttf');
+    url('/assets/fonts/instrument_sans/InstrumentSans-Bold.woff2') format('woff2');
 }
