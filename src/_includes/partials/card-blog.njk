@@ -1,5 +1,12 @@
 <custom-card clickable>
-  <slot name="image"></slot>
+  <slot name="image">
+    {% if item.data.image %}
+      <img 
+        class="item-image" 
+        src="{{ item.image | url }}" 
+        alt="{{ item.alt }}"
+        {% if loop.index <= 2 %} loading="eager" {% else %} loading="lazy" {% endif %}>
+      {% endif %}
   <h2 slot="headline">
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
   </h2>
@@ -12,7 +19,6 @@
       {% for tag in item.data.tags %}
         {% if tag != "posts" %}
           <span class="button" data-small-button>{{ tag }}</span>
-          <span class="button" data-small-button></span>
         {% endif %}
       {% endfor %}
     </div>
