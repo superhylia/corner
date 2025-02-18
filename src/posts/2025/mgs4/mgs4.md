@@ -1,6 +1,6 @@
 ---
 title: 'Metal Gear Solid 4: Guns of the Patriots: The Petals Live On'
-description: "Guns of the Patriots is \"Metal Gear\" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it."
+description: "*Guns of the Patriots* is \"Metal Gear\" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it."
 discover:
   description: "Guns of the Patriots is \"Metal Gear\" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it."
 date: 2024-01-11
