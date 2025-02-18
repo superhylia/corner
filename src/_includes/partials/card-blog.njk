@@ -1,5 +1,5 @@
 <custom-card clickable>
-  {% image "/posts/2025/mgs4/metal-gear-solid-4-snake-and-ocelot.png", "test" %}
+  {% image "{{ item.data.image }}", "{{ item.data.alt }}" %}
   <h2 slot="headline">
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
   </h2>
