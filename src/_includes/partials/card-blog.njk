@@ -1,4 +1,7 @@
 <custom-card clickable>
+  {% if post.data.image %}
+    <image "{{ post.data.image | url }}", "{{ post.data.alt }}"
+  {% endif %}
   <h2 slot="headline">
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
   </h2>
@@ -11,6 +14,7 @@
       {% for tag in item.data.tags %}
         {% if tag != "posts" %}
           <span class="button" data-small-button>{{ tag }}</span>
+          <span class="button" data-small-button>square image</span>
         {% endif %}
       {% endfor %}
     </div>
