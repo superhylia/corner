@@ -1,14 +1,6 @@
-<figure class="feature">
-    <img src="{{ item.data.image }}" alt="{{ post.data.alt }}" loading="eager" decoding="sync">
-  </figure>  
-
-<figure class="feature">
-    <img src="{{ post.data.image }}" alt="{{ post.data.alt }}" loading="eager" decoding="sync">
-  </figure>  
-
 <custom-card clickable>
   <figure class="feature">
-    <img src="{{ post.data.image }}" alt="{{ post.data.alt }}" loading="eager" decoding="sync">
+    <img src="{{ item.data.image }}" alt="{{ post.data.alt }}" loading="eager" decoding="sync">
   </figure>     
   <h2 slot="headline">
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
