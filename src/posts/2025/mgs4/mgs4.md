@@ -1,8 +1,8 @@
 ---
 title: 'Metal Gear Solid 4: Guns of the Patriots: The Petals Live On'
-description: "*Guns of the Patriots* is "Metal Gear" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it."
+description: "It's been a few months, and I have decided to change things again, which probably makes the starter even more opinionated. 🤷 Eleventy Excellent 3.0 now uses ESM, has a new config structure and uses web components."
 discover:
-  description: "Guns of the Patriots is "Metal Gear" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it."
+  description: "I have decided to change things again: Eleventy Excellent 3.0 now uses ESM, has a new config structure and uses web components."
 date: 2024-01-11
 tags: ['games', 'feature']
 image: '/posts/2025/mgs4/metal-gear-solid-4-snake-and-ocelot.png'
