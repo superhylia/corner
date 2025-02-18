@@ -10,9 +10,7 @@
 {% else %}
 
 <li id="{{ post.data.title | slugify }}" class="card flow clickable-card overflow-hidden">
-  {% if post.data.image %}
-    <image "{{ post.data.image | url }}", "{{ post.data.alt }}"
-  {% endif %}
+  <image "{{ post.data.image | url }}", "{{ post.data.alt }}"
   <h2>
     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
   </h2>
