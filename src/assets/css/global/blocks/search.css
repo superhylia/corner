@@ -2,12 +2,11 @@
     margin-block-start: var(--flow-space,1em);
     --pagefind-ui-scale: 1.2;
     --pagefind-ui-primary: var(--color-text);
-    --pagefind-ui-text: var(--color-bg);
-    --pagefind-ui-background: var(--color-text);
+    --pagefind-ui-text: var(--color-text);
+    --pagefind-ui-background: #ffffff00;
     --pagefind-ui-border: var(--color-text-accent);
     --pagefind-ui-tag: var(--color-primary);
     --pagefind-ui-border-width: 2px;
-    --pagefind-ui-border-radius: var(--border-radius);
     --pagefind-ui-image-border-radius: var(--border-radius);
     --pagefind-ui-image-box-ratio: 3 / 2;
     --pagefind-ui-font: var(--font-base);
