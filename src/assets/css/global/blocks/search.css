@@ -1,0 +1,29 @@
+.pagefind-ui{
+    margin-block-start: var(--flow-space,1em);
+    --pagefind-ui-scale: 1.2;
+    --pagefind-ui-primary: var(--color-text);
+    --pagefind-ui-text: var(--color-text);
+    --pagefind-ui-background: #ffffff00;
+    --pagefind-ui-border: var(--color-text-accent);
+    --pagefind-ui-tag: var(--color-primary);
+    --pagefind-ui-border-width: 5px;
+    --pagefind-ui-image-border-radius: var(--border-radius);
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: var(--font-base);
+}
+.pagefind-ui__result {
+    --pagefind-ui-border: var(--color-text-accent);
+  }
+.pagefind-ui__button {
+    --pagefind-ui-primary: var(--color-bg);
+    --pagefind-ui-background: var(--color-text);
+    margin-block-start: var(--space-s-m);
+}
+.pagefind-ui__button:hover {
+    --pagefind-ui-primary: var(--color-bg);
+    --pagefind-ui-background: var(--color-text);
+}
+
+.pagefind-ui__search-input:focus-visible {
+  outline: 2px solid var(--color-primary);
+}

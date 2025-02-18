@@ -10,6 +10,13 @@
 {% else %}
 
 <li id="{{ post.data.title | slugify }}" class="card flow clickable-card overflow-hidden">
+  {% if post.data.featureImage %}
+  <img 
+    class="post-image" 
+    src="{{ post.data.Image | url }}" 
+    alt="{{ post.data.alt }}"
+    {% if loop.index <= 2 %} loading="eager" {% else %} loading="lazy" {% endif %}>
+  {% endif %}
   <h2>
     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
   </h2>
