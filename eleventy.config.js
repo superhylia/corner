@@ -28,6 +28,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
   eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc}');
 
+  // Pagefind search
+  eleventyConfig.on('eleventy.after', () => {
+    execSync(`npx pagefind --site dist --glob "**/*.html"`, { encoding: 'utf-8' });
+  });
+  
   // --------------------- layout aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk');
   eleventyConfig.addLayoutAlias('page', 'page.njk');
