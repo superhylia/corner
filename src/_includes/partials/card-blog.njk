@@ -1,12 +1,7 @@
 <custom-card clickable>
-  <slot name="image">
-    {% if post.data.image %}
-      <img 
-        class="post-data-image" 
-        src="{{ post.data.image | url }}" 
-        alt="{{ post.data.alt }}"
-        {% if loop.index <= 2 %} loading="eager" {% else %} loading="lazy" {% endif %}>
-      {% endif %}
+  <figure class="feature">
+    <img src="{{ post.data.image }}" alt="{{ post.data.alt }}" loading="eager" decoding="sync">
+  </figure>     
   <h2 slot="headline">
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
   </h2>
