@@ -2,9 +2,9 @@
     margin-block-start: var(--flow-space,1em);
     --pagefind-ui-scale: 1.2;
     --pagefind-ui-primary: var(--color-fg);
-    --pagefind-ui-text: var(--color-fg);
-    --pagefind-ui-background: var(--color-bg);
-    --pagefind-ui-border: var(--color-fg);
+    --pagefind-ui-text: var(--color-bg);
+    --pagefind-ui-background: var(--color-text);
+    --pagefind-ui-border: var(--color-text-accent);
     --pagefind-ui-tag: var(--color-primary);
     --pagefind-ui-border-width: 2px;
     --pagefind-ui-border-radius: var(--border-radius);
@@ -13,16 +13,16 @@
     --pagefind-ui-font: var(--font-base);
 }
 .pagefind-ui__result {
-    --pagefind-ui-border: #eeeeee;
+    --pagefind-ui-border: var(--color-text-accent);
   }
 .pagefind-ui__button {
     --pagefind-ui-primary: var(--color-fg);
-    --pagefind-ui-background: var(--color-bg);
+    --pagefind-ui-background: var(--color-text);
     margin-block-start: var(--space-s-m);
 }
 .pagefind-ui__button:hover {
-    --pagefind-ui-primary: var(--color-bg);
-    --pagefind-ui-background: var(--color-fg);
+    --pagefind-ui-primary: var(--color-fg);
+    --pagefind-ui-background: var(--color-text);
 }
 
 .pagefind-ui__search-input:focus-visible {
