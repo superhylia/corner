@@ -1,6 +1,6 @@
 <custom-card clickable>
   {% if post.data.image %}
-    <image "{{ post.data.image | url }}", "{{ post.data.alt }}"
+    {% image "{{ post.data.image | url }}", "{{ post.data.alt }}" %}
   {% endif %}
   <h2 slot="headline">
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
