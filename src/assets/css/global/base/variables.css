@@ -37,6 +37,7 @@
   --color-primary: var(--color-red);
   --color-secondary: var(--color-blue);
   --color-tertiary: var(--color-yellow);
+  --color-quaternary: var(--color-green);
 
   --color-text-accent: var(--color-gray-700);
   --color-bg-accent: var(--color-gray-200);
@@ -52,6 +53,7 @@
     --color-primary: var(--color-red-subdued);
     --color-secondary: var(--color-blue-subdued);
     --color-tertiary: var(--color-yellow-subdued);
+    --color-quaternary: var(--color-green-subdued);
 
     --color-text-accent: var(--color-gray-300);
     --color-bg-accent: var(--color-gray-700);
@@ -65,6 +67,7 @@
   --color-primary: var(--color-red-subdued);
   --color-secondary: var(--color-blue-subdued);
   --color-tertiary: var(--color-yellow-subdued);
+  --color-quaternary: var(--color-green-subdued);
 
   --color-text-accent: var(--color-gray-300);
   --color-bg-accent: var(--color-gray-700);
