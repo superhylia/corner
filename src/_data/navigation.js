@@ -19,15 +19,23 @@ export default {
   ],
   bottom: [
     {
-      text: 'Style guide',
+      text: '/now',
+      url: '/now/'
+    },
+    {
+      text: '/uses',
+      url: '/uses/'
+    },
+    {
+      text: '/styleguide',
       url: '/styleguide/'
     },
     {
-      text: 'Imprint',
+      text: '/imprint',
       url: '/imprint/'
     },
     {
-      text: 'Privacy',
+      text: '/privacy',
       url: '/privacy/'
     }
   ]
