@@ -5,7 +5,7 @@ discover:
   description: "Guns of the Patriots is Metal Gear at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it."
 date: 2024-01-11
 tags: ['games', 'feature']
-image: '/posts/2025/mgs4/metal-gear-solid-4-snake-and-ocelot.png'
+image: '/posts/2025/mgs4/metal-gear-solid-4-guns-of-the-patriots-the-petals-live-on.png'
 alt: 'A picturesque valley showcasing majestic mountains and lush forests, creating a serene and captivating landscape'
 credit: Limited Edition artwork by the legend Yoji Shinkawa.
 bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
