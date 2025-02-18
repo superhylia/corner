@@ -7,7 +7,7 @@ image: '/posts/2025/mgs4/metal-gear-solid-4-snake-and-ocelot.png'
 alt: 'A picturesque valley showcasing majestic mountains and lush forests, creating a serene and captivating landscape'
 credit: Limited Edition artwork by the legend Yoji Shinkawa.
 discover:
-  description: Guns of the Patriots is "Metal Gear" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it.
+  description: `Guns of the Patriots is "Metal Gear" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish I could actually play it.`
 bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
 ---
 
