@@ -61,7 +61,7 @@
 <meta
   property="og:image"
   content="{%- if layout == 'post' -%}
-    {{- meta.url -}}{{- image -}}
+    {{- meta.url -}}/{{- ogImage -}}
   {%- else -%}
     {{- meta.url -}}{{- meta.opengraph_default -}}
   {%- endif -%}"
