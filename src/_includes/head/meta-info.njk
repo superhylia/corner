@@ -81,7 +81,15 @@
 <meta property="og:locale" content="{{ meta.locale }}" />
 <meta property="article:author" content="{{ meta.author.name }}" />
 
-<!-- Twitter specific head data was removed in v2 -->
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+{% if meta.meta_data.twitterSite %}
+<meta name="twitter:site" content="{{ meta.meta_data.twitterSite | default('') }}" />
+{% endif %}
+{% if meta.meta_data.twitterCreator %}
+<meta name="twitter:creator" content="{{ meta.meta_data.twitterCreator | default('') }}" />
+{% endif %}
+<meta name="twitter:dnt" content="on" />
 
 <!-- RSS Autodiscovery. Loops over meta.blog.feedLinks -->
 {% for feedLink in meta.blog.feedLinks %}
