@@ -12,7 +12,7 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 ### MIT License
 
-The **Cube Boilerplate** is licensed under the MIT License:
+The [**Cube Boilerplate**](https://github.com/Set-Creative-Studio/cube-boilerplate/tree/main) is licensed under the MIT License:
 
 Copyright (c) 2024 Set Studio
 
@@ -34,7 +34,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-The **Flexoki color scheme** used for the "paper" theme is licensed under the MIT License:
+The [**Flexoki color scheme**](https://stephango.com/flexoki) used for the "paper" theme is licensed under the MIT License:
 
 Copyright (c) 2023 Steph Ango
 
