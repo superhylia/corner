@@ -74,31 +74,32 @@
   --color-bg-accent-2: var(--color-gray-600);
 }
 
+/* Paper/Flexoki light theme */
 @media (prefers-color-scheme: paper) {
   :root {
-    --color-text: var(--color-red-subdued);
-    --color-bg: var(--color-gray-300);
+    --color-text: var(--color-flexoki-black);
+    --color-bg: var(--color-flexoki-paper);
 
     --color-primary: var(--color-red-subdued);
     --color-secondary: var(--color-blue-subdued);
     --color-tertiary: var(--color-yellow-subdued);
     --color-quaternary: var(--color-green-subdued);
 
-    --color-text-accent: var(--color-gray-300);
-    --color-bg-accent: var(--color-gray-700);
-    --color-bg-accent-2: var(--color-gray-600);
+    --color-text-accent: var(--color-flexoki-base-600);
+    --color-bg-accent: var(--color-flexoki-base-100);
+    --color-bg-accent-2: var(--color-flexoki-base-200);
   }
 }
 :root[data-theme='paper'] {
-  --color-text: var(--color-red-subdued);
-  --color-bg: var(--color-gray-300);
+  --color-text: var(--color-flexoki-black);
+  --color-bg: var(--color-flexoki-paper);
 
   --color-primary: var(--color-red-subdued);
   --color-secondary: var(--color-blue-subdued);
   --color-tertiary: var(--color-yellow-subdued);
   --color-quaternary: var(--color-green-subdued);
 
-  --color-text-accent: var(--color-gray-300);
-  --color-bg-accent: var(--color-gray-700);
-  --color-bg-accent-2: var(--color-gray-600);
+  --color-text-accent: var(--color-flexoki-base-600);
+  --color-bg-accent: var(--color-flexoki-base-100);
+  --color-bg-accent-2: var(--color-flexoki-base-200);
 }
