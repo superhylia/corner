@@ -8,6 +8,6 @@ layout: page
 ---
 
 The owner of this website is:
-{{ personal.full-name }}
+{{ personal.name }}
 {{ personal.address.city }}, {{ personal.address.state }}, {{ personal.address.country }}
 {{ personal.email }}
