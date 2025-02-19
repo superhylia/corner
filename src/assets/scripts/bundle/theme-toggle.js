@@ -5,7 +5,7 @@ const paperLabel = '{{ meta.themeSwitch.paper }}';
 const themeColors = {
   dark: '{{ meta.themeLight }}',
   light: '{{ meta.themeDark }}',
-  paper: '{{ meta.themeDark }}'
+  paper: '{{ meta.themePaper }}'
 };
 
 const theme = {
@@ -15,7 +15,7 @@ const theme = {
 window.onload = () => {
   const lightThemeToggle = document.querySelector('#light-theme-toggle');
   const darkThemeToggle = document.querySelector('#dark-theme-toggle');
-  const paperThemeToggle = document.querySelector('#dark-theme-toggle');
+  const paperThemeToggle = document.querySelector('#paper-theme-toggle');
   const switcher = document.querySelector('[data-theme-switcher]');
 
   if (!switcher) {
