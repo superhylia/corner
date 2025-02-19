@@ -21,6 +21,7 @@ export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon
 export const themeColor = '#dd4462'; // used in manifest, for example primary color value
 export const themeLight = '#edece4'; // used for meta tag theme-color, if light colors are prefered. best use value set for light bg
 export const themeDark = '#12131b'; // used for meta tag theme-color, if dark colors are prefered. best use value set for dark bg
+export const themePaper = '#b7b8ba'; // used for meta tag theme-color, if dark colors are prefered. best use value set for dark bg
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
 export const opengraph_default_alt =
   "I make too many things to list, so here's something I did not make but like a lot. Please play Kingdom Hearts II. It's peak."; // alt text for default meta image"
@@ -69,7 +70,8 @@ export const navigation = {
 export const themeSwitch = {
   title: 'Theme',
   light: 'light',
-  dark: 'dark'
+  dark: 'dark',
+  paper: 'paper'
 };
 export const greenweb = {
   // this goes into src/common/greenweb.njk
