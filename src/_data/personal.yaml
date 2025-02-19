@@ -1,5 +1,17 @@
 full-name: Levi Ireri
 email: superlevi12345@gmail.com
+address: {
+  firma: 'Levi Ireri',
+  street: '',
+  city: 'Arlington',
+  state: 'TX',
+  zip: '',
+  country: 'United States of America',
+  mobileDisplay: '',
+  mobileCall: '',
+  email: 'superlevi12345@gmail.com',
+  cif: ''
+}
 platforms:
   github: 'https://github.com/superhylia/corner'
   bluesky: 'https://bsky.app/profile/superhylia.dev'
