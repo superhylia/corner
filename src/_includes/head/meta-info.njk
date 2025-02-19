@@ -61,7 +61,7 @@
 <meta
   property="og:image"
   content="{%- if layout == 'post' -%}
-    /assets/og-images/{{ title | slugify }}-preview.jpeg
+    {{- meta.url -}}/assets/og-images/{{ title | slugify }}-preview.jpeg
   {%- else -%}
     {{- meta.url -}}{{- meta.opengraph_default -}}
   {%- endif -%}"
