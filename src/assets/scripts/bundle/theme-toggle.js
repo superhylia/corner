@@ -1,9 +1,11 @@
 const storageKey = 'theme-preference';
 const lightLabel = '{{ meta.themeSwitch.light }}';
 const darkLabel = '{{ meta.themeSwitch.dark }}';
+const paperLabel = '{{ meta.themeSwitch.paper }}';
 const themeColors = {
   dark: '{{ meta.themeLight }}',
-  light: '{{ meta.themeDark }}'
+  light: '{{ meta.themeDark }}',
+  paper: '{{ meta.themeDark }}'
 };
 
 const theme = {
@@ -13,6 +15,7 @@ const theme = {
 window.onload = () => {
   const lightThemeToggle = document.querySelector('#light-theme-toggle');
   const darkThemeToggle = document.querySelector('#dark-theme-toggle');
+  const paperThemeToggle = document.querySelector('#dark-theme-toggle');
   const switcher = document.querySelector('[data-theme-switcher]');
 
   if (!switcher) {
@@ -24,9 +27,11 @@ window.onload = () => {
 
   lightThemeToggle.addEventListener('click', () => onClick('light'));
   darkThemeToggle.addEventListener('click', () => onClick('dark'));
+  paperThemeToggle.addEventListener('click', () => onClick('paper'));
 
   lightThemeToggle.setAttribute('aria-pressed', theme.value === 'light');
   darkThemeToggle.setAttribute('aria-pressed', theme.value === 'dark');
+  paperThemeToggle.setAttribute('aria-pressed', theme.value === 'paper');
 };
 
 // sync with system changes
@@ -40,6 +45,7 @@ function onClick(themeValue) {
   theme.value = themeValue;
   document.querySelector('#light-theme-toggle').setAttribute('aria-pressed', themeValue === 'light');
   document.querySelector('#dark-theme-toggle').setAttribute('aria-pressed', themeValue === 'dark');
+  document.querySelector('#paper-theme-toggle').setAttribute('aria-pressed', themeValue === 'paper');
   setPreference();
   updateMetaThemeColor();
 }
