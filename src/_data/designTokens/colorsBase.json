@@ -6,6 +6,14 @@
       "name": "Gray",
       "value": "#888888"
     }
+    {
+      "name": "Flexoki paper",
+      "value": "#FFFCF0"
+    }
+    {
+      "name": "Flexoki black",
+      "value": "#100F0F"
+    }
   ],
   "shades_vibrant": [],
   "light_dark": [
