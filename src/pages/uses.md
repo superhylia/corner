@@ -12,7 +12,8 @@ layout: page
     <ul>
     <li>AMD Ryzen 7 8840HS</li>
     <li>AMD Radeon 780M</li>
-    <li>16GB RAM/1TB SSD</li>
+    <li>16GB RAM</li>
+    <li>/1TB SSD</li>
     </ul>
     </li>
     <li>Keychron C2 Pro QMK/VIA Wired Mechanical Keyboard (K Pro Brown Switch)</li>
@@ -31,6 +32,7 @@ layout: page
     <li>UniGetUI</li>
     <li>Windows Centering Helper</li>
     <li>StackEdit</li>
+    <li>Spotify</li>
     </ul>
     </li>
     <li>Entertainment
@@ -39,6 +41,10 @@ layout: page
     <li>Nintendo Switch</li>
     <li>PlayStation 4 Slim</li>
     <li>Wii U</li>
+    </ul>
+    </li>
+    <li> Phone
+    <ul>
     <li>Samsung Galaxy S22+</li>
     <li>Sony WH-CH720N Wireless Noise Cancelling Headphones</li>
     </ul>
