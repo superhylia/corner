@@ -4,7 +4,7 @@ import Image from "@11ty/eleventy-img"; // import eleventy image
 const processOGImage = async (image) => {
   // use eleventy image to process the image
   let imageObj = await Image(image, {
-    outputDir: "assets/images/og-images/", // set the output directory
+    outputDir: "assets/og-images/", // set the output directory
     formats: ["jpeg"], // choose which formats to output
     // add any other eleventy image options here sizing, etc 
     // see https://www.11ty.dev/docs/plugins/image/
