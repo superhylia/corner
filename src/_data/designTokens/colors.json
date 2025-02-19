@@ -39,6 +39,62 @@
       "value": "#12131b"
     },
     {
+      "name": "Flexoki paper",
+      "value": "#FFFCF0"
+    },
+    {
+      "name": "Flexoki base-50",
+      "value": "#F2F0E5"
+    },
+    {
+      "name": "Flexoki base-100",
+      "value": "base-100"
+    },
+    {
+      "name": "Flexoki base-150",
+      "value": "base-150"
+    },
+    {
+      "name": "Flexoki base-200",
+      "value": "#CECDC3"
+    },
+    {
+      "name": "Flexoki base-300",
+      "value": "#B7B5AC"
+    },
+    {
+      "name": "Flexoki base-500",
+      "value": "#878580"
+    },
+    {
+      "name": "Flexoki base-600",
+      "value": "#6F6E69"
+    },
+    {
+      "name": "Flexoki base-700",
+      "value": "#575653"
+    },
+    {
+      "name": "Flexoki base-800",
+      "value": "#403E3C"
+    },
+    {
+      "name": "Flexoki base-850",
+      "value": "#343331"
+    },
+    {
+      "name": "Flexoki base-900",
+      "value": "#282726"
+    },
+    {
+      "name": "Flexoki base-950",
+      "value": "#1C1B1A"
+    },
+    {
+      "name": "Flexoki black",
+      "value": "#100F0F"
+    },
+    {
       "name": "Red",
       "value": "#f31a4e"
     },
