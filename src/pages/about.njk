@@ -2,8 +2,17 @@
 title: About
 permalink: /about/index.html
 description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
-layout: page
+layout: base
 ---
+
+<article class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-tertiary)">
+    <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
+      <h1 class="text-center" style="color: var(--color-bg);">{{ title }}</h1>
+    </div>
+
+    {% svg "divider/waves", null, "seperator" %}
+  </header>
 
 This starter uses modern CSS, fluid type & space, flexible Layouts and Progressive Enhancement, wrapped in a basic template.
 
