@@ -2,6 +2,7 @@
 layout: base
 schema: BlogPosting
 ---
+<script type="module" src="https://esm.sh/gh/loueed/bsky@v1.0.0/comments"></script>
 
 <article class="region" style="--region-space-top: var(--space-xl-2xl)" data-pagefind-body>
   <div class="wrapper flow prose">
@@ -29,14 +30,11 @@ schema: BlogPosting
     </p>
 
     {{ content | safe }}
-    {% include 'partials/edit-on.njk' %}
-    <script type="module" src="https://esm.sh/gh/loueed/bsky@v1.0.0/comments"></script>
     {% if bskyId %}
-    <footer>
       <h3>Comments</h3>
-      <bsky-comments post="{{bskyurl}}"></bsky-comments>
-      </footer>
+        <bsky-comments post="{{bskyurl}}"></bsky-comments>
       {% endif %}
+    {% include 'partials/edit-on.njk' %}
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
