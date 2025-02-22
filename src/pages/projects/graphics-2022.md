@@ -4,6 +4,9 @@ title: Graphics from 2022
 description: 'All my graphics from 2022.'
 permalink: 'graphics/2022/index.html'
 gallery:
+  - image: ./src/assets/projects/graphic_design/2022/izanagi.png
+    alt: 'Two female characters, Min Min and Pyra, stand fiercely while the text Izanagi displays next to them.'
+    caption: 'A banner for user Izanagi.'
   - image: ./src/assets/projects/graphic_design/2022/jswish.png
     alt: 'The text jswish opposes Joker and Chiaki.'
     caption: 'A banner for user jswish.'
