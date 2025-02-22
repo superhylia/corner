@@ -39,7 +39,7 @@ Graphics for former tournament series [Tri-State Tourney Tuesdays](https://start
 ![](/assets/projects/graphic_design/2023/tstt/tstt%20startgg%20header%20with%20strip.png 'The main header.')
 ![](/assets/projects/graphic_design/2023/tstt/tstt%20stagelist.png 'Stagelist.')
 
-# Loop through images without additional interactivity:
+### Loop through images without additional interactivity:
 
 <ul class="gallery" role="list" style="padding: 0;">
   {%- for item in gallery -%}
