@@ -70,7 +70,7 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
-    formats: ['webp', 'jpeg', 'avif', 'png', 'svg'],
+    formats: ['webp', 'jpeg'],
     widths: ['auto'],
     htmlOptions: {
       imgAttributes: {
