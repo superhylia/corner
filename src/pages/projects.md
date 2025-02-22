@@ -3,7 +3,6 @@ layout: base
 title: Projects
 description: 'Everything I''ve made.'
 permalink: 'portfolio/index.html'
-bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
 ---
 
 <div class="wrapper">
@@ -12,26 +11,14 @@ bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
       <h1 class="text-center" style="color: var(--color-bg);">{{ title }}</h1>
       <h3 class="text-center" style="color: var(--color-bg);">All that I've made, from graphic design and branding to communities and code projects (including this website!).</h3>
     </div>
-
     {% svg "divider/edgy", null, "seperator" %}
   </header>
 </div>
 
 <article class="full | region">
     <div class="wrapper flow prose">
-      <p>
-        There's a lot of graphic design stuff I need to pull over still onto here, so for now, my updated <a href="https://be.net/superhylia">Behance</a> should do.
-      </p>
-      {% if bskyId %}
-        <h3>Comments</h3>
-        <bsky-comments post="{{bskyurl}}"></bsky-comments>
-      {% endif %}
+      ## test
   </article>
-
-{% if bskyId %}
-  <h3>Comments</h3>
-  <bsky-comments post="{{bskyurl}}"></bsky-comments>
-{% endif %}
 
 {% css "local" %}
   {% include "css/custom-card.css" %}
