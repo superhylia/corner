@@ -3,7 +3,7 @@ title: 'Next mission: entering a game jam'
 description: "This might not go well."
 date: 2025-02-21
 tags: ['all-eyes-on-me', 'games', 'devlog']
-image: '/posts/2025/vgdo-gj-day-1/Spring_2025_Game_Jam_Kickoff_conv_1.png'
+image: 'posts/2025/vgdo-gj-day-1/Spring_2025_Game_Jam_Kickoff_conv_1.png'
 alt: 'A tired bear sits down within a circle as stage curtains cover the background.'
 ---
 
