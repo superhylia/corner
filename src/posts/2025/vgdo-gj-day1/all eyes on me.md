@@ -31,6 +31,7 @@ In the hours since the announcement and going off what I had posted before, I th
 <div>
 <custom-youtube @slug="kIxKjmrCrS4" @label="IKARUGA SUPERPLAY - Hard difficulty - All Chapters S++ - Scoring # 31557900 HD"></custom-youtube>
 </div>
+
 Since I found out about the game jam, I've had one terrible idea in mind: go in blind into a genre you don't know that well. Any reasonable person would say this is a terrible idea, and I concur, but I think this could be a really good way to learn and do something I've never explored before.
 
 While the world of shoot-em-ups isn't super well talked about these days, it's been a recent want of mine to explore an era of gaming before the one I grew up with (around the millennium onwards, give or take), back when game design principles for 2D and 3D experiences were still being written and where limitations bred unique solutions more often. I've obviously played shmups before, but it's a part of gaming I've overlooked for a while. Approaching game development from that lack of perspective may be transformative, both in appreciating the genre itself and in better understanding the craft that goes into making these. I generally tend to be a fan of arcade-y, replayable action games like *Bayonetta* or search-action games that encourage full completion in a restricted time frame like basically all the *Metroid* games, so that should help me.
