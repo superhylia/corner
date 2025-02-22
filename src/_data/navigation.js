@@ -11,10 +11,6 @@ export default {
     {
       text: 'Blog',
       url: '/blog/'
-    },
-    {
-      text: '🔍',
-      url: '/Search/'
     }
   ],
   bottom: [
@@ -25,10 +21,6 @@ export default {
     {
       text: '/uses',
       url: '/uses/'
-    },
-    {
-      text: '/styleguide',
-      url: '/styleguide/'
     },
     {
       text: '/imprint',
