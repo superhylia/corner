@@ -11,7 +11,7 @@ gallery:
     alt: 'The text jswish opposes Joker and Chiaki.'
     caption: 'A banner for user "jswish".'
   - image: ./src/assets/projects/graphic_design/2022/tati.png
-    alt: "Boxer Little Mac has many afterimages and comic book onomanopea ("snap", "tak, "tap", "squeak", "ping") while the text Tati displays on the right."
+    alt: 'Boxer Little Mac has many afterimages and comic book onomatopoeia ("snap", "tak, "tap", "squeak", "ping") while the text Tati displays on the right.'
     caption: 'A banner for user "Tati".'
   - image: ./src/assets/projects/graphic_design/2022/terry.png
     alt: 'The text Mr. Terry Bogard opposes Terry Bogard on top of a red background.'
