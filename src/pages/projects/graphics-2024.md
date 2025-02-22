@@ -22,7 +22,7 @@ gallery:
   - image: ./src/assets/projects/graphic_design/2024/jazzy/jazzy.png
     alt: 'Close-up of a delicate white flower with a yellow center, surrounded by green leaves'
     caption: 'Jasmine nightshades blooming in July'
-redirectFrom: ['projects/graphics/2024/index.html', '/graphics-2024/index.html']
+redirectFrom: ['/projects/graphics/2024/index.html', '/graphics-2024/index.html']
 ---
 
 This post has a gallery set in its front matter as a list of objects, each with an `image`, `alt`, and `caption` property.
