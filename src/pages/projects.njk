@@ -3,6 +3,7 @@ layout: base
 title: Projects
 description: 'Everything I''ve made.'
 permalink: 'portfolio/index.html'
+bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
 ---
 
 <div class="wrapper">
@@ -19,9 +20,14 @@ permalink: 'portfolio/index.html'
 <article class="full | region">
     <div class="wrapper flow prose">
       <p>
-        There's a lot of graphic design stuff I need to pull over still onto here, so for now, my updated <a href="https://be.net/superhylia>Behance</a> should do.
+        There's a lot of graphic design stuff I need to pull over still onto here, so for now, my updated <a href="https://be.net/superhylia">Behance</a> should do.
       </p>
   </article>
+
+{% if bskyId %}
+  <h3>Comments</h3>
+  <bsky-comments post="{{bskyurl}}"></bsky-comments>
+{% endif %}
 
 {% css "local" %}
   {% include "css/custom-card.css" %}
