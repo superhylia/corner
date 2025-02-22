@@ -1,6 +1,6 @@
 ---
 title: 'My developer profile'
-category: 'note'
+category: 'noteice'
 date: 2025-01-11
 excludeFromSitemap: true
 ---
