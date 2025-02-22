@@ -30,6 +30,13 @@ schema: BlogPosting
 
     {{ content | safe }}
     {% include 'partials/edit-on.njk' %}
+    <script type="module" src="https://esm.sh/gh/loueed/bsky@v1.0.0/comments"></script>
+    {% if bskyId %}
+    <footer>
+      <h3>Comments</h3>
+      <bsky-comments post="{{bskyurl}}"></bsky-comments>
+      </footer>
+      {% endif %}
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
@@ -43,8 +50,7 @@ schema: BlogPosting
       alt="{{ meta.author.name }}"
     />
   </div>
-
-  <script type="module" src="https://esm.sh/gh/loueed/bsky@v1.0.0/comments"></script>
+  
 </article>
 
 
