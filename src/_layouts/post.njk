@@ -29,12 +29,7 @@ schema: BlogPosting
     </p>
 
     {{ content | safe }}
-    {% if lastEdit %}
-      <!-- last edit -->
-      {% set definedDate = lastEdit %}
-      <dt>{{ meta[page.lang].blog.edited | capitalize }}</dt>
-      <dd>{% include "partials/date.njk" %}</dd>
-      {% endif %}    
+    {% include 'partials/lastedit.njk' %}
     {% include 'partials/edit-on.njk' %}
   </div>
 
