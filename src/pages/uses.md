@@ -4,7 +4,7 @@ permalink: /uses/index.html
 description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
 layout: page
 ---
-![An image of my setup.](/assets/images/pages/setup-feb25.jpg 'An image of my setup from February 2025.')
+![An image of my setup.](/assets/images/pages/uses/setup-feb25.jpg 'An image of my setup from February 2025.')
 <ul>
     <li>Hardware
     <ul>
@@ -52,7 +52,8 @@ layout: page
     <li>Analogue
     <ul>
     <li>The North Face Jester</li>
-    <li>Moleskine Notebook, Ruled-Plain, Black, Extra Large, Soft Cover (7.5 x 10)</li>
+    <li>Game Dev Notebook: Moleskine Notebook, Ruled-Plain, Black, Extra Large, Soft Cover (7.5 x 10)</li>
+    <li>Whiteboards</li>
     </ul>
     </li>
     </ul>
