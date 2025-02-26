@@ -1,6 +1,14 @@
 export default {
   top: [
     {
+      text: 'About',
+      url: '/about/'
+    },
+    {
+      text: 'Now',
+      url: '/now/'
+    },
+    {
       text: 'Portfolio',
       url: '/portfolio/'
     },
@@ -11,13 +19,9 @@ export default {
   ],
   bottom: [
     {
-      text: '/now',
-      url: '/now/'
-    },
-    {
       text: '/uses',
       url: '/uses/'
-    },
+    }, 
     {
       text: '/imprint',
       url: '/imprint/'

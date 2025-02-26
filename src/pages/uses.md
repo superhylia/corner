@@ -4,7 +4,7 @@ permalink: /uses/index.html
 description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
 layout: page
 ---
-<!-- ![An image of my setup.](/assets/images/pages/setup-feb25.png 'An image of my setup from February 2025.') -->
+![An image of my setup.](/assets/images/pages/setup-feb25.jpg 'An image of my setup from February 2025.')
 <ul>
     <li>Hardware
     <ul>

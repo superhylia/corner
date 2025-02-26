@@ -1,0 +1,50 @@
+---
+layout: base
+---
+
+<article class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-secondary)">
+    <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
+      <h1 class="text-center" style="color: var(--color-bg);">{{ title }}</h1>
+      <h3 class="text-center" style="color: var(--color-bg);">{{ description }}</h3>
+    </div>
+
+    {% svg "divider/pixels", null, "seperator" %}
+  </header>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
+
+  <div class="wrapper flow prose">
+    {{ content | safe }}
+    </div>
+
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections["blog_" + page.lang] %} {% for post in postslist %} {%
+    include "partials/blog-loop.njk" %} {% endfor %}
+  </ul>
+
+  <custom-masonry layout="50-50">
+		{% asyncEach item in pagination.items %}
+			{% set definedDate = item.date %}
+
+			{% include "partials/card-blog.njk" %}
+		{% endeach %}
+	</custom-masonry>
+
+  <!-- set collection to paginate -->
+  {% set collectionToPaginate = collections.posts %}
+  <!-- set target pagination settings in meta.js -->
+  {% set metaKey = "blog" %}
+  <!-- if the number of items in the collection is greater than the number of items shown on one page -->
+  {% if collectionToPaginate.length > pagination.size %}
+    <!-- include pagination -->
+    {% include 'partials/pagination.njk' %}
+  {% endif %}
+</article>
