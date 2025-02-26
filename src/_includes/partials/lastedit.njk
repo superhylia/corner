@@ -1,0 +1,7 @@
+{% if lastEdit %}
+      {% set definedDate = lastEdit %}
+      <hr /> 
+        <p class="text-step-min-1">
+          Last edited on {% include "partials/date.njk" %}
+      </p>
+  {% endif %}    
