@@ -45,7 +45,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
-  eleventyConfig.addCollection('tagList', tagList);
   eleventyConfig.addCollection("ALOM", function(collectionApi) {
     return collectionApi.getFilteredByTag("all-eyes-on-me").reverse();
   });
