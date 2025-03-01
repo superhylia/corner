@@ -5,16 +5,16 @@ description: 'All my graphics'
 permalink: 'graphics/2024/index.html'
 gallery:
   - image: ./src/assets/projects/graphic_design/2024/penelope.png
-    alt: 'Inkling and Princess Peach are overlaid an alternating pink and purple pulsating circular background. The text "Penelope" appears in between large "PEACH" and "INK" text.'
-    caption: 'A banner for user "Penelope."'
+    alt: 'Inkling and Princess Peach are overlaid an alternating pink and purple pulsating circular background. The text Penelope appears in between large PEACH and INK text.'
+    caption: 'A banner for user Penelope.'
   - image: ./src/assets/projects/graphic_design/2024/LeviIPoster.png
-    alt: 'Colorful notes surround "Notes from Around the World," the title of a performance presented by the Plano East Orchestra.'
-    caption: 'A poster for my high school orchestra program''s "Notes from Around the World" performance.'
+    alt: 'Colorful notes surround Notes from Around the World, the title of a performance presented by the Plano East Orchestra.'
+    caption: 'A poster for my high school orchestra program''s Notes from Around the World performance.'
   - image: ./src/assets/projects/graphic_design/2024/apollo.png
-    alt: 'The text "Apollo" lays atop art of Shinjiro Aragaki surrounded by circular waves filled in with other characters (Dante, Jill, Miller, Ocelot, and Flynn). "Next One" and "Truth" text appear on the top and bottom background, respectively.'
+    alt: 'The text Apollo lays atop art of Shinjiro Aragaki surrounded by circular waves filled in with other characters (Dante, Jill, Miller, Ocelot, and Flynn). Next One and Truth text appear on the top and bottom background, respectively.'
     caption: 'A banner for my friend Apollo.'
   - image: ./src/assets/projects/graphic_design/2024/dihgra.png
-    alt: 'Kazuya Mishima punches above Jin Kazama on top of a rainy background with the text "no limit for us" and "the struggle made me strong" handwritten over him. To the right, the text "dihgra" is overlaid Clive Rosfield on top of a subtly textured off-white background.'
+    alt: 'Kazuya Mishima punches above Jin Kazama on top of a rainy background with the text no limit for us and the struggle made me strong handwritten over him. To the right, the text dihgra is overlaid Clive Rosfield on top of a subtly textured off-white background.'
     caption: 'A banner for my friend Dihgra.'
   - image: ./src/assets/projects/graphic_design/2024/soda.png
     alt: 'The text "Soda64" appears above Kat and a collage of anime and video game characters.'
