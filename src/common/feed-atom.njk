@@ -2,8 +2,19 @@
 permalink: /feed.xml
 eleventyExcludeFromCollections: true
 excludeFromSitemap: true
-redirectFrom: ['/feed/']
+redirectFrom: ['/feed/atom/']
 ---
+
+```
+Content-Type: application/xml; charset=utf-8  # not application/rss+xml
+x-content-type-options: nosniff
+```
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/data/pretty-feed-v3.xsl" type="text/xsl"?>
+```
+
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ meta.lang or page.lang }}" xml:base="{{ meta.url }}/">
   <title>{{ meta.blog.name }}</title>

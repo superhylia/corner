@@ -21,8 +21,6 @@ gallery:
     caption: 'A banner for user Thistle.'
 ---
 
-All of my graphics from 2022. 
-
 {% include "partials/gallery.njk" %}
 
 ### Loop through images without additional interactivity:

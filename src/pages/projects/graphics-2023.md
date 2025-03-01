@@ -27,16 +27,10 @@ gallery:
     caption: 'Jasmine nightshades blooming in July'
 ---
 
-This post has a gallery set in its front matter as a list of objects, each with an `image`, `alt`, and `caption` property.
-
-When you import the gallery component, the images are listed in a grid as buttons, each linked to the respective image in a `<dialog>` HTML element. A close button within each dialog allows the image to be hidden again. Includes `gallery.css` for styling the modal dialogs and backdrop, `gallery.js` manages modal dialog interactions.
-
-{% include "partials/gallery.njk" %}
-
-# Tri-State Tourney Tuesdays
+### Tri-State Tourney Tuesdays
 Graphics for former tournament series [Tri-State Tourney Tuesdays](https://start.gg/tstt).
-![test](/assets/projects/graphic_design/2023/tstt/tstt%20icon%20gallery.png 'A collection of icons for *TSTT*.')
 ![](/assets/projects/graphic_design/2023/tstt/tstt%20startgg%20header%20with%20strip.png 'The main header.')
+![](/assets/projects/graphic_design/2023/tstt/tstt%20icon%20gallery.png 'A collection of icons for TSTT.')
 ![](/assets/projects/graphic_design/2023/tstt/tstt%20stagelist.png 'Stagelist.')
 
 ### Loop through images without additional interactivity:
