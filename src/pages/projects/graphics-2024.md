@@ -19,7 +19,7 @@ gallery:
   - image: ./src/assets/projects/graphic_design/2024/soda.png
     alt: 'The text Soda64 appears above Kat and a collage of anime and video game characters.'
     caption: 'A banner for content creator Soda64.'  
-  - image: ./src/assets/projects/graphic_design/2024/soda.png
+  - image: ./src/assets/projects/graphic_design/2024/renzo.png
     alt: 'The text renzolodeon appears above a collage of cartoon characters.'
     caption: 'A banner for content creator Renzolodeon.'
   - image: ./src/assets/projects/graphic_design/2024/jazzy/jazzy.png

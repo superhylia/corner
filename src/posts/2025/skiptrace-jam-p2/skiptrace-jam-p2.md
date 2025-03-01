@@ -2,6 +2,7 @@
 title: 'Skiptrace jam devlog (P2): plumbing to foundation'
 description: "This might actually go well! or; how houses can help us make games."
 date: 2025-02-28
+lastEdit: 2025-03-01
 tags: ['all-eyes-on-me', 'games', 'devlog']
 image: '/posts/2025/skiptrace-jam-p2/outside.jpg'
 alt: 'A notebook titled Skiptrace/VGDO Game Jam is open on someone''s lap outside in grass.'
@@ -25,23 +26,23 @@ Having these gestate over the weekend and with some inspiration from a certain G
 
 No game is rock solid without a sound design doc, [as *Starfield* taught us](https://x.com/Winterflan/status/1740874666892562713), and while you don’t need a 500-page manifesto for a month-long game jam, it’s better to go in with a plan and strict guidelines for what you’d want to work on than come up with it on the spot as you go. It’s like building a house, except instead of crashing a market, you crash on your keyboard instead! 
 
-![](https://wordpress.bricknbolt.com/blogs-and-articles/wp-content/uploads/sites/2/2024/07/House-construction-phase-step-by-step-process.webp ’I promise this analogy will make sense.’)
+![](https://wordpress.bricknbolt.com/blogs-and-articles/wp-content/uploads/sites/2/2024/07/House-construction-phase-step-by-step-process.webp 'I promise this analogy will make sense.')
 
 In this case, determining if you can even do the game jam in terms of schedule would be “site grading,” defining what you’re willing to work on is “plumbing,” and developing a solid concept is “setting the foundation.” If the site you’re building a house on is on unstable land, you probably shouldn’t build a house on it: it’s good to have aspirations to create stuff, but don’t throw your life into chaos by doing so, especially if it’s a project with a time limit. 
 
 We can take that analogy of constructing a house into constructing a video game and writing down the plan for that is called a “game design document.” There’s a variety of resources and design docs that you can find and use for what fits how you work: I have a collection of them that I’ve collected over the years [here](https://superhylia.notion.site/gdresources?v=2be4d0a2043b4e41a23725ce0c069eee&pvs=74). What works best for me is building a core “concept” doc: a limited 1-page outline of everything I want to work on that I then expand out more and more.
 
-![](https://gamedevbeginner.com/wp-content/uploads/GDD-example-2.png ‘This is a great outline for how a concept/design doc for a single page would look like, though as always, find something that works great for *you*.`)
+![](https://gamedevbeginner.com/wp-content/uploads/GDD-example-2.png 'This is a great outline for how a concept/design doc for a single page would look like, though as always, find something that works great for *you*.')
 
 We can break this down into a few key areas:
 
-- Core concept statement: what is the game that we want to make?
-- Design pillars: why do we play it?
-- Mechanics and controls: how do we play it?
-- Target audience: who is playing it?
-- Story and aesthetic/audiovisual style: when and where is the game?
-- Project management (milestones, release platforms, etc): when and where are we playing it?
-- Finally, a refined core concept statement: what is the game that we’re actively making?
+- **Core Concept Statement**: what is the game that we want to make?
+- **Design Pillars**: why do we play it?
+- **Mechanics and Controls**: how do we play it?
+- **Target Audience**: who is playing it?
+- **Story and Aesthetic/Audiovisual style**: when and where is the game?
+- **Project Management** (milestones, release platforms, etc): when and where are we playing it?
+- Finally, a **refined Core Concept Statement**: what is the game that we’re actively making?
 
 A core concept statement should be like a thesis for a research paper: it should reflect the core ideas of what you want your game to be. Generally, I make two of them, a concept statement based off the ideas that first come to mind, and then edit it after I finish the rest of the project.
 
@@ -130,6 +131,5 @@ To reiterate, the core to any creative process or personal progress is finding a
 Next time I update, I’ll have at least *something* to show in PICO-8 now that I have this mostly fleshed out. I still got to transfer from paper to Notion, but I have a very strong idea of how *Skiptrace* will play and progress. This has been fun to think about and draw up and I’m glad I get to make a game while you lovely folks get to read about it!
 
 Until then, see you next post!
-
 [^1]: *Fusion* is fantastic front to back, holy shit y’all gotta tap in
 [^2]: *skiptrace*: to locate a missing person’s whereabouts, typically in regards to private investigation or bounty hunting.
