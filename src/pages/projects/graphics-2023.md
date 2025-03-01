@@ -46,3 +46,4 @@ Graphics for former tournament series [Tri-State Tourney Tuesdays](https://start
     <li>{% image item.image, item.alt, item.caption %}</li>
   {%- endfor -%}
 </ul>
+

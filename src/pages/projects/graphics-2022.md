@@ -21,9 +21,7 @@ gallery:
     caption: 'A banner for user Thistle.'
 ---
 
-This post has a gallery set in its front matter as a list of objects, each with an `image`, `alt`, and `caption` property.
-
-When you import the gallery component, the images are listed in a grid as buttons, each linked to the respective image in a `<dialog>` HTML element. A close button within each dialog allows the image to be hidden again. Includes `gallery.css` for styling the modal dialogs and backdrop, `gallery.js` manages modal dialog interactions.
+All of my graphics from 2022. 
 
 {% include "partials/gallery.njk" %}
 
