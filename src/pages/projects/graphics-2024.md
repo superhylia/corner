@@ -17,10 +17,10 @@ gallery:
     alt: 'Kazuya Mishima punches above Jin Kazama on top of a rainy background with the text no limit for us and the struggle made me strong handwritten over him. To the right, the text dihgra is overlaid Clive Rosfield on top of a subtly textured off-white background.'
     caption: 'A banner for my friend Dihgra.'
   - image: ./src/assets/projects/graphic_design/2024/soda.png
-    alt: 'The text "Soda64" appears above Kat and a collage of anime and video game characters.'
+    alt: 'The text Soda64 appears above Kat and a collage of anime and video game characters.'
     caption: 'A banner for content creator Soda64.'  
   - image: ./src/assets/projects/graphic_design/2024/soda.png
-    alt: 'The text "renzolodeon" appears above a collage of cartoon characters.'
+    alt: 'The text renzolodeon appears above a collage of cartoon characters.'
     caption: 'A banner for content creator Renzolodeon.'
   - image: ./src/assets/projects/graphic_design/2024/jazzy/jazzy.png
     alt: 'Close-up of a delicate white flower with a yellow center, surrounded by green leaves'
