@@ -1,4 +1,6 @@
 export const url = process.env.URL || 'http://localhost:8080';
+// Extract domain from `url`
+export const domain = new URL(url).hostname;
 export const siteName = 'Hylia\'s Corner';
 export const siteDescription = 'i talk or something';
 export const siteType = 'Person'; // schema
@@ -60,12 +62,18 @@ export const details = {
   expand: 'expand all',
   collapse: 'collapse all'
 };
+export const dialog = {
+  close: 'Close',
+  next: 'Next',
+  previous: 'Previous'
+};
 export const navigation = {
   navLabel: 'Menu',
   ariaTop: 'Main',
   ariaBottom: 'Complementary',
   ariaPlatforms: 'Platforms',
-  drawerNav: true
+  drawerNav: true,
+  subMenu: false
 };
 export const themeSwitch = {
   title: 'Theme',
@@ -74,18 +82,15 @@ export const themeSwitch = {
   paper: 'paper'
 };
 export const greenweb = {
-  // this goes into src/common/greenweb.njk
-  providers: {
-    // if you want to add more than one, edit the array directly.
-    domain: 'netlify.com',
-    service: 'cdn'
-  },
-  credentials: {
-    // optional, eg: 	{ domain='my-org.com', doctype = 'webpage', url = 'https://my-org.com/our-climate-record'}
-    domain: '',
-    doctype: '',
-    url: ''
-  }
+  // https://carbontxt.org/
+  disclosures: [
+    {
+      docType: 'sustainability-page',
+      url: `${url}/sustainability/`,
+      domain: domain
+    }
+  ],
+  services: [{domain: 'netlify.com', serviceType: 'cdn'}]
 };
 export const viewRepo = {
   // this is for the view/edit on github link. The value in the package.json will be pulled in.

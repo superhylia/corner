@@ -1,6 +1,4 @@
 const storageKey = 'theme-preference';
-const lightLabel = '{{ meta.themeSwitch.light }}';
-const darkLabel = '{{ meta.themeSwitch.dark }}';
 const paperLabel = '{{ meta.themeSwitch.paper }}';
 const themeColors = {
   dark: '{{ meta.themeLight }}',
@@ -66,8 +64,6 @@ function setPreference() {
 
 function reflectPreference() {
   document.firstElementChild.setAttribute('data-theme', theme.value);
-  // document.querySelector('#light-theme-toggle')?.setAttribute('aria-label', lightLabel);
-  // document.querySelector('#dark-theme-toggle')?.setAttribute('aria-label', darkLabel);
 }
 
 function updateMetaThemeColor() {

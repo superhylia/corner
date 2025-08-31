@@ -4,11 +4,12 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 
-{% for page in collections.all %}
-  {% if page.url and page.data.redirectFrom %}
-    {% for oldUrl in page.data.redirectFrom %}
-{{ oldUrl }} {{ page.url }}
+{% for page in collections.all -%}
+  {% if page.url and page.data.redirectFrom -%}
+    {% for oldUrl in page.data.redirectFrom -%}
+      {{ oldUrl }}
+      {{ page.url }}
     {% endfor %}
-  {% endif %}
-{% endfor %}
+  {% endif -%}
+{% endfor -%}
 /search/ /tags
