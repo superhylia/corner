@@ -3,6 +3,7 @@ title: /uses
 permalink: /uses/index.html
 description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
 layout: page
+image: '/assets/images/pages/uses/setup-feb25.jpg'
 lastEdit: 2025-02-26
 ---
 ![An image of my setup.](/assets/images/pages/uses/setup-feb25.jpg 'An image of my setup from February 2025.')

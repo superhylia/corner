@@ -27,6 +27,8 @@ gallery:
     caption: 'Jasmine nightshades blooming in July'
 ---
 
+{% include "partials/gallery.njk" %}
+
 ### Tri-State Tourney Tuesdays
 Graphics for former tournament series [Tri-State Tourney Tuesdays](https://start.gg/tstt).
 ![](/assets/projects/graphic_design/2023/tstt/tstt%20startgg%20header%20with%20strip.png 'The main header.')

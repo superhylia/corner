@@ -62,6 +62,8 @@
   property="og:image"
   content="{%- if layout == 'post' -%}
     {{- meta.url -}}{{- ogImage -}}
+  {%- elseif layout == 'page' -%}
+    {{- meta.url -}}{{- ogImage -}}
   {%- else -%}
     {{- meta.url -}}{{- meta.opengraph_default -}}
   {%- endif -%}"

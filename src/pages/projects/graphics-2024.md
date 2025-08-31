@@ -28,6 +28,8 @@ gallery:
 redirectFrom: ['/projects/graphics/2024/index.html', '/graphics-2024/index.html']
 ---
 
+{% include "partials/gallery.njk" %}
+
 * Graphics for content creator [Soda64](https://www.youtube.com/@Soda_64)
 * Graphics for content creator [Renzolodeon](https://www.youtube.com/@Renzolodeon)
 
@@ -37,8 +39,6 @@ Graphics for Ohio Super Smash Bros. Ultimate tournament and live jazz show [Stat
 ![](/assets/projects/graphic_design/2024/jazzy/jazzy%20stagelist.png 'Stagelist.')
 ![](/assets/projects/graphic_design/2024/jazzy/sgg%20icon.png 'The start.gg icon and tournament logo.')
 ![](/assets/projects/graphic_design/2024/jazzy/sgg%20homepage.png 'start.gg homepage graphics.')
-
-{% include "partials/gallery.njk" %}
 
 ### Loop through images without additional interactivity:
 

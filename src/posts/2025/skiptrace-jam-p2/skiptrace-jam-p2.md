@@ -8,7 +8,6 @@ image: '/posts/2025/skiptrace-jam-p2/outside.jpg'
 alt: 'A notebook titled Skiptrace/VGDO Game Jam is open on someone''s lap outside in grass.'
 ---
 After a weekend relaxing (mostly playing *Metroid Fusion* and watching *Code Geass R2*) and thinking of ideas during the school week, it’s time to get this game planned and fleshed out. First stop is the game design doc!
-
 {% include "partials/toc.njk" %}
 
 # Plumbing
