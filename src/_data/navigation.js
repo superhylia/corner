@@ -29,6 +29,10 @@ export default {
     {
       text: '/privacy',
       url: '/privacy/'
+    },
+    {
+      text: 'Accessibility',
+      url: '/accessibility/'
     }
   ]
 };

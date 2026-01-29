@@ -81,8 +81,7 @@ export default async function (eleventyConfig) {
     htmlOptions: {
       imgAttributes: {
         loading: 'lazy',
-        decoding: 'async',
-        sizes: 'auto'
+        decoding: 'async'
       },
       pictureAttributes: {}
     }
@@ -108,6 +107,7 @@ export default async function (eleventyConfig) {
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
   eleventyConfig.addShortcode('image', shortcodes.imageShortcode);
+  eleventyConfig.addShortcode('imageKeys', shortcodes.imageKeysShortcode);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   // --------------------- Events: after build
@@ -129,6 +129,11 @@ export default async function (eleventyConfig) {
     // -- node_modules
     'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`
   });
+
+  // ----------------------  ignore test files
+  if (process.env.ELEVENTY_ENV != 'test') {
+    eleventyConfig.ignores.add('src/common/pa11y.njk');
+  }
 
   // --------------------- general config
   return {
