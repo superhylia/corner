@@ -13,10 +13,16 @@
 /* make featured image alwyays 16/9 */
 .post h1 + :is(picture, figure) img {
   max-inline-size: var(--max-img-width, 100%);
+  /* Ensure the image behaves like a block and clears margins */
+  display: block; 
+  margin-inline: auto;
+
   block-size: auto;
   aspect-ratio: 16/9;
   object-fit: cover;
   object-position: center;
+  /* Add this to prevent 'bleeding' if the container is weird */
+  overflow: hidden;
 }
 
 .post date {
