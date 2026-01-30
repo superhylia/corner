@@ -1,8 +1,6 @@
 ---
 title: 'Spyro the Dragon: Elegance Reignited'
 description: "After years of having it on the backlog and a recent binge of Spyro content for whatever reason (shoutout EPG), I decided to finally take the plunge on one of the original PlayStation's classics and one of the most revered collect-a-thons ever."
-discover:
-  description: "After years of having it on the backlog and a recent binge of Spyro content for whatever reason (shoutout EPG), I decided to finally take the plunge on one of the original PlayStation's classics and one of the most revered collect-a-thons ever."
 date: 2025-05-02
 redirectFrom: ['/blog/spyro1r/']
 tags: ['games', 'feature']
