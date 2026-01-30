@@ -78,6 +78,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
     widths: ['auto'],
+    cacheOptions: {
+      duration: "1d",
+      directory: ".cache", // This folder will store the "memory" of processed images
+      removeDotDot: false,
+    },
     htmlOptions: {
       imgAttributes: {
         loading: 'lazy',
