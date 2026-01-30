@@ -75,7 +75,7 @@ export default async function (eleventyConfig) {
     verbose: false
   });
 
-  const cacheDir = path.join(process.cwd(), ".cache");
+  const cacheDir = path.join(process.cwd(), "./cache");
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
     widths: ['auto'],
