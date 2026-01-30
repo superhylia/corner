@@ -75,13 +75,12 @@ export default async function (eleventyConfig) {
     verbose: false
   });
 
-  const cacheDir = path.join(process.cwd(), "./cache");
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
     widths: ['auto'],
     cacheOptions: {
       duration: "1d",
-      directory: cacheDir, // This folder will store the "memory" of processed images
+      directory: "./cache", // This folder will store the "memory" of processed images
       removeDotDot: false,
     },
     htmlOptions: {
