@@ -6,8 +6,8 @@ discover:
 date: 2024-01-11
 redirectFrom: ['/blog/mgs4/']
 tags: ['games', 'feature']
-image: '/posts/2025/mgs4/metal-gear-solid-4-guns-of-the-patriots-the-petals-live-on.jpg'
-alt: 'A picturesque valley showcasing majestic mountains and lush forests, creating a serene and captivating landscape'
+image: '/posts/2024/mgs4/metal-gear-solid-4-guns-of-the-patriots-the-petals-live-on.jpg'
+alt: 'Solid Snake and Revolver Ocelot oppose each other, their stare deep in reflection and colored in a hazely, sepia tone.'
 credit: Limited Edition artwork by the legend Yoji Shinkawa.
 bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
 ---
