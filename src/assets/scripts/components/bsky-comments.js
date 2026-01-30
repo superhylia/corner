@@ -10,8 +10,9 @@ class BskyComments extends HTMLElement {
     this.postTemplate   = null; // Change by doing something like: loadCommentTemplate("comments.template.html")
     this.headerTemplate = null; // Same Deal, but with loadHeaderTemplate
     this.subTemplate  = null; // For chaining same author replies
+  }
 
-    function escapeHTML(str) {
+  escapeHTML(str) {
       return String(str)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
@@ -19,7 +20,6 @@ class BskyComments extends HTMLElement {
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
       }
-  }
 
   async loadCommentTemplate(url) {
     postTemplate = await loadTemplate(url);
@@ -55,7 +55,7 @@ class BskyComments extends HTMLElement {
       if (data.posts && data.posts.length > 0) {
         // "oldest" isn't real, so sending sort=oldest just gives us Latest, so we take the last post.
         const post = discoverType === "oldest" ? data.posts[data.posts.length - 1] : data.posts[0];
-        loadComments(post.uri, options);
+        this.loadComments(post.uri, options);
       } else {
         console.log('No matching post found linking to ' + currentUrl);
       }
@@ -89,7 +89,7 @@ class BskyComments extends HTMLElement {
 
     const did = await getDID(user);
     console.log(did);
-    loadComments("at://" + did + "/app.bsky.feed.post/" + post, options);
+    this.loadComments("at://" + did + "/app.bsky.feed.post/" + post, options);
     
   }
 
@@ -97,9 +97,9 @@ class BskyComments extends HTMLElement {
   // if options has a renderOptions key, its value is passed to renderComments.
   async loadComments(rootPostId, options={}) {
     const API_URL = "https://api.bsky.app/xrpc/app.bsky.feed.getPostThread";
-    this.hostAuthor = ""
+    let hostAuthor = ""
 
-    async function fetchComments(postId) {
+    const fetchComments = async (postId) => {
       const url = `${API_URL}?uri=${encodeURIComponent(postId)}`;
       try {
         const response = await fetch(url);
@@ -235,7 +235,7 @@ class BskyComments extends HTMLElement {
       }
 
     // Render Comments with either the default or an external file
-    const template = postTemplate || `
+    const headerTpl = postTemplate || `
       <div class="comment-innerbox">
         <img class="comment-avatar" src="{{avatar}}">
         <div>
@@ -254,7 +254,7 @@ class BskyComments extends HTMLElement {
     // Prep Embds
     const embedsHTML = renderEmbeds(embeds)?.outerHTML || "";
 
-    post.innerHTML = template
+    post.innerHTML = headerTpl
       .replace(/{{avatar}}/g, author.avatar || "")
       .replace(/{{name}}/g, escapeHTML(author.displayName || author.handle || "Unknown"))
       .replace(/{{handle}}/g, author.handle || "")
@@ -389,7 +389,7 @@ class BskyComments extends HTMLElement {
 
       // Render Header with either the default or an external file
       const container = document.getElementById("comments-container");
-      const template = headerTemplate || `
+      const template = this.headerTemplate || `
         <p class="comment-metricsbox"><a class="comment-metricslink" href="{{url}}">
           <span class="comment-metrics">{{heart}} {{likeCount}} Likes</span> 
           <span class="comment-metrics">{{repost}} {{repostCount}} Reposts</span>
@@ -423,7 +423,7 @@ class BskyComments extends HTMLElement {
   }
 }
 
-customElements.define('bsky-comments', comments);
+customElements.define('bsky-comments', BskyComments);
 const bsky = new BskyComments();
 window.discoverPost = bsky.discoverPost.bind(bsky);
 window.loadCommentsURL = bsky.loadCommentsURL.bind(bsky);
