@@ -6,7 +6,7 @@
   module.exports = async function () {
     const meta = await Image(this.src, {
       formats: ['svg'],
-      dryRun: false
+      dryRun: true
     });
 
     const plugins = [];
