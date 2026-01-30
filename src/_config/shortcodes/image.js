@@ -41,6 +41,11 @@ const processImage = async options => {
   const metadata = await Image(src, {
     widths: [...widths],
     formats: [...formats],
+    cacheOptions: {
+      duration: "1d",
+      directory: ".cache", // This folder will store the "memory" of processed images
+      removeDotDot: false,
+    },
     urlPath: '/assets/images/',
     outputDir: './dist/assets/images/',
     filenameFormat: (id, src, width, format, options) => {
