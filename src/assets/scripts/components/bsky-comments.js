@@ -1,24 +1,24 @@
-class comments extends HTMLElement {
+class BskyComments extends HTMLElement {
 
   constructor() {
     super();
     // SVGs
-    let heart  = '<svg xmlns="http://www.w3.org/2000/svg" fill="#71153b" viewBox="0 0 24 24" stroke-width="1.5" stroke="#71153b class="size-5" color="pink"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"></path></svg>'
-    let repost = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" class="size-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3"></path></svg>`
-    let reply  = `<svg xmlns="http://www.w3.org/2000/svg" fill="#7FBADC" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7FBADC" class="size-5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z"></path></svg>`
+    this.heart  = '<svg xmlns="http://www.w3.org/2000/svg" fill="#71153b" viewBox="0 0 24 24" stroke-width="1.5" stroke="#71153b" class="size-5" color="pink"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"></path></svg>'
+    this.repost = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" class="size-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3"></path></svg>`
+    this.reply  = `<svg xmlns="http://www.w3.org/2000/svg" fill="#7FBADC" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7FBADC" class="size-5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z"></path></svg>`
 
-    let postTemplate   = null; // Change by doing something like: loadCommentTemplate("comments.template.html")
-    let headerTemplate = null; // Same Deal, but with loadHeaderTemplate
-    let subTemplate  = null; // For chaining same author replies
+    this.postTemplate   = null; // Change by doing something like: loadCommentTemplate("comments.template.html")
+    this.headerTemplate = null; // Same Deal, but with loadHeaderTemplate
+    this.subTemplate  = null; // For chaining same author replies
 
     function escapeHTML(str) {
-    return String(str)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-    }
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+      }
   }
 
   async loadCommentTemplate(url) {
@@ -97,7 +97,7 @@ class comments extends HTMLElement {
   // if options has a renderOptions key, its value is passed to renderComments.
   async loadComments(rootPostId, options={}) {
     const API_URL = "https://api.bsky.app/xrpc/app.bsky.feed.getPostThread";
-    let hostAuthor = ""
+    this.hostAuthor = ""
 
     async function fetchComments(postId) {
       const url = `${API_URL}?uri=${encodeURIComponent(postId)}`;
@@ -135,8 +135,8 @@ class comments extends HTMLElement {
     // See: https://docs.bsky.app/docs/advanced-guides/timestamps
     // Default to 'sortAt' but allow specifying other timestamps.
     function sortCommentsByTime(comments, options) {
-      let tsKey = options?.tsKey ?? 'sortAt';
-      let order = options?.order ?? 'asc';
+      this.tsKey = options?.tsKey ?? 'sortAt';
+      this.order = options?.order ?? 'asc';
 
       if (!['sortAt', 'createdAt', 'indexedAt'].includes(tsKey)) {
           // Invalid ts key value
@@ -307,8 +307,8 @@ class comments extends HTMLElement {
 
         // Check if the post has only one reply and it's from the same author
         if ( merge && comment.replies && comment.replies.length === 1 && comment.replies[0].post.author.did === comment.post.author.did) {
-          let concatenatedText = comment.post.record.text;
-          let currentComment = comment;
+          this.concatenatedText = comment.post.record.text;
+          this.currentComment = comment;
 
           // Concatenate the replies into a single message with <br> tags
           while (currentComment.replies && currentComment.replies.length === 1 && currentComment.replies[0].post.author.did === currentComment.post.author.did) {
@@ -399,10 +399,10 @@ class comments extends HTMLElement {
         </p>`;
 
       container.innerHTML = template
-        .replace(/{{heart}}/g, heart || "")
-        .replace(/{{repost}}/g, repost || "")
-        .replace(/{{reply}}/g, reply || "")
-        .replace(/{{url}}/g, postURL || "")
+        .replace(/{{heart}}/g, this.heart || "")
+        .replace(/{{repost}}/g, this.repost || "")
+        .replace(/{{reply}}/g, this.reply || "")
+        .replace(/{{url}}/g, this.postURL || "")
         .replace(/{{likeCount}}/g, commentData.thread.post.likeCount || "")
         .replace(/{{repostCount}}/g, commentData.thread.post.repostCount + commentData.thread.post.quoteCount || "")
         .replace(/{{replyCount}}/g, commentData.thread.post.replyCount || "")
@@ -423,4 +423,7 @@ class comments extends HTMLElement {
   }
 }
 
-customElements.define('comments', comments);
+customElements.define('bsky-comments', comments);
+const bsky = new BskyComments();
+window.discoverPost = bsky.discoverPost.bind(bsky);
+window.loadCommentsURL = bsky.loadCommentsURL.bind(bsky);

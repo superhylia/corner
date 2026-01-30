@@ -6,7 +6,7 @@
     <div id="comments-container"></div>
     <script>
         // Searches your feed for the top-liked post that links to this page
-        discoverPost("superhylia.dev");
+        // discoverPost("superhylia.dev");
 
         // A more advanced version can be used here, where you can manually set a url. Types are "Oldest", "Latest", and "Top"(most liked). Oldest is default
         // discoverPost("superhylia.dev", { "renderOptions": { "discoverURL": "https://kayin.moe/toyification", discoverType: "top"} });
@@ -15,7 +15,7 @@
         // loadComments("at://did:plc:2pc4xllqwmuur3ch2cyoyddr/app.bsky.feed.post/3lbb32nb4322g")
 
         // Loads comments from a post's URL
-        //loadCommentsURL("bsky.app/profile/kayin.moe/post/3lbb32nb4322g")
+        loadCommentsURL("{{ bskyurl }}")
 
         // Sets custom templates before loading comments
         //loadCommentTemplate("comments.template.html")
