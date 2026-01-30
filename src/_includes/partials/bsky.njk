@@ -1,34 +1,28 @@
 {% if bskyurl %}
 
-    <head>
-        <title>Comments</title>
-        <link rel="stylesheet" href="/assets/css/local/comments.css">
-        <script src="/assets/scripts/components/comments.js"></script>
-    </head>
+    <h3>Comments</h3>
+    <link rel="stylesheet" href="/assets/css/local/comments.css">
+    <script src="/assets/scripts/components/comments.js"></script>
+    <div id="comments-container"></div>
+    <script>
+        // Searches your feed for the top-liked post that links to this page
+        discoverPost("superhylia.dev");
 
-    <body>
-        <div id="comments-container"></div>
-        <script>
-            // Searches your feed for the top-liked post that links to this page
-            discoverPost("superhylia.dev");
+        // A more advanced version can be used here, where you can manually set a url. Types are "Oldest", "Latest", and "Top"(most liked). Oldest is default
+        // discoverPost("superhylia.dev", { "renderOptions": { "discoverURL": "https://kayin.moe/toyification", discoverType: "top"} });
 
-            // A more advanced version can be used here, where you can manually set a url. Types are "Oldest", "Latest", and "Top"(most liked). Oldest is default
-            // discoverPost("superhylia.dev", { "renderOptions": { "discoverURL": "https://kayin.moe/toyification", discoverType: "top"} });
+        // Loads comments from a post's URI and user DID
+        // loadComments("at://did:plc:2pc4xllqwmuur3ch2cyoyddr/app.bsky.feed.post/3lbb32nb4322g")
 
-            // Loads comments from a post's URI and user DID
-            // loadComments("at://did:plc:2pc4xllqwmuur3ch2cyoyddr/app.bsky.feed.post/3lbb32nb4322g")
+        // Loads comments from a post's URL
+        //loadCommentsURL("bsky.app/profile/kayin.moe/post/3lbb32nb4322g")
 
-            // Loads comments from a post's URL
-            //loadCommentsURL("bsky.app/profile/kayin.moe/post/3lbb32nb4322g")
+        // Sets custom templates before loading comments
+        //loadCommentTemplate("comments.template.html")
+        //loadMetricTemplate("metrics.template.html")
+        //loadComments("at://did:plc:2pc4xllqwmuur3ch2cyoyddr/app.bsky.feed.post/3lbb32nb4322g")
 
-            // Sets custom templates before loading comments
-            //loadCommentTemplate("comments.template.html")
-            //loadMetricTemplate("metrics.template.html")
-            //loadComments("at://did:plc:2pc4xllqwmuur3ch2cyoyddr/app.bsky.feed.post/3lbb32nb4322g")
-
-            // Sets custom options as an object, including sorting by creation date, as well as having descending posts
-            //loadComments("at://did:plc:2pc4xllqwmuur3ch2cyoyddr/app.bsky.feed.post/3lbb32nb4322g", { "renderOptions": { "commentTemplate": 'comments.template.html', "headerTemplate": 'header.template.html', "sortOptions": { "tsKey": 'createdAt', "order": 'desc', "priority": 'none' } } })
-        </script>
-    </body>
-    </html>
+        // Sets custom options as an object, including sorting by creation date, as well as having descending posts
+        //loadComments("at://did:plc:2pc4xllqwmuur3ch2cyoyddr/app.bsky.feed.post/3lbb32nb4322g", { "renderOptions": { "commentTemplate": 'comments.template.html', "headerTemplate": 'header.template.html', "sortOptions": { "tsKey": 'createdAt', "order": 'desc', "priority": 'none' } } })
+    </script>
 {% endif %}
