@@ -38,7 +38,7 @@ const processImage = async options => {
     src = `./src${src}`;
   }
 
-  const cacheDir = path.join(process.cwd(), "./cache");
+  const cacheDir = path.join(process.cwd(), "./.cache");
   console.log(`[11ty-img] Checking cache for: ${src}`);
   const metadata = await Image(src, {
     widths: [...widths],
