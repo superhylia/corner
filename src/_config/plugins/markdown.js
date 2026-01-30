@@ -73,7 +73,7 @@ export const markdownLib = markdownIt({
       }
 
       const attributesString = attributes.map(([key, value]) => `${key}="${value}"`).join(' ');
-      const imgTag = `<img src="${src}" alt="${alt}" class="mx-auto" ${attributesString}>`;
-      return caption ? `<figure>${imgTag}<figcaption>${caption}</figcaption></figure>` : imgTag;
+      const imgTag = `<img src="${src}" alt="${alt}" class="mx-auto" style="display: block; margin: auto;" ${attributesString}>`;
+      return caption ? `<figure>${imgTag}<figcaption>${caption}</figcaption></figure>` : `<div class="img-wrapper" style="width: 100%; margin: 2rem 0;">${imgTag}</div>`;
     };
   });

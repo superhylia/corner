@@ -47,6 +47,7 @@ const processImage = async options => {
       duration: "1d",
       directory: cacheDir,
       removeDotDot: false,
+      useCache: true
     },
     urlPath: '/assets/images/',
     outputDir: './dist/assets/images/',

@@ -22,15 +22,15 @@ class BskyComments extends HTMLElement {
       }
 
   async loadCommentTemplate(url) {
-    postTemplate = await loadTemplate(url);
+    this.postTemplate = await this.loadTemplate(url);
   }
 
   async loadHeaderTemplate(url) {
-    headerTemplate = await loadTemplate(url);
+    this.headerTemplate = await this.loadTemplate(url);
   }
 
   async loadSubTemplate(url) {
-    subTemplate = await loadTemplate(url);
+    this.subTemplate = await this.loadTemplate(url);
   }
 
   // loads optional templates
