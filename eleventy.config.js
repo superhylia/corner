@@ -22,8 +22,6 @@ import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
 import { execSync } from 'child_process';
 
-const fs = require("fs");
-
 export default async function (eleventyConfig) {
   // --------------------- Events: before build
   eleventyConfig.on('eleventy.before', async () => {
@@ -143,22 +141,7 @@ export default async function (eleventyConfig) {
     eleventyConfig.ignores.add('src/common/pa11y.njk');
   }
 
-  // ------------------
-  eleventyConfig.on("eleventy.after", async () => {
-    const IMAGE_CACHE_DIR = "./.cache/";
-    const destDir = "./dist/assets/images/";
-    
-    if (fs.existsSync(IMAGE_CACHE_DIR)) {
-      console.log("[11ty] Copying optimized images from .cache to dist...");
-      // Create the destination directory if it doesn't exist
-      fs.mkdirSync(destDir, { recursive: true });
-      // Copy everything from the cache to the production folder
-      fs.cpSync(IMAGE_CACHE_DIR, destDir, { recursive: true });
-      console.log("[11ty] Image copy complete!");
-    } else {
-      console.log("[11ty] No image cache found to copy.");
-    }
-  });
+
 
   // --------------------- general config
   return {
