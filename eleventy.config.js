@@ -124,7 +124,7 @@ export default async function (eleventyConfig) {
   // --------------------- Passthrough File Copy
 
   // -- same path
-  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
+  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images', 'src/assets/css/'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
 
@@ -142,6 +142,22 @@ export default async function (eleventyConfig) {
   }
 
 
+  // ----------------------  ignore test files
+  eleventyConfig.on("eleventy.after", async () => {
+    const IMAGE_CACHE_DIR = "./.cache/";
+    const destDir = "./dist/assets/images/";
+    
+    if (fs.existsSync(IMAGE_CACHE_DIR)) {
+      console.log("[11ty] Copying optimized images from .cache to dist...");
+      // Create the destination directory if it doesn't exist
+      fs.mkdirSync(destDir, { recursive: true });
+      // Copy everything from the cache to the production folder
+      fs.cpSync(IMAGE_CACHE_DIR, destDir, { recursive: true });
+      console.log("[11ty] Image copy complete!");
+    } else {
+      console.log("[11ty] No image cache found to copy.");
+    }
+  });
 
   // --------------------- general config
   return {
