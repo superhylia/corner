@@ -6,11 +6,11 @@ redirectFrom: ['/blog/spyro1r/']
 tags: ['games', 'feature']
 image: '/posts/2025/spyro-1-reignited/sunny_flight_s1r.jpg'
 alt: 'Spyro the Dragon overlooking a pond with a chest and several colored crystals in Sunny Flight.'
-credit: DarkSpyro.net
+credit: 'DarkSpyro.net'
 bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
 ---
 
-After years of having it on the backlog and a recent binge of Spyro content for whatever reason (shoutout EPG), I decided to finally take the plunge on one of the original PlayStation's classics and one of the most revered collect-a-thons ever.
+After years of having it on the backlog and a recent binge of Spyro content for whatever reason (shoutout [EPG](https://www.youtube.com/c/ExoParadigmGamer)), I decided to finally take the plunge on one of the original PlayStation's classics and one of the most revered collect-a-thons ever.
 
 While I usually start these reviews with the gameplay, I have to gush about the game's looks first and foremost. This game looks **incredible** and is easily one of the best-looking games I've ever played in my life. The colors are vibrant, the animations are so smooth, and the art direction is so evocative of a fantasy storybook while remaining loyal to the original 1998 game (which still looks great in my eyes). The graphics do come with some meh optimization on PC, with frames dropping into the high 50s, a texture streaming issue I needed to fix with a launch option, and the oddly bright lighting on shadow settings below High that look almost unintentional. Still, though, they absolutely nailed the Pixar look of these games, and it looks more breathtaking than in footage, especially at 60FPS. The soundtrack is also decent, though only a few tracks, like Lofty Castle, were personally very memorable. I've definitely heard better from future games, and I do wish *Reignited* did more with remixing the original soundtrack instead of something so similar to the original beyond a drumline added when charging.
 

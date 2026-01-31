@@ -11,8 +11,10 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-// add yaml support
+// add yaml and fs  support
 import yaml from 'js-yaml';
+import fs from 'node:fs';
+import path from 'node:path';
 
 //  config import
 import {getAllPosts, showInSitemap, tagList} from './src/_config/collections.js';
@@ -80,7 +82,7 @@ export default async function (eleventyConfig) {
     widths: ['auto'],
     cacheOptions: {
       duration: "1d",
-      directory: "./.cache", // This folder will store the "memory" of processed images
+      directory: ".cache", // This folder will store the "memory" of processed images
       removeDotDot: false,
     },
     htmlOptions: {
@@ -144,7 +146,7 @@ export default async function (eleventyConfig) {
 
   // ----------------------  ignore test files
   eleventyConfig.on("eleventy.after", async () => {
-    const IMAGE_CACHE_DIR = "./.cache/";
+    const IMAGE_CACHE_DIR = ".cache/";
     const destDir = "./dist/assets/images/";
     
     if (fs.existsSync(IMAGE_CACHE_DIR)) {

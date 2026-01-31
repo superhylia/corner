@@ -20,6 +20,7 @@ const processImage = async options => {
     src,
     alt = '',
     caption = '',
+    credit = '',
     loading = 'lazy',
     containerClass,
     imageClass,
@@ -38,7 +39,7 @@ const processImage = async options => {
     src = `./src${src}`;
   }
 
-  const cacheDir = path.join(process.cwd(), "./.cache");
+  const cacheDir = path.join(process.cwd(), ".cache");
   console.log(`[11ty-img] Checking cache for: ${src}`);
   const metadata = await Image(src, {
     widths: [...widths],
@@ -81,6 +82,14 @@ const processImage = async options => {
 
   const pictureElement = `<picture> ${imageSources}<img ${imageAttributes}></picture>`;
 
+  if (credit) {
+  const finalContainerClass = containerClass ? `feature ${containerClass}` : 'feature';
+  return `<div slot="image" class="${finalContainerClass}" style="position: relative; display: inline-block; max-width: 100%; line-height: 0;">
+      ${pictureElement}
+      <div class="credit">${credit}</div>
+    </div>`;
+}
+
   return caption
     ? `<figure slot="image"${containerClass ? ` class="${containerClass}"` : ''}>${pictureElement}<figcaption>${caption}</figcaption></figure>`
     : `<picture slot="image"${containerClass ? ` class="${containerClass}"` : ''}>${imageSources}<img ${imageAttributes}></picture>`;
@@ -91,6 +100,7 @@ export const imageShortcode = async (
   src,
   alt,
   caption,
+  credit,
   loading,
   containerClass,
   imageClass,
@@ -105,6 +115,7 @@ export const imageShortcode = async (
     src,
     alt,
     caption,
+    credit,
     loading,
     containerClass,
     imageClass,
