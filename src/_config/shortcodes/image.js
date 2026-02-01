@@ -51,7 +51,7 @@ const processImage = async options => {
       useCache: true
     },
     urlPath: '/assets/images/',
-    outputDir: './dist/assets/images/',
+    outputDir: './.cache/images/',
     filenameFormat: (id, src, width, format, options) => {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
@@ -82,18 +82,27 @@ const processImage = async options => {
 
   const pictureElement = `<picture> ${imageSources}<img ${imageAttributes}></picture>`;
 
-  if (credit) {
-  const finalContainerClass = containerClass ? `feature ${containerClass}` : 'feature';
-  return `<div slot="image" class="${finalContainerClass}" style="position: relative; display: inline-block; max-width: 100%; line-height: 0;">
-      ${pictureElement}
-      <div class="credit">${credit}</div>
-    </div>`;
-}
+  let imageMarkup = pictureElement;
 
-  return caption
-    ? `<figure slot="image"${containerClass ? ` class="${containerClass}"` : ''}>${pictureElement}<figcaption>${caption}</figcaption></figure>`
-    : `<picture slot="image"${containerClass ? ` class="${containerClass}"` : ''}>${imageSources}<img ${imageAttributes}></picture>`;
-};
+  if (credit) {
+    const finalContainerClass = containerClass ? `feature ${containerClass}` : 'feature';
+    imageMarkup = `<div class="${finalContainerClass}" style="position: relative; display: inline-block; max-width: 100%; line-height: 0;">
+        ${pictureElement}
+        <div class="credit">${credit}</div>
+      </div>`;
+  }
+
+  if (caption) {
+    return `<figure slot="image" style="text-align: center; margin-inline: auto;">
+      ${imageMarkup}
+      <figcaption>${caption}</figcaption>
+    </figure>`;
+  }
+
+  return `<div slot="image" style="display: flex; justify-content: center; width: 100%;">${imageMarkup}</div>`;
+  }
+
+  
 
 // Positional parameters (legacy)
 export const imageShortcode = async (

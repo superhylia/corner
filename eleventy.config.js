@@ -134,6 +134,9 @@ export default async function (eleventyConfig) {
     // -- to root
     'src/assets/images/favicon/*': '/',
 
+    // --pretty-feed.xsl
+    'src/assets/pretty-feed-v3.xsl': 'src/assets/pretty-feed-v3.xsl',
+
     // -- node_modules
     'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`
   });
@@ -146,7 +149,7 @@ export default async function (eleventyConfig) {
 
   // ----------------------  ignore test files
   eleventyConfig.on("eleventy.after", async () => {
-    const IMAGE_CACHE_DIR = ".cache/";
+    const IMAGE_CACHE_DIR = "./.cache/images/";
     const destDir = "./dist/assets/images/";
     
     if (fs.existsSync(IMAGE_CACHE_DIR)) {

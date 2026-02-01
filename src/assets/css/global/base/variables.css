@@ -25,55 +25,55 @@
     var(--color-tertiary) 0 100%
   );
 
-  --color-light: var(--color-gray-100);
-  --color-dark: var(--color-gray-900);
-  --color-mid: var(--color-gray-400);
+  --color-light: var(--color-gray-50);
+  --color-dark: var(--color-gray-950);
+  --color-mid: var(--color-gray-500);
 }
 
 /* Light theme */
 :root,
 :root[data-theme='light'] {
-  --color-text: var(--color-gray-800);
-  --color-bg: var(--color-gray-100);
+  --color-text: var(--color-gray-950);
+  --color-bg: var(--color-gray-50);
 
   --color-primary: var(--color-red);
   --color-secondary: var(--color-blue);
   --color-tertiary: var(--color-yellow);
   --color-quaternary: var(--color-green);
 
-  --color-text-accent: var(--color-gray-700);
-  --color-bg-accent: var(--color-gray-200);
-  --color-bg-accent-2: var(--color-gray-300);
+  --color-text-accent: var(--color-gray-800);
+  --color-bg-accent: var(--color-gray-100);
+  --color-bg-accent-2: var(--color-gray-200);
 }
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: var(--color-gray-100);
-    --color-bg: var(--color-gray-800);
+    --color-text: var(--color-gray-50);
+    --color-bg: var(--color-gray-950);
 
     --color-primary: var(--color-red-subdued);
     --color-secondary: var(--color-blue-subdued);
     --color-tertiary: var(--color-yellow-subdued);
     --color-quaternary: var(--color-green-subdued);
 
-    --color-text-accent: var(--color-gray-300);
-    --color-bg-accent: var(--color-gray-700);
-    --color-bg-accent-2: var(--color-gray-600);
+    --color-text-accent: var(--color-gray-200);
+    --color-bg-accent: var(--color-gray-800);
+    --color-bg-accent-2: var(--color-gray-700);
   }
 }
 :root[data-theme='dark'] {
-  --color-text: var(--color-gray-100);
-  --color-bg: var(--color-gray-800);
+  --color-text: var(--color-gray-50);
+  --color-bg: var(--color-gray-950);
 
   --color-primary: var(--color-red-subdued);
   --color-secondary: var(--color-blue-subdued);
   --color-tertiary: var(--color-yellow-subdued);
   --color-quaternary: var(--color-green-subdued);
 
-  --color-text-accent: var(--color-gray-300);
-  --color-bg-accent: var(--color-gray-700);
-  --color-bg-accent-2: var(--color-gray-600);
+  --color-text-accent: var(--color-gray-200);
+  --color-bg-accent: var(--color-gray-900);
+  --color-bg-accent-2: var(--color-gray-800);
 }
 
 /* Paper/Flexoki light theme */

@@ -1,27 +1,27 @@
 :root {
-    --color-comments: #c1dcff;
-    --color-borders: #eaeaea;
-    --color-borders-embed: #c8c8c8;
-    --color-background: #f5f5f5;
-    --color-background-alt: #c1dcff;
-    --color-host: #c1dcff;
-    --font-color: #000000;
-    --font-size: 1.5em;
+    --color-comments: unset;
+    --color-borders: unset;
+    --color-borders-embed: unset;
+    --color-background: var(--color-bg-accent);
+    --color-background-alt: var(--color-primary);
+    --color-host: var(--color-primary);
+    --font-color: var(--color-text);
+    --font-size: var(--size-step-0);
     --font-size-repost: 0.8em;
-    --font-meta-color: #555;
-    --font-meta-size: 1.3em;
-    --link-color: #0000ff;
-    --link-visited-color: #551a8b;
-    --link-hover-color: #0000ff;
-    --icon-size: 60px;
+    --font-meta-color: var(--color-text-accent);
+    --font-meta-size: var(--size-step-min-1);
+    --link-color: unset;
+    --link-visited-color: unset;
+    --link-hover-color: var(--color-text);
+    --icon-size: var(--space-xl);
     --icon-radius: 5em;
-    --box-max-width: 600px;
-    --box-border-radius: 5px;
+    --box-max-width: unset;
+    --box-border-radius: var(--border-radius-medium);
 }
 
 #comments-container {
-    font-family: Arial, sans-serif;
-    margin: 20px 0;
+    font-family: var(--font-base);
+    margin: var(--space-2xs) 0;
 }
 
 #comments-container a {
@@ -37,9 +37,9 @@
 }
 
 .comment-box {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid var(--color-comments);
+    margin: var(--space-xs-s) 0;
+    padding: var(--space-xs-s);
+    border: unset;
     background-color: var(--color-background);
     border-radius: var(--box-border-radius);
     max-width: var(--box-max-width);
@@ -48,7 +48,6 @@
 
 p.comment-text {
     font-size: var(--font-size);
-    font-color: var(--font-color);
 }
 
 .comment-innerbox {
@@ -92,16 +91,17 @@ p.comment-text {
 .comment-metricslink {
     color: var(--color-text);
     display: flex;
-    gap: 0.7em;
+    gap: var(--space-m);
 }
 
 .comment-metrics {
     display: flex;
     align-items: center;
+    padding: var(--space-3xs);
 }
 
 .comment-metrics>svg {
-    height: 1.5em;
+    height: var(--space-l);
 }
 
 .comment-embedbox {
@@ -144,3 +144,4 @@ p.comment-text {
     height: calc(var(--icon-size) * 0.66666);
     width: calc(var(--icon-size) * 0.66666);
 }
+

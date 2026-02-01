@@ -1,0 +1,31 @@
+<div class="share-dropdown" data-module="share-menu">
+  <button class="button" aria-expanded="false" aria-controls="share-list" data-share-trigger>
+    Share
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+  </button>
+  
+  <ul id="share-list" class="share-list" hidden>
+    <li>
+      <a href="https://bsky.app/intent/compose?text={{ title | urlencode }}%20{{ site.url }}{{ page.url | url }}" target="_blank" rel="noopener">
+        Share on BlueSky
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ site.url }}{{ page.url | url }}" target="_blank" rel="noopener">
+        Share on Twitter
+      </a>
+    </li>
+    <li>
+      <button data-copy-link="{{ site.url }}{{ page.url | url }}">
+        Copy Link
+      </button>
+    </li>
+    <li data-web-share-item hidden>
+      <button data-web-share-trigger data-title="{{ title }}" data-url="{{ site.url }}{{ page.url | url }}">
+        More options...
+      </button>
+    </li>
+  </ul>
+</div>
+
+<script> {% include "scripts/social-share.js" %} </script>

@@ -35,24 +35,18 @@ class BskyComments extends HTMLElement {
   renderEmbeds(embed) {
     const embedBox = document.createElement("div");
     if (embed && embed.$type === "app.bsky.embed.images#view") {
-    const images = embed.images;
-    if (images && images.length > 0) {
-      // Add 'display: flex' and 'flex-wrap: wrap' for stacking
       embedBox.classList.add("comment-imagebox");
-      embedBox.style = "display: flex; flex-wrap: wrap; gap: var(--space-xs); margin-top: var(--space-xs); width: 100%;";
-      
-      images.forEach(image => {
+        embed.images.forEach(image => {
         const link = document.createElement("a");
         link.href = image.fullsize;
         link.target = "_blank";
-        link.style = "flex: 1 1 200px; min-width: 0; max-width:"
-        link.innerHTML = `<img src="${image.thumb}" alt="${image.alt || ''}" class="comment-image" style="flex: 1 1 200px; max-width: 100%; height: auto; border-radius: 8px;">`;
+        link.innerHTML = `<img src="${image.thumb}" class="comment-image" style="max-width:200px; border-radius:8px;">`;
         embedBox.appendChild(link);
       });
       }
-    }
       return embedBox;
     }
+
 
   renderPost(comment) {
     const post = document.createElement("div");
@@ -127,7 +121,8 @@ class BskyComments extends HTMLElement {
           <span class="comment-metrics">${this.reply} ${commentData.thread.post.replyCount} Replies</span>
         </div>
 
-      </div>`;  
+      </div>`;
+          
 
       if (commentData.thread.replies) {
         this.renderComments(commentData.thread.replies, container, commentHidden);

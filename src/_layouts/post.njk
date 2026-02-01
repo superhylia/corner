@@ -13,6 +13,7 @@ schema: BlogPosting
         imageKeys {
           "src": image,
           "alt": alt or "",
+          "caption": description,
           "credit": credit,
           "loading": "eager"
         }
@@ -39,6 +40,7 @@ schema: BlogPosting
         {% endif %}
        {% endfor %}
       {% endif %}
+      {% include 'partials/social-share.njk' %}
     </p>
 
     {{ content | safe }}

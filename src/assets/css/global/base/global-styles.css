@@ -89,8 +89,50 @@ hr {
   background-color: var(--color-bg-accent-2);
 }
 
+.feature {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  overflow: hidden;
+  margin-bottom: var(--space-m);
+  margin-inline: auto;
+}
+
+.feature custom-card {
+  line-height: normal;
+}
+
+.credit {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  z-index: 10;
+
+  font-size: var(--size-step-min-1);
+  color: var(--color-text-accent);
+  line-height: 1;
+
+  background-color: var(--color-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid(--color-bg);
+  border-top-left-radius: 8px;
+  border-radius: var(--border-radius-medium);
+  width: max-content;
+  padding: 6px 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+  pointer-events: none;
+}
+
+.feature:hover .credit {
+  opacity: 1;
+  visibility: visible;
+}
+
 figcaption {
-  margin-block-start: var(--space-s);
+  margin-block-start: var(--space-xs);
   font-size: var(--size-step-min-1);
   text-align: center;
   padding-block-end: var(--space-xs);
