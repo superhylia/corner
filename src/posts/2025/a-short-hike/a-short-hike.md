@@ -4,7 +4,7 @@ description: "The sense of curiosity all of us have, made miniature."
 discover:
   description: "The sense of curiosity all of us have, made miniature."
 date: 2025-08-02
-redirectFrom: ['/blog/ashorthike/']
+redirectFrom: ['/ashorthike/']
 tags: ['games', 'feature']
 image: '/posts/2025/a-short-hike/i_did_it_ash.jpg'
 alt: 'Claire overlooks a beautiful mountainscape: an aurora of blue and purple light the sky.'
@@ -14,7 +14,7 @@ bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
 
 *A Short Hike* had been sitting in my free EGS library for quite some time; I had heard it was quite a short, cozy, explorative game that admittedly would've made me a bit wary about purchasing it. After playing it on a whim, I can definitely say it's worth the price of admission if you are buying. It didn't last me long, but it did leave me fulfilled, and for what's been a pretty stressful past few weeks, it was comforting and a little inspiring.
 
-{% image "/posts/2025/a-short-hike/binoculars_ash.jpg", null, "And yet *he* can't get a new model?", "My own screenshot." %}
+{% image "/posts/2025/a-short-hike/binoculars_ash.jpg", null, null, "My own screenshot." %}
 
 The visuals have always caught my eye as a sucker for low-poly 5th generation art styles, and this game nails it. It gets Animal Crossing comparisons for its aesthetic and low-tempo gameplay, but this reminds me a lot of Wild World's look, which is always lovely. It's bright, lit well, and distinctive in range, and I love the detail that as the draw distance is further away from the camera, models are outlined in a sepia, almost sketch-like style, which colors in as you get closer. Every area looks different while still feeling cohesive as one mountain, assisted by the fantastic use of dynamic music. The soundtrack is one of the best uses of this feature that I can recall, perfectly matching not just the "vibe" of each area, but the pace of your movement and the platforming challenges Claire is facing. Setting off your adventure with "Beach Buds" as you get acclimated to the controls with its comforting use of nice piano strokes, guitar, and accordion for spice let you settle in, while the contrasting "Snow, Lots of Snow" during your journey is slower tempo and more reserved with a touch of choir backing that lets you focus on the more difficult spacing needed to reach the peak. After finishing the game, I immediately went to listen to the soundtrack again, which says a lot. Sadly, there is no photo mode, but the UI is very minimalistic as only your feathers, the compass, and any dialogue (with cutesy typography, I might add) are ever on the screen; everything else is otherwise visually communicated very well with Claire having dash lines, losing feathers, and turning her shirt blue when expending her resources.
 

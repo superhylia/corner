@@ -99,7 +99,7 @@ const processImage = async options => {
     </figure>`;
   }
 
-  return `<div slot="image" style="display: flex; justify-content: center; width: 100%;">${imageMarkup}</div>`;
+  return `<div slot="image" style="display: flex; justify-content: center; width: 100%; margin-block-end: var(--space-s);">${imageMarkup}</div>`;
   }
 
   
