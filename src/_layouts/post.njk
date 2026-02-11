@@ -22,7 +22,7 @@ schema: BlogPosting
       
     
 
-    <p class="meta | cluster gutter-xs-s">
+    <div class="meta | cluster gutter-xs-s">
       <!-- draft status -->
       {%- if draft -%}
         <span class="button" data-small-button data-button-variant="tertiary">draft</span>
@@ -40,15 +40,33 @@ schema: BlogPosting
         {% endif %}
        {% endfor %}
       {% endif %}
+
       {% include 'partials/social-share.njk' %}
-    </p>
+    </div>
 
     {{ content | safe }}
     <hr>
-    {% include 'partials/edit-on.njk' %}
-
-    {% include 'partials/bsky.njk' %}
   </div>
+
+{% if series %}
+  <div class="series | section">
+      <section class="section__inner wrapper flow prose" style="padding-block-start: var(--space-l); --spot-color: {{ seriesMeta[series].accentColor | safe }}; color: {{ seriesMeta[series].headerTextColor | safe}};">
+          {% include 'partials/series-nav.njk' %}
+      </section>
+    </div>
+{% endif%}
+
+{% if bskyurl %}
+  <div class="series | section">
+      <section class="section__inner wrapper flow prose" style="padding-block-start: var(--space-l); --spot-color: --color-bg; ">
+          {% include 'partials/bsky.njk' %}
+      </section>
+    </div>
+{% endif%}
+
+<div class="wrapper flow prose" style="margin-block: var(--flow-space, var(--space-m-l));">
+  {% include 'partials/edit-on.njk' %}
+</div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
   <div hidden class="h-entry">

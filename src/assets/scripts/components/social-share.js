@@ -19,7 +19,7 @@ if (shareMenu) {
     const url = copyBtn.dataset.copyLink;
     navigator.clipboard.writeText(url).then(() => {
       const originalText = copyBtn.innerText;
-      copyBtn.innerText = 'Copied!';
+      copyBtn.innerText = 'Copied! Go paste it.';
       setTimeout(() => copyBtn.innerText = originalText, 2000);
     });
   });

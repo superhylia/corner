@@ -51,6 +51,7 @@ class BskyComments extends HTMLElement {
       });
       }
     }
+    
       return embedBox;
     }
 

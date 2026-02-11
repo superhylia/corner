@@ -31,7 +31,7 @@ export default {
       url: '/privacy/'
     },
     {
-      text: 'Accessibility',
+      text: '/accessibility',
       url: '/accessibility/'
     }
   ]

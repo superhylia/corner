@@ -3,11 +3,13 @@ title: 'Metal Gear Solid 4: Guns of the Patriots: The Petals Live On'
 description: "*Guns of the Patriots* is watching \"Metal Gear\" be at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish it wanted me to actually play it."
 date: 2024-01-11
 redirectFrom: ['/blog/mgs4/']
-tags: ['games', 'feature']
+tags: ['games', 'review']
 image: '/posts/2024/mgs4/metal-gear-solid-4-guns-of-the-patriots-the-petals-live-on.jpg'
 alt: 'Solid Snake and Revolver Ocelot oppose each other, their stare deep in reflection and colored in a hazely, sepia tone.'
 credit: Limited Edition artwork by the legend Yoji Shinkawa.
 bskyurl: 'https://bsky.app/profile/superhylia.dev/post/3lgo7sydmi226'
+series: "Test"
+order: 1
 ---
 
 One of the greatest video games I will ever play. *Metal Gear Solid 4: Guns of the Patriots* so ferociously captures everything loved about this franchise that is 37 years old and still going strong in every aspect: its characters, the story they weave, the music that surrounds them, and the gameplay that moves them are all done to the highest degree. It isn't perfect: the long cutscenes can definitely drag on. The plot can sometimes be overambitious, asserting new characters and concepts at a rapid pace without spending much time to allow exposition to be digested and understood, even if these concepts, for the most part, are interesting. *Guns of the Patriots*, however, flaws and all, make it *Metal Gear*. What makes a game "Metal Gear" is hard to define: to some, it's cinematic espionage action, while to others, it's a sometimes-goofy, sometimes-brilliant expression of anti-war themes. To me, while *Metal Gear* is those things, it is the emphasis on the individual, both the main characters and the player, and the implications of their role in life and society that define this franchise. In that sense, *Guns of the Patriots* is "Metal Gear" at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. 

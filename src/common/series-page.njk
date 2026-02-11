@@ -1,0 +1,51 @@
+---
+layout: base
+pagination:
+  data: collections.series
+  size: 1
+  alias: seriesPosts
+  resolve: values
+permalink: /series/{{ seriesPosts[0].data.series | slugify }}/
+eleventyComputed:
+  title: '{{ seriesPosts[0].data.series }}'
+---
+
+<!-- set collection to paginate -->
+{% set collectionToPaginate = collections.series %}
+<!-- set target pagination settings in meta.js -->
+{% set metaKey = "series" %}
+{% set seriesName = seriesPosts[0].data.series %}
+{% set meta = seriesMeta[seriesName] %}
+
+
+<div class="wrapper">
+  <header class="full | section" style="--spot-color: {{ meta.accentColor | safe }}">
+    <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
+      <h1 class="text-center" style="color: {{ meta.headerTextColor }};">{{ title }}</h1>
+      <h3 class="text-center" style="color: {{ meta.headerTextColor }};">{{ meta.description }}</h3>
+    </div>
+
+    {% svg "divider/pixels", null, "divider" %}
+  </header>
+
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <div id="search"></div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
+
+<ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% for item in seriesPosts %} 
+        {% include "partials/card-series.njk" %}
+    {% endfor %}
+  </ul>
+
+  <!-- if the number of items in the collection is greater than the number of items shown on one page -->
+  {% if collectionToPaginate.length > pagination.size %}
+    <!-- include pagination -->
+    {% include 'partials/pagination.njk' %}
+  {% endif %}
+</div>

@@ -6,6 +6,8 @@ lastEdit: 2025-03-01
 tags: ['all-eyes-on-me', 'games', 'devlog']
 image: '/posts/2025/skiptrace-jam-p2/outside.jpg'
 alt: 'A notebook titled Skiptrace/VGDO Game Jam is open on someone''s lap outside in grass.'
+series: "All Eyes on Me Game Jam"
+order: 2
 ---
 After a weekend relaxing (mostly playing *Metroid Fusion* and watching *Code Geass R2*) and thinking of ideas during the school week, it’s time to get this game planned and fleshed out. First stop is the game design doc!
 {% include "partials/toc.njk" %}

@@ -4,11 +4,13 @@ description: "I wish, I wish, with all my heart, to fly with dragons in a world 
 date: 2025-05-02
 lastEdit: 2026-01-31
 redirectFrom: ['/blog/spyro1r/']
-tags: ['games', 'feature']
+tags: ['games', 'review']
 image: '/posts/2025/spyro-1-reignited/sunny_flight_s1r.jpg'
 alt: 'Spyro the Dragon overlooking a pond with a chest and several colored crystals in Sunny Flight.'
 credit: 'DarkSpyro.net'
 bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
+series: "Test"
+order: 2
 ---
 
 After years of having it on the backlog and a recent binge of Spyro content for whatever reason (shoutout [EPG](https://www.youtube.com/c/ExoParadigmGamer)), I decided to finally take the plunge on one of the original PlayStation's classics and one of the most revered collect-a-thons ever.

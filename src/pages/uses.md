@@ -48,7 +48,7 @@ lastEdit: 2025-02-26
     <li> Phone
     <ul>
     <li>Samsung Galaxy S22+</li>
-    <li>[Sony WH-CH720N Wireless Noise Cancelling Headphones](https://electronics.sony.com/audio/headphones/headband/p/whch720n-b?srsltid=AfmBOopdDOnoplH0FFViSAAw6hmAZ6gkH6L5spz9GTiK5guFCbDV6qn4)</li>
+    <li> [Sony WH-CH720N Wireless Noise Cancelling Headphones](https://electronics.sony.com/audio/headphones/headband/p/whch720n-b?srsltid=AfmBOopdDOnoplH0FFViSAAw6hmAZ6gkH6L5spz9GTiK5guFCbDV6qn4) </li>
     </ul>
     </li>
     <li>Analogue

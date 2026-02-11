@@ -15,7 +15,7 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
       <h3 class="text-center" style="color: var(--color-text);">Scribbles and essays about creating something in the world (and guilty pleasures).</h3>
     </div>
 
-    {% svg "divider/edgy", null, "divider" %}
+    {% svg "divider/pixels", null, "divider" %}
   </header>
 
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
@@ -29,13 +29,12 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
 
 <div class="taglist | mt-s-m cluster">
   {% for tag in collections.tagList %}
-    <a href="/tags/{{ tag }}" class="button"> {{ tag }} </a>
+    <a href="/tags/{{ tag }}" class="button"> #{{ tag }} </a>
   {% endfor %}
 </div>
 
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections["blog_" + page.lang] %} {% for post in postslist %} {%
-    include "partials/blog-loop.njk" %} {% endfor %}
+    {% set postslist = collections["blog_" + page.lang] %} {% for post in postslist %} {% include "partials/blog-loop.njk" %} {% endfor %}
   </ul>
 
   <custom-masonry layout="50-50">

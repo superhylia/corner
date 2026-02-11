@@ -1,27 +1,37 @@
-<div class="share-dropdown" data-module="share-menu">
-  <button class="button" aria-expanded="false" aria-controls="share-list" data-share-trigger>
+<div class="share-dropdown" data-module="share-menu" style="margin-left: auto;">
+  <button class="button" aria-expanded="false" aria-controls="share-list" data-share-trigger data-small-button>
     Share
     <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
   </button>
   
   <ul id="share-list" class="share-list" hidden>
     <li>
-      <a href="https://bsky.app/intent/compose?text={{ title | urlencode }}%20{{ site.url }}{{ page.url | url }}" target="_blank" rel="noopener">
+      <button data-copy-link="{{ page.url | url | absoluteUrl(meta.url) }}">
+        Copy Link
+      </button>
+    </li>
+    <li>
+      <a href="https://bsky.app/intent/compose?text={{ title | urlencode }}%20{{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
         Share on BlueSky
       </a>
     </li>
     <li>
-      <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ site.url }}{{ page.url | url }}" target="_blank" rel="noopener">
+      <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
         Share on Twitter
       </a>
     </li>
     <li>
-      <button data-copy-link="{{ site.url }}{{ page.url | url }}">
-        Copy Link
-      </button>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
+        Share on LinkedIn
+      </a>
+    </li>
+    <li>
+      <a href="mailto:?subject={{ title | urlencode }}&body={{ title | urlencode }}%20-%20{{ description }}%0A%0ARead%20at%20{{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
+        Send via email
+      </a>
     </li>
     <li data-web-share-item hidden>
-      <button data-web-share-trigger data-title="{{ title }}" data-url="{{ site.url }}{{ page.url | url }}">
+      <button data-web-share-trigger data-title="{{ title }}" data-url="{{ page.url | url | absoluteUrl(meta.url) }}">
         More options...
       </button>
     </li>

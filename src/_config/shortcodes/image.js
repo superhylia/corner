@@ -1,5 +1,7 @@
 import Image from '@11ty/eleventy-img';
 import path from 'node:path';
+import markdownIt from 'markdown-it';
+const md = new markdownIt({html: true});
 
 const stringifyAttributes = attributeMap => {
   return Object.entries(attributeMap)
@@ -82,27 +84,24 @@ const processImage = async options => {
 
   const pictureElement = `<picture> ${imageSources}<img ${imageAttributes}></picture>`;
 
-  let imageMarkup = pictureElement;
-
-  if (credit) {
-    const finalContainerClass = containerClass ? `feature ${containerClass}` : 'feature';
-    imageMarkup = `<div class="${finalContainerClass}" style="position: relative; display: inline-block; max-width: 100%; line-height: 0;">
-        ${pictureElement}
-        <div class="credit">${credit}</div>
-      </div>`;
-  }
+  const finalContainerClass = containerClass ? `feature ${containerClass}` : 'feature';
+  
+  const imageMarkup = `<div class="${finalContainerClass}" style="position: relative; display: inline-block; max-width: 100%; line-height: 0;">
+      ${pictureElement}
+      ${credit ? `<div class="credit">${credit}</div>` : ''}
+    </div>`;
 
   if (caption) {
+    const mdCaption = md.renderInline(caption);
     return `<figure slot="image" style="text-align: center; margin-inline: auto;">
       ${imageMarkup}
-      <figcaption>${caption}</figcaption>
+      <figcaption>${mdCaption}</figcaption>
     </figure>`;
   }
 
-  return `<div slot="image" style="display: flex; justify-content: center; width: 100%; margin-block-end: var(--space-s);">${imageMarkup}</div>`;
+  return `<div slot="image" style="display: flex; justify-content: center; width: 100%;">${imageMarkup}</div>`;
   }
 
-  
 
 // Positional parameters (legacy)
 export const imageShortcode = async (

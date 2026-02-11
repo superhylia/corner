@@ -1,0 +1,47 @@
+{% if series %}
+  {% set currentSeries = collections.series[series] %}
+  {% set currentIndex = 0 %}
+  {% set seriesName = seriesPosts[0].data.series %}
+  {% set meta = seriesMeta[seriesName] %}
+  
+  {# Find where we are in the loop #}
+  {% for post in currentSeries %}
+    {% if post.url == page.url %}{% set currentIndex = loop.index0 %}{% endif %}
+  {% endfor %}
+
+  <nav class="series-nav">
+    <h3>#{{ currentIndex + 1 }} of {{ currentSeries.length }} | <a href="/series/{{ series | slugify }}">"{{ series }}"</a> series</h3>
+    <p class="text-step-min-1"> {{ seriesMeta[series].description }} </p>
+    <ul>
+      {# If the first in a series, show next 3 #}
+      {% if currentIndex == 0 %}
+        {% for i in range(1, 4) %}
+          {% if currentSeries[i] %}
+          <li><a href="{{ currentSeries[i].url }}">Next: {{ currentSeries[i].data.title }} (#{{ i + 1 }})</a></li>
+          {% endif %}
+        {% endfor %}
+
+      {# If the last in a series, show previous 3 #}
+      {% elif currentIndex == currentSeries.length - 1 %}
+        {% for i in range(currentIndex - 3, currentIndex) %}
+          {% if currentSeries[i] %}
+          <li><a href="{{ currentSeries[i].url }}">Previous: {{ currentSeries[i].data.title }} (#{{ i + 1 }})</a></li>
+          {% endif %}
+        {% endfor %} 
+
+        
+      {% else %}
+        {# Show previous 2 posts #}
+          {% set prevStart = currentIndex - 2 if currentIndex >= 2 else 0 %}
+          {% for i in range(prevStart, currentIndex) %}
+            <li><a href="{{ currentSeries[i].url }}">Previous: {{ currentSeries[i].data.title }} (#{{ i + 1 }})</a></li>
+          {% endfor %}
+
+        {# Show next post #}
+        {% if  currentIndex < currentSeries.length - 1 %}
+          <li><a href="{{ currentSeries[currentIndex + 1].url }}">Next: {{ currentSeries[currentIndex + 1].data.title }} (#{{ currentIndex + 1 }})</a></li>
+        {% endif %}
+      {% endif %}
+    </ul>
+  </nav>
+{% endif %}

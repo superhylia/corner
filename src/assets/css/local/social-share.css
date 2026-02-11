@@ -1,0 +1,78 @@
+/* Container for both the copy button and the dropdown */
+.share-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-2, 0.5rem);
+  vertical-align: middle;
+}
+
+/* The Copy Icon Button */
+.share-btn-icon {
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.share-btn-icon:hover {
+  color: var(--color-primary);
+}
+
+/* Dropdown Container */
+.share-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* "Share" button */
+.share-trigger {
+  list-style: none;
+  cursor: pointer;
+  padding: var(--size-1) var(--size-3);
+  background: var(--color-bg-accent);
+  color: var(--color-text);
+  border-radius: var(--radius-sm, 4px);
+  font-size: var(--size-step-n1, 0.875rem);
+  font-weight: bold;
+}
+
+/* Hides the default browser triangle */
+.share-trigger::-webkit-details-marker { display: none; }
+
+/* The Floating Menu */
+.share-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px); /* Space below trigger */
+  z-index: 100;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 8px);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  overflow: hidden;
+}
+
+.share-menu a, 
+.share-menu button {
+  padding: var(--size-2) var(--size-3);
+  text-decoration: none;
+  font-size: var(--size-step-n1);
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.share-menu a:hover, 
+.share-menu button:hover {
+  background: var(--color-bg-accent);
+  color: var(--color-primary);
+}

@@ -6,6 +6,8 @@ lastEdit: 2025-02-21
 tags: ['all-eyes-on-me', 'games', 'devlog']
 image: '/posts/2025/vgdo-gj-day1/kickoff.png'
 alt: 'A tired bear sits down within a circle as stage curtains cover the background.'
+series: "All Eyes on Me Game Jam"
+order: 1
 ---
 
 A New Year resolution of mine for this year has been to make *something*. Get back to writing consistently. Keep doing graphic design and open commissions for it. Try to make videos or essays on the medium you love so much. Or...

@@ -17,7 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 //  config import
-import {getAllPosts, showInSitemap, tagList} from './src/_config/collections.js';
+import {getAllPosts, showInSitemap, tagList, getAllSeries} from './src/_config/collections.js';
 import events from './src/_config/events.js';
 import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
@@ -32,7 +32,7 @@ export default async function (eleventyConfig) {
   });
 
   // --------------------- custom wtach targets
-  eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
+  eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg,xsl}');
   eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc}');
 
   // Pagefind search
@@ -51,6 +51,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
+  eleventyConfig.addCollection('series', getAllSeries);
   eleventyConfig.addCollection("ALOM", function(collectionApi) {
     return collectionApi.getFilteredByTag("all-eyes-on-me").reverse();
   });
@@ -135,7 +136,7 @@ export default async function (eleventyConfig) {
     'src/assets/images/favicon/*': '/',
 
     // --pretty-feed.xsl
-    'src/assets/pretty-feed-v3.xsl': 'src/assets/pretty-feed-v3.xsl',
+    'src/assets/pretty-feed-v3.xsl': '/assets/pretty-feed-v3.xsl',
 
     // -- node_modules
     'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`
