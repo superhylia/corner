@@ -5,7 +5,7 @@ date: 2026-03-01
 redirectFrom: ['/blog/ngp-famicom-intro/']
 tags: ['new-gaze-plus', 'famicom', 'weight-of-age', 'games', 'research', 'intro']
 image: '/posts/2026/ngp-famicom/fami-intro/intro.png' 
-alt: 'An illustrated diagram of the Family Computer is behind text introducing essay series "New Gaze+: The Weight of Age" by superhylia.dev.'
+alt: 'An illustrated diagram of the Family Computer is behind text introducing essay series New Gaze+: The Weight of Age by superhylia.dev.'
 credit: 'My own graphic design.'
 series: "New Gaze Plus: The NES/Famicom & The Weight of Age"
 order: 1
