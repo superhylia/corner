@@ -20,11 +20,6 @@ Finally, we reach the story. Hideo Kojima and the Kojima Productions team are kn
 
 Even if Metal Gear as a franchise concluded here, I believe *Guns of the Patriots*’ ending would be enough. It transcends beyond simple entertainment and becomes an experience, an art painting in and of itself. The paint is smooth, and the artist's mastery of scenery marks an excellent presentation. The piece is imperfect by any means: the plaque explaining the art is overlong, the canvas maintains a few uneven scratches, and the piece takes a few seconds to process. It’s dreamlike in its ambition, standing tall amongst the other paintings in the museum, dreaming bigger than anything you’ve seen. Despite its flaws, despite its imperfection, you see the sublimity. It may not be the greatest game ever made like I deem its predecessor, but *Metal Gear Solid 4: Guns of the Patriots* will always remain worth it for its gameplay, presentation, music, and story. It is not perfect, but rather a game that never tried to be and achieved so much anyway, a lesson its most iconic character learns. Maybe, as individuals, it's one we should live on with as well.
 
-Having these gestate over the weekend and with some inspiration from a certain Game Boy Advance game[^1], I got a very basic idea on *Skiptrace*[^2], the name I decided to go with since it fits perfectly with the surveillance motif. But what good is just an idea if we can’t think about how it applies?
-
-[^1]: *Fusion* is fantastic front to back, holy shit y’all gotta tap in
-[^2]: *skiptrace*: to locate a missing person’s whereabouts, typically in regards to private investigation or bounty hunting.
-
 {%- css "local" -%}
   {%- include 'css/table.css' -%}
 {%- endcss -%}
