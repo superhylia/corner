@@ -69,15 +69,6 @@ export default async function (eleventyConfig) {
     useTransform: true
   });
 
-  eleventyConfig.addPlugin(plugins.readingtime, {
-    wordsPerMinute: 200,
-    suffixDisplay: true,
-    suffixText: 'min',
-    prefixDisplay: true,
-    prefixText: '~',
-    verbose: false
-  });
-
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
     widths: ['auto'],
@@ -112,6 +103,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('alphabetic', filters.sortAlphabetically);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
   eleventyConfig.addFilter('unescape', filters.unescape);
+  eleventyConfig.addFilter('readingTime', filters.readingTime); 
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);

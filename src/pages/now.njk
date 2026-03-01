@@ -5,12 +5,46 @@ description: 'Gaming".'
 layout: base
 ---
 <div class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-quaternary)">
+  <header class="full | section" style="--spot-color: var(--color-tertiary)">
     <div class="section__inner flow region">
-      <h1 class="text-center" style="color: var(--color-bg);">{{ title }}</h1>
-      <h3 class="text-center" style="color: var(--color-bg);">All that I've made, from graphic design and branding to communities and code projects (including this website!).</h3>
+      <h1 class="text-center" style="color: var(--color-text);">{{ title }}</h1>
+      <h3 class="text-center" style="color: var(--color-text);">When I don't happen to be busy...</h3>
     </div>
     
     {% svg "divider/edgy", null, "divider" %}
   </header>
+
+  <article class="full | region">
+    <div class="wrapper flow prose">
+      <h1 id= "Games"> <a href ="#games" class="heading-anchor"> Games</a> </h1>
+      <p>
+        My <a href="https://www.backloggd.com/u/superhylia/"> Backloggd</a> is more up-to-date, but last time I edited this...
+      <ul> 
+        <li> <i> Resident Evil</i> (2002) by Capcom Production Studio 4 </li>
+        <li> <i> Yakuza 0</i> by Ryu Ga Gotoku Studio </li>
+        <li> <i> Persona 5</i> Royal by Atlus </li>
+        </ul>
+      </p>
+      <h1 id= "Books"> <a href ="#books" class="heading-anchor"> Books</a> </h1>
+      <p> 
+        <ul>
+          <li> <i>The Tower</i> by Flora Carr </li>
+          </ul>
+      </p>
+      <h1 id= "Movies"> <a href ="#movies" class="heading-anchor"> Movies</a> </h1>
+        <div id="letterboxd-embed-wrapper-tc">Loading...</div>
+          <link rel="stylesheet" href="/assets/css/local/letterboxd.css">
+          <script>
+            fetch('https://lb-embed-content.bokonon.dev?username=superhylia')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
+            });
+        </script>
+      <h1 id= "Music"> <a href ="#music" class="heading-anchor"> Music</a> </h1>
+       <div class="last-fm-widget">
+        <img src="https://lastfm-recently-played.vercel.app/api?user=superhylia&count=7&width=1000loved=true&show_user=header&footer_style=normal_stats&loved_style=4" alt="Recently played on Last.fm" eleventy:ignore>
+      </div>
+  </article>
+</article>
 </div>

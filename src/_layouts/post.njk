@@ -19,8 +19,6 @@ schema: BlogPosting
         }
       %}
       {% endif %}
-      
-    
 
     <div class="meta | cluster gutter-xs-s">
       <!-- draft status -->
@@ -28,25 +26,25 @@ schema: BlogPosting
         <span class="button" data-small-button data-button-variant="tertiary">draft</span>
       {%- endif %}
       <!-- date -->
-      {% set definedDate = date %} {% include "partials/date.njk" %}
-      <span> | {{ content | readingtime }} to read</span>
-      {%
-        if tags.length >
-        1
-      %}
-        <!-- tags -->
-        {% for tag in tags %}{% if tag != "posts" %}
-          <a class="button" href="/tags/{{ tag | slugify }}/" data-small-button> #{{ tag }} </a>
-        {% endif %}
-       {% endfor %}
-      {% endif %}
-
+      {% set definedDate = date %} {% include "partials/date.njk" %}•
+      <span>~{{ content | readingTime }} read</span>
       {% include 'partials/social-share.njk' %}
     </div>
 
     {{ content | safe }}
+    {% include 'partials/edit-on.njk' %}
     <hr>
+    <div class="tags | cluster gutter-xs-s" style="margin-block-end: var(--flow-space, 1em);"">
+    {% if tags.length > 1 %}
+      <!-- tags -->
+      <span class="tags-label" style="font-size: var(--size-step-min-1);""> <u>Tags:<u></span> {% for tag in tags %}{% if tag != "posts" %}
+        <a class="button" href="/tags/{{ tag | slugify }}/" data-small-button> #{{ tag }} </a>
+      {% endif %}
+      {% endfor %}
+    {% endif %}
+    </div>
   </div>
+
 
 {% if series %}
   <div class="series | section">
@@ -64,10 +62,6 @@ schema: BlogPosting
     </div>
 {% endif%}
 
-<div class="wrapper flow prose" style="margin-block: var(--flow-space, var(--space-m-l));">
-  {% include 'partials/edit-on.njk' %}
-</div>
-
   <!--  h-card infos: https://indieweb.org/authorship -->
   <div hidden class="h-entry">
     <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
@@ -84,7 +78,9 @@ schema: BlogPosting
 </article>
 
 
+
 {%- css "local" -%}
   {%- include 'css/post.css' -%}
   {%- include 'css/footnotes.css' -%}
+  {%- include 'css/table.css' -%}
 {%- endcss -%}

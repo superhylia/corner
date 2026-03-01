@@ -10,8 +10,6 @@ image: '/posts/2025/a-short-hike/i_did_it_ash.jpg'
 alt: 'Claire overlooks a beautiful mountainscape: an aurora of blue and purple light the sky.'
 credit: My own screenshot.
 bskyurl: 'https://bsky.app/profile/superhylia.bsky.social/post/3lgo7sydmi226'
-series: "Test"
-order: 3
 ---
 
 *A Short Hike* had been sitting in my free EGS library for quite some time; I had heard it was quite a short, cozy, explorative game that admittedly would've made me a bit wary about purchasing it. After playing it on a whim, I can definitely say it's worth the price of admission if you are buying. It didn't last me long, but it did leave me fulfilled, and for what's been a pretty stressful past few weeks, it was comforting and a little inspiring.

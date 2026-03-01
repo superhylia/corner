@@ -1,5 +1,6 @@
 .footnotes {
   font-size: var(--size-step-min-1);
+  margin-block-start: 0;
 }
 
 .footnote-ref {

@@ -1,5 +1,5 @@
 export default {
-    "Test": {
+    "New Gaze Plus: The NES/Famicom & The Weight of Age": {
         description: "A test series",
         accentColor: "#711521",
         headerTextColor: "#dfe2e4"

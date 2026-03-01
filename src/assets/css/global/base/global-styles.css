@@ -27,6 +27,7 @@ main {
   flex: auto;
 }
 
+t1,
 h1,
 h2,
 h3 {
@@ -36,8 +37,12 @@ h3 {
   letter-spacing: var(--tracking-s);
 }
 
-h1 {
+t1 {
   font-size: var(--size-step-6);
+}
+
+h1 {
+  font-size: var(--size-step-5);
 }
 
 h2 {

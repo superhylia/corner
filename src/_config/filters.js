@@ -6,6 +6,7 @@ import {splitlines} from './filters/splitlines.js';
 import {striptags} from './filters/striptags.js';
 import {slugifyString} from './filters/slugify.js';
 import {unescape} from './filters/unescape.js';
+import {readingTime} from './filters/readingTime.js';
 
 export default {
   toISOString,
@@ -16,5 +17,6 @@ export default {
   shuffleArray,
   sortAlphabetically,
   slugifyString,
-  unescape
+  unescape,
+  readingTime
 };

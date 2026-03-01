@@ -44,7 +44,24 @@ class BskyComments extends HTMLElement {
         embedBox.appendChild(link);
       });
       }
-      return embedBox;
+    if (embed && embed.$type === "app.bsky.embed.external#view") {
+      const link = embed.external;
+      const linkThumb = embed.external.thumb;
+      const linkTitle = embed.external.title;
+      if (embed.external.thumb) {
+        embedBox.innerHTML = `
+          <div class="comment-embedbox-thumb">
+            <a href="${link.uri}">
+              <img src="${linkThumb}">
+              <p><strong>${linkTitle}</strong></p>
+              <p>${link.description}</p>
+            </a>
+          </div>`;
+      } else {
+        embedBox.innerHTML = `<a href="${link}"><div class="comment-embedbox">[Link to <em>${linkTitle}<em>]</div></a>`;
+      }
+    }
+    return embedBox;
     }
 
 

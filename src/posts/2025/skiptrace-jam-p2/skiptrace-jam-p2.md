@@ -122,7 +122,6 @@ This is a decent core statement in my eyes! The game has an identity, the player
 Finally, while we can easily expand this text outline to be as large or as compact of a game design doc as we’d like, sometimes, things don’t express as well in text as they may do drawn. As a visual learner, drawing diagrams, annotations, crude drawings, or some form of visual companion to our text. The mixed blank/ruled paper notebook I use for game design and development (finally getting use out of it, hooray) helps a lot with this. Drawings and written explanations are side by side, providing important context and substance to my ideas.
 
 ![](draw_blueprint.jpg)
-
 ![](draw_blueprint_2.jpg 'This is how I laid out drawings and written word for the Skiptrace GDD.')
 
 To reiterate, the core to any creative process or personal progress is finding a system that works for you. It should feel natural and logical to lay out how you work: that’s how you do it consistently and how you do it well. For me, as a visual learner who tends to work best with a basic outline that expands outwards, one-page design documents that I add more and more to side-by-side with drawings to explain how mechanics or menus work makes the most sense! 
