@@ -50,9 +50,7 @@
 />
 <meta
   property="og:image"
-  content="{%- if layout == 'post' -%}
-    {{- meta.url -}}{{- ogImage -}}
-  {%- elseif layout == 'page' -%}
+  content="{%- if layout == 'post' or layout == 'page' -%}
     {{- meta.url -}}{{- ogImage -}}
   {%- else -%}
     {{- meta.url -}}{{- meta.opengraph_default -}}
@@ -60,7 +58,7 @@
 />
 <meta
   property="og:image:alt"
-  content="{%- if layout == 'post' -%}
+  content="{%- if layout == 'post' or layout == 'page' -%}
     {{- title -}}
   {%- else -%}
     {{- meta.opengraph_default_alt -}}
