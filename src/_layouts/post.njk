@@ -34,10 +34,10 @@ schema: BlogPosting
     {{ content | safe }}
     {% include 'partials/edit-on.njk' %}
     <hr>
-    <div class="tags | cluster gutter-xs-s" style="margin-block-end: var(--flow-space, 1em);"">
+    <div class="tags | cluster gutter-xs-s" style="margin-block-end: var(--flow-space, 1em);">
     {% if tags.length > 1 %}
       <!-- tags -->
-      <span class="tags-label" style="font-size: var(--size-step-min-1);""> <u>Tags:<u></span> {% for tag in tags %}{% if tag != "posts" %}
+      <span class="tags-label" style="font-size: var(--size-step-min-1);"> <u>Tags:</u></span> {% for tag in tags %}{% if tag != "posts" %}
         <a class="button" href="/tags/{{ tag | slugify }}/" data-small-button> #{{ tag }} </a>
       {% endif %}
       {% endfor %}
