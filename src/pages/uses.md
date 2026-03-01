@@ -1,11 +1,13 @@
 ---
 title: /uses
 permalink: /uses/index.html
-description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
+description: 'My /uses page for my setup and software.'
 layout: page
+image: '/assets/images/pages/uses/setup-feb28.jpg'
+alt: 'Claire overlooks a beautiful mountainscape: an aurora of blue and purple light the sky.'
+credit: An image of my setup from February 2026.
 lastEdit: 2025-02-28
 ---
-![An image of my setup.](/assets/images/pages/uses/setup-feb28.jpg 'An image of my setup from February 2025.')
 *   Hardware
     *   [Lenovo Yoga 7 (2-in-1) 14AHP9](https://www.lenovo.com/us/en/p/laptops/yoga/yoga-2-in-1-series/lenovo-yoga-7-2-in-1-gen-9-14-inch-amd/len101y0046?srsltid=AfmBOorJj-KAxYfl4TKCzVcqEu5m2eSkAVeKcLc1Yx3yMWpm\_6krv\_Pq)
         *   AMD Ryzen 7 8840HS
