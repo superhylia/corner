@@ -21,7 +21,8 @@ eleventyComputed:
 <div class="wrapper">
   <header class="full | section" style="--spot-color: {{ meta.accentColor | safe }}">
     <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
-      <h1 class="text-center" style="color: {{ meta.headerTextColor }};">{{ title }}</h1>
+      {% if meta.headerLogo %} <img src="{{ meta.headerLogo }}" alt="{{ meta.headerLogoAlt }}" loading="eager" decoding="sync" style="height: var(--space-2xl-3xl); width: auto; display: block; margin: 0 auto;">  {% endif %}
+      <h1 class="text-center" style="color: {{ meta.headerTextColor }};">{{ title | unescape }}</h1>
       <h3 class="text-center" style="color: {{ meta.headerTextColor }};">{{ meta.description }}</h3>
     </div>
 

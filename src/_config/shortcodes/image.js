@@ -86,8 +86,9 @@ const processImage = async options => {
 
   const finalContainerClass = containerClass ? `feature ${containerClass}` : 'feature';
   
+
   const imageMarkup = `<div class="${finalContainerClass}" style="position: relative; display: inline-block; max-width: 100%; line-height: 0;">
-      ${pictureElement}
+    ${pictureElement}
       ${credit ? `<div class="credit">${credit}</div>` : ''}
     </div>`;
 
