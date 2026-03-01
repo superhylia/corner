@@ -9,7 +9,7 @@ alt: 'An illustrated diagram of the Family Computer is behind text introducing e
 credit: 'My own graphic design.'
 series: "New Gaze Plus: The NES/Famicom & The Weight of Age"
 order: 1
-bskyurl: 
+bskyurl: https://bsky.app/profile/superhylia.dev/post/3mfzncyz57s26
 ---
 
 {% include "partials/toc.njk" %}
@@ -68,7 +68,7 @@ All 30 curated titles will feature in one of four sections, each aiming to provi
 * *Dragon Quest III*
 
 **C.** You Cannot Beat Us: *Can the origin of the conflation between difficulty and challenge be found in the earliest iteration of the influential and infamous that serves as fundamental game design to this day?*
-* *Castlevania II: Simon's Quest*
+* *Castlevania II: Simon's Quest* :floppy_disk:
 * *Super Mario Bros.: The Lost Levels/2: For Super Players* :floppy_disk:
 * *Kid Icarus* :floppy_disk:
 * *Zelda II: The Adventure of Link* :floppy_disk:
