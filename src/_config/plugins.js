@@ -5,6 +5,9 @@ import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import webc from '@11ty/eleventy-plugin-webc';
 import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
 
+// other
+import embedEverything from 'eleventy-plugin-embed-everything';
+
 // custom
 import {markdownLib} from './plugins/markdown.js';
 import {drafts} from './plugins/drafts.js';
@@ -20,5 +23,6 @@ export default {
   eleventyImageTransformPlugin,
   markdownLib,
   drafts,
-  htmlConfig
+  htmlConfig,
+  embedEverything,
 };

@@ -27,10 +27,9 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
     });
 </script>
 
-<div class="taglist | mt-s-m cluster">
-  {% for tag in collections.tagList %}
-    <a href="/tags/{{ tag }}" class="button"> #{{ tag }} </a>
-  {% endfor %}
+<div class="search-nav | mt-s-m cluster">
+  <a href="/tags/" class="button" data-button-variant="tertiary"> {% svg "misc/bookmark" %} Browse by Tags </a> 
+  <a href="/series/" class="button" data-button-variant="quaternary"> {% svg "misc/stack" %} Browse by Series </a>
 </div>
 
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
@@ -52,4 +51,12 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
     <!-- include pagination -->
     {% include 'partials/pagination.njk' %}
   {% endif %}
+  <section class="flow region region-space-m">
+    <h3 class="heading-line | mt-l-xl">Tags</h3>
+    <div class="taglist | mt-s-m cluster">
+      {% for tag in collections.tagList %}
+        <a href="/tags/{{ tag }}" class="button" style="font-size: var(--size-step-min-1)"> #{{ tag }} </a>
+      {% endfor %}
+    </div>
+    </section>
 </div>

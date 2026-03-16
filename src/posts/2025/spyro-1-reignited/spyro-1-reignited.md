@@ -4,7 +4,7 @@ description: "I wish, I wish, with all my heart, to fly with dragons in a world 
 date: 2025-05-02
 lastEdit: 2026-01-31
 redirectFrom: ['/blog/spyro1r/']
-tags: ['games', 'review']
+tags: ['games', 'review', 'remakes', 'spyro']
 image: '/posts/2025/spyro-1-reignited/sunny_flight_s1r.jpg'
 alt: 'Spyro the Dragon overlooking a pond with a chest and several colored crystals in Sunny Flight.'
 credit: 'DarkSpyro.net'

@@ -75,6 +75,12 @@
   --button-color: color-mix(in oklab, var(--color-tertiary) 10%, var(--color-dark));
 }
 
+.button[data-button-variant='quaternary'] {
+  --button-bg: var(--color-quaternary);
+  --button-color: var(--color-dark);
+  --button-color: color-mix(in oklab, var(--color-quaternary) 10%, var(--color-dark));
+}
+
 .button[data-ghost-button] {
   --button-bg: var(--color-bg);
   --button-border-color: var(--color-text);

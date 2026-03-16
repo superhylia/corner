@@ -12,3 +12,12 @@ order: 2
 bskyurl: 
 draft: true
 ---
+
+- Famicom designed for parity with arcade Donkey Kong
+- compare between Arcade Archives(?), Famicom, and Original Edition
+
+# Sources
+- https://web.archive.org/web/20210505135528/https://www.usgamer.net/articles/nes-creator-masayuki-uemura-on-the-birth-of-nintendos-first-console
+- https://www.nintendo.com/en-gb/Iwata-Asks/Super-Mario-Bros-25th-Anniversary/Vol-2-NES-Mario/2-Playing-Donkey-Kong-at-Home/2-Playing-Donkey-Kong-at-Home-216037.html
+- https://web.archive.org/web/20220425234630/https://www.nintendo.com/nes-classic/donkey-kong-developer-interview/
+- 

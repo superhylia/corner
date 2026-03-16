@@ -64,6 +64,20 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.rss);
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
 
+  eleventyConfig.addPlugin(plugins.embedEverything, {
+    use: ['bluesky', 'instagram', 'twitter', 'spotify', 'twitch'],
+    twitch: {
+      parent: "superhylia.dev"
+    },
+    mastodon: {
+      server: 'mastodon.social'
+    },
+    twitter: {
+      cacheText: true,
+      theme: 'dark',
+    }
+  });
+
   eleventyConfig.addPlugin(plugins.webc, {
     components: ['./src/_includes/webc/**/*.webc'],
     useTransform: true
@@ -76,6 +90,9 @@ export default async function (eleventyConfig) {
       duration: "1d",
       directory: ".cache", // This folder will store the "memory" of processed images
       removeDotDot: false,
+    },
+    sharpOptions: {
+		  animated: true,
     },
     htmlOptions: {
       imgAttributes: {

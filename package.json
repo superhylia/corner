@@ -36,7 +36,10 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
     "@11ty/is-land": "^4.0.1",
+    "@mdit/plugin-alert": "^0.23.1",
+    "@mdit/plugin-spoiler": "^0.23.1",
     "@myxotod/eleventy-plugin-readingtime": "^2.0.0",
+    "eleventy-plugin-embed-everything": "^1.21.1",
     "lite-youtube-embed": "^0.3.4",
     "tailwindcss": "^3.4.17"
   },

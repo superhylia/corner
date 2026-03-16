@@ -28,6 +28,7 @@ redirectFrom: ['/feed/atom/']
       <content type="html">
 				{{ post.content | renderTransforms(post.data.page, meta.url) }}
  			</content>
+      <summary> {%- if post.data.description -%} {{ post.data.description | safe }} {%- else -%} {{ post.data.title }} {%- endif -%} </summary>
     </entry>
   {%- endfor -%}
 </feed>

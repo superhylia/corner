@@ -23,16 +23,8 @@ export default {
       url: '/uses/'
     }, 
     {
-      text: '/imprint',
-      url: '/imprint/'
-    },
-    {
-      text: '/privacy',
-      url: '/privacy/'
-    },
-    {
-      text: '/accessibility',
-      url: '/accessibility/'
+      text: '/slashes',
+      url: '/slashes/'
     }
   ]
 };

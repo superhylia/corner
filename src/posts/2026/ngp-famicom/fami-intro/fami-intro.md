@@ -44,7 +44,7 @@ This isn't an essay series about remakes per se, but their implication and value
 {% image "/posts/2026/ngp-famicom/fami-intro/intro.png", "An illustrated diagram of the Family Computer is behind text introducing essay series New Gaze+: The Weight of Age by superhylia.dev.", null, "My own graphic design." %}
 
 ## Outline
-All 30 curated titles will feature in one of four sections, each aiming to provide a specific research question that each game is best fit to respond to. These essays are more than just "reviews" or "retrospectives" and plan to address the historical context, development process, and core design of each title so a throughline of progress can be made, as challenging as that may be.
+All 30 curated titles spanning 10 years of the Famicom's lifespan from 1983 to 1993 will feature in one of four sections, each aiming to provide a specific research question that each game is best fit to respond to. These essays are more than just "reviews" or "retrospectives" and plan to address the historical context, development process, and core design of each title so a throughline of progress can be made, as challenging as that may be.
 
 ---
 
@@ -54,8 +54,8 @@ All 30 curated titles will feature in one of four sections, each aiming to provi
 * *Super Mario Bros.*
 * *Gradius*
 * *The Mysterious Murasame Castle* :floppy_disk:
-* *Ninja Gaiden*
 * *Dragon Quest*
+* *Ninja Gaiden*
 
 **B.** It's Dangerous to Go Alone: *How did the Famicom's technical limitations and expansions restrain and seed artistry amongst the libraries most influential through the lens of paratext games of this era depended on?*
 * *The Legend of Zelda* :floppy_disk:
@@ -80,7 +80,7 @@ All 30 curated titles will feature in one of four sections, each aiming to provi
 * *Final Fantasy III* ([ChaosRush's English translation](https://www.romhacking.net/translations/4760/))
 * *Punch-Out!!*
 * *Disney's DuckTales*
-* *Tetris* (both Tengen/Nintendo)
+* *Tetris* (all 3: Bullet-Proof Software/Tengen/Nintendo)
 * *Mega Man 4*
 * *Mr. Gimmick*
 * *Kirby's Adventure*

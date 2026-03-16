@@ -9,7 +9,7 @@
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
   </{{ headingLevel }}>
   <span slot="date"> {% include "partials/date.njk" %} </span>
-  <p slot="content">{{ item.data.description }}</p>
+  <div slot="content" webc:nokeep>{{ item.data.description | markdownFormat | safe }}</div>
 </custom-card>
 
 {% css "local" %}

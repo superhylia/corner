@@ -1,0 +1,48 @@
+@import 'base/fonts.css';
+
+p {
+    margin: 0.5em 0;
+}
+
+h2, h3 {
+    margin: 1em 0 0 0;
+}
+
+.rss-feed {
+    padding: 10px 20px;
+    background-color: #12131b;
+    color: #f0f0f3;
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: Atkinson Hyperlegible Next;
+    font-weight: normal;
+}
+
+.nav__notice {
+    background-color: #dd3059;
+    color: #f0f0f3;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #dbdbdb;
+}
+
+a:hover {
+    color: #f0f0f3;
+}
+
+.nav__notice a {
+    color: #f0f0f3;
+    font-weight: bold;
+}
+
+.summary {
+    font-style: italic;
+}
+
+code {
+    font-size: 1.2em;
+    word-break: break-all;
+}

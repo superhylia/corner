@@ -23,7 +23,7 @@ schema: BlogPosting
     <div class="meta | cluster gutter-xs-s">
       <!-- draft status -->
       {%- if draft -%}
-        <span class="button" data-small-button data-button-variant="tertiary">draft</span>
+        <span class="button" data-small-button data-button-variant="tertiary"> {% svg "misc/drafts" %} draft</span>
       {%- endif %}
       <!-- date -->
       {% set definedDate = date %} {% include "partials/date.njk" %}•
@@ -34,10 +34,11 @@ schema: BlogPosting
     {{ content | safe }}
     {% include 'partials/edit-on.njk' %}
     <hr>
+    {% include 'partials/social-share-footer.njk' %}
     <div class="tags | cluster gutter-xs-s" style="margin-block-end: var(--flow-space, 1em);">
     {% if tags.length > 1 %}
       <!-- tags -->
-      <span class="tags-label" style="font-size: var(--size-step-min-1);"> <u>Tags:</u></span> {% for tag in tags %}{% if tag != "posts" %}
+      <span class="tags-label" style="font-size: var(--size-step-min-1);"> {% svg "misc/bookmark" %} Tags:</span> {% for tag in tags %}{% if tag != "posts" %}
         <a class="button" href="/tags/{{ tag | slugify }}/" data-small-button> #{{ tag }} </a>
       {% endif %}
       {% endfor %}
@@ -49,15 +50,17 @@ schema: BlogPosting
 {% if series %}
   <div class="series | section">
       <section class="section__inner wrapper flow prose" style="padding-block-start: var(--space-l); --spot-color: {{ seriesMeta[series].accentColor | safe }}; color: {{ seriesMeta[series].headerTextColor | safe}};">
-          {% include 'partials/series-nav.njk' %}
+        {% svg "misc/stack" %}
+        {% include 'partials/series-nav.njk' %}
       </section>
     </div>
 {% endif%}
 
 {% if bskyurl %}
-  <div class="series | section">
+  <div class="comments | section">
       <section class="section__inner wrapper flow prose" style="padding-block-start: var(--space-l); --spot-color: --color-bg; ">
-          {% include 'partials/bsky.njk' %}
+        {% svg "misc/reply" %}
+        {% include 'partials/bsky.njk' %}
       </section>
     </div>
 {% endif%}

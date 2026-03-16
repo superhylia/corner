@@ -1,4 +1,5 @@
 const shareMenu = document.querySelector('[data-module="share-menu"]');
+const shareFooterMenu = document.querySelector('[data-module="share-footer-menu"]');
 
 if (shareMenu) {
   const trigger = shareMenu.querySelector('[data-share-trigger]');
@@ -33,5 +34,21 @@ if (shareMenu) {
         url: webShareBtn.dataset.url
       }).catch(console.error);
     });
+  }
+}
+
+if (shareFooterMenu) {
+  const webShareFooterBtn = shareFooterMenu.querySelector('[data-web-share-trigger]');
+
+   if (webShareFooterBtn && navigator.share) {
+    webShareFooterBtn.addEventListener('click', () => {
+      navigator.share({
+        title: webShareFooterBtn.dataset.title,
+        url: webShareFooterBtn.dataset.url
+      }).catch(console.error);
+    });
+  } else if (webShareFooterBtn) {
+    // Hide the button if the browser doesn't support Web Share (like most desktops)
+    webShareFooterBtn.hidden = true;
   }
 }

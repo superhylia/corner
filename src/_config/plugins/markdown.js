@@ -9,6 +9,8 @@ import {full as markdownItEmoji} from 'markdown-it-emoji';
 import markdownItFootnote from 'markdown-it-footnote';
 import markdownitMark from 'markdown-it-mark';
 import markdownitAbbr from 'markdown-it-abbr';
+import { spoiler as markdownItSpoiler } from '@mdit/plugin-spoiler';
+import { alert as markdownItAlert } from '@mdit/plugin-alert';
 import {slugifyString} from '../filters/slugify.js';
 
 export const markdownLib = markdownIt({
@@ -56,6 +58,8 @@ export const markdownLib = markdownIt({
   ])
   .use(markdownItEmoji)
   .use(markdownItFootnote)
+  .use(markdownItAlert)
+  .use(markdownItSpoiler)
   .use(markdownitMark)
   .use(markdownitAbbr)
   .use(md => {
