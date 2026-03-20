@@ -91,9 +91,9 @@ export default async function (eleventyConfig) {
       directory: ".cache", // This folder will store the "memory" of processed images
       removeDotDot: false,
     },
-    sharpOptions: {
-		  animated: true,
-    },
+    // sharpOptions: {
+		//   animated: true,
+    // },
     htmlOptions: {
       imgAttributes: {
         loading: 'lazy',
