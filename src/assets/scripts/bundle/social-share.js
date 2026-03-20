@@ -47,8 +47,5 @@ if (shareFooterMenu) {
         url: webShareFooterBtn.dataset.url
       }).catch(console.error);
     });
-  } else if (webShareFooterBtn) {
-    // Hide the button if the browser doesn't support Web Share (like most desktops)
-    webShareFooterBtn.hidden = true;
   }
 }

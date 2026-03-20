@@ -15,7 +15,7 @@
       <a href="mailto:?subject={{ title | urlencode }}&body={{ title | urlencode }}%20-%20{{ description }}%0A%0ARead%20at%20{{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
         Email
       </a>
-      <button data-footer-web-share-trigger data-title="{{ title }}" data-url="{{ page.url | url | absoluteUrl(meta.url) }}">
+      {# <button data-footer-web-share-trigger data-title="{{ title }}" data-url="{{ page.url | url | absoluteUrl(meta.url) }}">
         More options...
-        </button>
+        </button> #}
 </div>
