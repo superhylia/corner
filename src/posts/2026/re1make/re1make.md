@@ -8,7 +8,6 @@ image: '/posts/2026/re1make/re1_ps3_crop.jpg'
 alt: 'A zombie (the 1st encountered in the game Resident Evil) stands slightly distorted in front of a raw black background, turning its eye toward the viewer.'
 credit: 'Capcom for the biohazard HD Remaster Collector''s Package.'
 bskyurl: 
-draft: true
 ---
 Recently, I've been on a pretty big [personal project to examine 30 NES/Famicom games](https://superhylia.dev/blog/introducing-new-gaze-the-nes/famicom-and-the-weight-of-age/) to try to see if they hold up today and whether that exploration can bring up some conversations about how we value games as art, if remakes or future successors devalue their 8-bit predecessors, and our willingness to appreciate age. One of the games I'm planning to cover as a part of that series is Sweet Home, a 1989 Famicom adaptation of the Kiyoshi Kurosawa and Juzo Itami film that laid the groundwork for the survival horror genre, including inspiring the very game I talk about today. While my playthrough of Resident Evil (2002 Remake) wasn't necessarily inspired by this endeavor, I started it months ago and have been playing on and off since; perhaps I've finished it just in time for it to resonate with me most. Like its 2004 Metroid counterpart, this game's reputation as a remake precedes it and, for my generation sans influence, has arguably superseded the original in all forms: in canonicity, in conversation, in availability, and most relevant for us, in recommendation.
 
