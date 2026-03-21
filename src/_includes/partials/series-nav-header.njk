@@ -1,0 +1,11 @@
+{% set currentSeries = collections.series[series] %}
+{% set currentIndex = 0 %}
+{% set seriesName = seriesPosts[0].data.series %}
+{% set meta = seriesMeta[seriesName] %}
+
+{# Find where we are in the loop #}
+{% for post in currentSeries %}
+  {% if post.url == page.url %}{% set currentIndex = loop.index0 %}{% endif %}
+{% endfor %}
+
+<a class="button" data-small-button style="--button-bg: {{ seriesMeta[series].accentColor | safe }}; width: 100%" href="/series/{{ series | slugify }}"> {% svg "misc/stack" %} #{{ currentIndex + 1 }}/{{ currentSeries.length }} of "{{ series }}" series</a>

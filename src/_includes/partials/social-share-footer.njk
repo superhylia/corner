@@ -1,5 +1,5 @@
 <div class="share | cluster gutter-xs-s" data-module="share-footer-menu" style="font-size: var(--size-step-min-1);">
-      <span class="share-label" style="font-size: var(--size-step-min-1);"> {% svg "misc/share" %} Share this post via:</span>
+      <span class="share-label" style="font-size: var(--size-step-min-1);"> {% svg "misc/share" %} Share this post via:</span>      
       <a href="https://bsky.app/intent/compose?text={{ title | urlencode }}%20{{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
         BlueSky
       </a>
@@ -15,7 +15,11 @@
       <a href="mailto:?subject={{ title | urlencode }}&body={{ title | urlencode }}%20-%20{{ description }}%0A%0ARead%20at%20{{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
         Email
       </a>
-      {# <button data-footer-web-share-trigger data-title="{{ title }}" data-url="{{ page.url | url | absoluteUrl(meta.url) }}">
-        More options...
-        </button> #}
+      <span>
+        <button data-footer-share-trigger data-title="{{ title }}" data-url="{{ page.url | url | absoluteUrl(meta.url) }}">
+          <u>More options...</u>
+        </button>
+      </span>
 </div>
+
+<script> {% include "scripts/social-share.js" %} </script>

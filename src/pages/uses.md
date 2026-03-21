@@ -4,7 +4,6 @@ permalink: /uses/index.html
 description: 'My /uses page for my setup and software.'
 layout: page
 image: '/assets/images/pages/uses/setup-feb28.jpg'
-ogImage: '/assets/images/pages/uses/setup-feb28.jpg'
 alt: 'Claire overlooks a beautiful mountainscape: an aurora of blue and purple light the sky.'
 credit: An image of my setup from February 2026.
 lastEdit: 2025-02-28

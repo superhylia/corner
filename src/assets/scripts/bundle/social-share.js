@@ -3,48 +3,36 @@ const shareFooterMenu = document.querySelector('[data-module="share-footer-menu"
 
 if (shareMenu) {
   const trigger = shareMenu.querySelector('[data-share-trigger]');
-  const list = shareMenu.querySelector('#share-list');
-  const copyBtn = shareMenu.querySelector('[data-copy-link]');
-  const webShareItem = shareMenu.querySelector('[data-web-share-item]');
-  const webShareBtn = shareMenu.querySelector('[data-web-share-trigger]');
-
-  // Toggle Dropdown
-  trigger.addEventListener('click', () => {
-    const expanded = trigger.getAttribute('aria-expanded') === 'true';
-    trigger.setAttribute('aria-expanded', !expanded);
-    list.hidden = expanded;
-  });
-
-  // Copy Link Logic
-  copyBtn.addEventListener('click', () => {
-    const url = copyBtn.dataset.copyLink;
-    navigator.clipboard.writeText(url).then(() => {
-      const originalText = copyBtn.innerText;
-      copyBtn.innerText = 'Copied! Go paste it.';
-      setTimeout(() => copyBtn.innerText = originalText, 2000);
-    });
-  });
 
   // Web Share API Logic
   if (navigator.share) {
-    webShareItem.hidden = false;
-    webShareBtn.addEventListener('click', () => {
+    trigger.addEventListener('click', () => {
       navigator.share({
-        title: webShareBtn.dataset.title,
-        url: webShareBtn.dataset.url
+        title: trigger.dataset.title,
+        url: trigger.dataset.url
       }).catch(console.error);
+    });
+  }
+
+  else {
+    trigger.addEventListener('click', () => {
+      const url = trigger.dataset.url;
+      navigator.clipboard.writeText(url).then(() => {
+        const originalText = trigger.innerText;
+        trigger.innerText = 'Copied! Go paste it.';
+        setTimeout(() => trigger.innerText = originalText, 2000);
+      });
     });
   }
 }
 
 if (shareFooterMenu) {
-  const webShareFooterBtn = shareFooterMenu.querySelector('[data-web-share-trigger]');
-
-   if (webShareFooterBtn && navigator.share) {
-    webShareFooterBtn.addEventListener('click', () => {
+  const trigger = shareFooterMenu.querySelector('[data-footer-share-trigger]');
+  if (navigator.share) {
+    trigger.addEventListener('click', () => {
       navigator.share({
-        title: webShareFooterBtn.dataset.title,
-        url: webShareFooterBtn.dataset.url
+        title: trigger.dataset.title,
+        url: trigger.dataset.url
       }).catch(console.error);
     });
   }

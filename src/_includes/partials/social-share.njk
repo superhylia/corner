@@ -1,46 +1,8 @@
 
-<div class="share-dropdown" data-module="share-menu" style="margin-inline-start: auto;">
-  <button class="button" aria-expanded="false" aria-controls="share-list" data-share-trigger data-small-button>
+<div class="share-button" data-module="share-menu" style="margin-inline-start: auto;">
+  <button class="button" data-share-trigger data-title="{{ title }}" data-url="{{ page.url | url | absoluteUrl(meta.url) }}" data-small-button>
     {% svg "misc/share" %}
   </button>
-  
-  <ul id="share-list" class="share-list" hidden>
-    <li>
-      <button data-copy-link="{{ page.url | url | absoluteUrl(meta.url) }}">
-        Copy Link
-      </button>
-    </li>
-    <li>
-      <a href="https://bsky.app/intent/compose?text={{ title | urlencode }}%20{{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
-        Share on BlueSky
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
-        Share on Twitter
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
-        Share on LinkedIn
-      </a>
-    </li>
-    <li>
-      <a href="https://share.joinmastodon.org/#text={{ title | urlencode }}%0A%0ARead%20at%20{{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
-        Share on Mastodon
-      </a>
-    </li>
-    <li>
-      <a href="mailto:?subject={{ title | urlencode }}&body={{ title | urlencode }}%20-%20{{ description }}%0A%0ARead%20at%20{{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
-        Send via email
-      </a>
-    </li>
-    <li data-web-share-item hidden>
-      <button data-web-share-trigger data-title="{{ title }}" data-url="{{ page.url | url | absoluteUrl(meta.url) }}">
-        More options...
-      </button>
-    </li>
-  </ul>
-</div>
+</div> 
 
 <script> {% include "scripts/social-share.js" %} </script>
