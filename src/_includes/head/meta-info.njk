@@ -50,7 +50,7 @@
 />
 <meta
   property="og:image"
-  content="{%- if image -%}
+  content="{%- if ogImage -%}
     {{- meta.url -}}{{- ogImage -}}
   {%- elif title -%}
     {{- meta.url -}}/assets/og-images/{{ title | slugify }}-preview.jpeg
