@@ -50,7 +50,7 @@
 />
 <meta
   property="og:image"
-  content="{%- if image -%}
+  content="{%- if layout == 'post' or layout == 'page' -%}
     {{- meta.url -}}{{- image -}}
   {%- elif ogImage -%}
     {{- meta.url -}}{{- ogImage -}}
@@ -60,7 +60,7 @@
 />
 <meta
   property="og:image:alt"
-  content="{%- if alt -%}
+  content="{%- if layout == 'post' or layout == 'page' -%}
     {{- alt -}}
   {%- elif title -%}
     {{- title -}}
