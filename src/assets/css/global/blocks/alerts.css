@@ -1,0 +1,77 @@
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-text);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-text);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-secondary);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-secondary);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-primary);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-primary);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-quaternary);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-quaternary);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-tertiary);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-tertiary);
+}
+
+.markdown-alert.markdown-alert-lightspoiler {
+  border-left-color: var(--color-tertiary);
+}
+
+.markdown-alert.markdown-alert-lightspoiler .markdown-alert-title {
+  color: var(--color-tertiary);
+}

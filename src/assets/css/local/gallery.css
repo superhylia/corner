@@ -7,6 +7,16 @@
 .gallery dialog + button {
   all: unset;
   cursor: pointer;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+.gallery dialog + button :is(figure, div, picture, [slot="image"]){
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .gallery dialog + button:focus-visible {
@@ -23,7 +33,14 @@
 .gallery dialog + button img {
   aspect-ratio: 1;
   object-fit: cover;
+  width: 100%;
+  display: block;
 }
+
+.gallery dialog + button figcaption {
+  display: none;
+}
+
 
 /* Don't indicate interactivity without JS */
 is-land:not(:defined) .gallery dialog + button {

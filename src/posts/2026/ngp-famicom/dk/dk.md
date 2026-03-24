@@ -16,6 +16,29 @@ draft: true
 - Famicom designed for parity with arcade Donkey Kong
 - compare between Arcade Archives(?), Famicom, and Original Edition
 
+{% svg "misc/warning" %}
+{% svg "misc/caution" %}
+{% svg "misc/warning2" %}
+{% svg "misc/nuclear" %}
+{% svg "misc/remind" %}
+{% svg "misc/pin" %}
+{% svg "misc/info" %}
+
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
 # Sources
 - https://web.archive.org/web/20210505135528/https://www.usgamer.net/articles/nes-creator-masayuki-uemura-on-the-birth-of-nintendos-first-console
 - https://www.nintendo.com/en-gb/Iwata-Asks/Super-Mario-Bros-25th-Anniversary/Vol-2-NES-Mario/2-Playing-Donkey-Kong-at-Home/2-Playing-Donkey-Kong-at-Home-216037.html

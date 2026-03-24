@@ -34,3 +34,7 @@
 .post .meta {
   font-size: var(--size-step-min-1);
 }
+
+.post .toc-list {
+    margin-block-start: 0em;
+}

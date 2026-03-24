@@ -33,7 +33,7 @@ schema: BlogPosting
 
     {% if series %}
       <div class="seriestop | cluster gutter-xs-s">
-        <a class="button" data-small-button style="--button-bg: {{ seriesMeta[series].accentColor | safe }}; --button-color: {{ seriesMeta[series].headerTextColor | safe }}; width: 100%" href="/series/{{ series | slugify }}"> {% svg "misc/stack" %} Part of "{{ series }}" series</a>
+        <a class="button" data-small-button style="--button-bg: {{ seriesMeta[series].accentColor | safe }}; --button-color: {{ seriesMeta[series].headerTextColor | safe }}; width: 100%" href="/series/{{ series | slugify }}"> {% svg "misc/stack" %} Part of the "{{ series }}" series</a>
       </div>
     {% endif %}
 
