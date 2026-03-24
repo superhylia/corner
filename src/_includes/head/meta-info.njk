@@ -60,10 +60,10 @@
 />
 <meta
   property="og:image:alt"
-  content="{%- if layout == 'post' or layout == 'page' -%}
-    {{- title -}}
+  content="{%- if alt -%}
+    {{- alt -}}
   {%- else -%}
-    {{- meta.opengraph_default_alt -}}
+    {{- title -}}
   {%- endif -%}"
 />
 <!-- <meta property="og:image:width" content="1200" />

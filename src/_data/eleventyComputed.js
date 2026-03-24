@@ -6,6 +6,7 @@ const processOGImage = async (image) => {
   let imageObj = await Image(image, {
     outputDir: "dist/assets/og-images/", // set the output directory
     formats: ["jpeg"], // choose which formats to output
+    widths: [1200], //specific width
     // add any other eleventy image options here sizing, etc 
     // see https://www.11ty.dev/docs/plugins/image/
   });
