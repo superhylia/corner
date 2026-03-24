@@ -5,13 +5,14 @@ background: '#12131b'
 text: '#f0f0f3'
 siteUrl: 'superhylia.dev'
 pagination:
-  data: collections.allPosts
+  data: collections.showInSitemap
   size: 1
   alias: post
 permalink: '/assets/og-images/{{ post.data.title | slugify }}-preview.svg'
 eleventyExcludeFromCollections: true
 ---
-
+{% set titleInLines = post.data.title | splitlines(22) %}
+{% set numberOfLines = titleInLines.length %}
 <svg
   width="1200"
   height="630"
@@ -20,8 +21,7 @@ eleventyExcludeFromCollections: true
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
 >
-  {% set titleInLines = post.data.title | splitlines(22) %}
-  {% set numberOfLines = titleInLines.length %}
+
   {% if numberOfLines == 1 %}
     {% set verticalStartingPoint = 340 %}
     {% elseif numberOfLines == 2 %}

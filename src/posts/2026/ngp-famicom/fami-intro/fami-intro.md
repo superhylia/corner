@@ -2,7 +2,7 @@
 title: 'Introducing New Gaze+: The NES/Famicom & The Weight of Age'
 description: "A 30 game adventure to see if treasure is still in this castle."
 date: 2026-03-01
-redirectFrom: ['/blog/ngp-famicom-intro/']
+redirectFrom: ['/blog/introducing-new-gaze-the-nes/famicom-and-the-weight-of-age/']
 tags: ['new-gaze-plus', 'famicom', 'weight-of-age', 'games', 'research', 'intro']
 image: '/posts/2026/ngp-famicom/fami-intro/intro.png' 
 alt: 'An illustrated diagram of the Family Computer is behind text introducing essay series New Gaze+: The Weight of Age by superhylia.dev.'
