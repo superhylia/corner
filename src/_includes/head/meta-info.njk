@@ -50,11 +50,11 @@
 />
 <meta
   property="og:image"
-  content=" {%- if ogImage -%}
+  content="{%- if ogImage -%}
     {{- meta.url -}}{{- ogImage -}}
   {%- elif image -%}
     {{- meta.url -}}{{- image -}}
-  {%- elif not excludeFromSitemap and title -%}
+  {%- elif title -%}
     {{- meta.url -}}/assets/og-images/{{ title | slugify }}-preview.jpeg
   {%- else -%}
     {{- meta.url -}}{{- meta.opengraph_default -}}

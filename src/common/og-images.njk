@@ -8,8 +8,6 @@ pagination:
   data: collections.showInSitemap
   size: 1
   alias: post
-  before: |
-    (data) => data.filter(post => !post.data.image)
 permalink: '/assets/og-images/{{ post.data.title | slugify }}-preview.svg'
 eleventyExcludeFromCollections: true
 ---
