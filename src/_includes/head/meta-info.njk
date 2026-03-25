@@ -51,7 +51,7 @@
 <meta
   property="og:image"
   content=" {%- if ogImage -%}
-    {{- meta.url -}}{{- image -}}
+    {{- meta.url -}}{{- ogImage -}}
   {%- elif image -%}
     {{- meta.url -}}{{- image -}}
   {%- elif not excludeFromSitemap and title -%}
