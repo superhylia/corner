@@ -1,7 +1,7 @@
 {% if lastEdit %}
   {% set definedDate = lastEdit %}
   <p class="text-step-min-1">  
-    {% svg "misc/snooze-month" %} Last edited on {% include "partials/date.njk" %}
+    {% svg "misc/snooze-month" %} Last edited on {% include "partials/date.njk" %} {% if lastEditReason %} {{ lastEditReason }} {% endif %}
   </p> 
   {% endif %}
   

@@ -7,6 +7,7 @@ import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
 
 // other
 import embedEverything from 'eleventy-plugin-embed-everything';
+import EleventyPluginOgImage from 'eleventy-plugin-og-image';
 
 // custom
 import {markdownLib} from './plugins/markdown.js';
@@ -25,4 +26,5 @@ export default {
   drafts,
   htmlConfig,
   embedEverything,
+  EleventyPluginOgImage,
 };

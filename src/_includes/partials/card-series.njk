@@ -20,7 +20,7 @@
     </div>
   {% endif %}
   <div slot="content" webc:nokeep>{{ item.data.description | markdownFormat | safe }}</div>
-  <footer slot="footer"><span class="button" data-small-button data-button-variant='primary'>#{{ item.data.order }}</span></footer>
+  <footer slot="footer"><span class="button" data-small-button style="--button-bg: {{ seriesMeta[item.data.series].accentColor | safe }}; --button-color: {{ seriesMeta[item.data.series].headerTextColor | safe }}">#{{ item.data.order }}</span></footer>
 </custom-card>
 
 {% css "local" %}

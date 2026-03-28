@@ -64,6 +64,25 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.rss);
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
 
+  eleventyConfig.addPlugin(plugins.EleventyPluginOgImage, {
+    satoriOptions: {
+      fonts: [
+        {
+          name: 'Instrument Sans',
+          data: fs.readFileSync('./src/assets/fonts/instrument_sans/InstrumentSans-Bold.ttf'),
+          weight: 900,
+          style: 'normal',
+        },
+        {
+          name: 'Atkinson Hyperlegible Next',
+          data: fs.readFileSync('./src/assets/fonts/atkinson-hyperlegible-next/AtkinsonHyperlegibleNext-Regular.ttf'),
+          weight: 400,
+          style: 'normal',
+        },
+      ],
+    },
+  })
+
   eleventyConfig.addPlugin(plugins.embedEverything, {
     use: ['bluesky', 'instagram', 'twitter', 'spotify', 'twitch'],
     twitch: {
@@ -129,9 +148,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   // --------------------- Events: after build
-  if (process.env.ELEVENTY_RUN_MODE === 'serve') {
-    eleventyConfig.on('eleventy.after', events.svgToJpeg);
-  }
+  // if (process.env.ELEVENTY_RUN_MODE === 'serve') {
+  //   eleventyConfig.on('eleventy.after', events.svgToJpeg);
+  // }
 
   // --------------------- Passthrough File Copy
 

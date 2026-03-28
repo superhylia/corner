@@ -20,6 +20,9 @@
     </div>
   {% endif %}
   <div slot="content" webc:nokeep>{{ item.data.description | markdownFormat | safe }}</div>
+  {% if item.data.series %}
+       <footer slot="footer"><span class="button" data-small-button style="--button-bg: {{ seriesMeta[item.data.series].accentColor | safe }}; --button-color: {{ seriesMeta[item.data.series].headerTextColor | safe }}; width: 100%" href="/series/{{ item.data.series | slugify }}"> {% svg "misc/stack" %} Part of the "{{ item.data.series }}" series</span></footer>
+  {% endif %}
 </custom-card>
 
 {% css "local" %}

@@ -61,7 +61,7 @@ All 30 curated titles spanning 10 years of the Famicom's lifespan from 1983 to 1
 * *The Legend of Zelda* :floppy_disk:
 * *Metroid* :floppy_disk:
 * *Super Mario Bros. 2/USA*
-* *Famicom Detective Club Part II: The Girl Who Stands Behind* ([Demiforce & Tomato's SFC English translation](https://www.romhacking.net/translations/850/)[^FDC]) :floppy_disk:
+* *Famicom Detective Club Part II: The Girl Who Stands Behind* ([Demiforce & Tomato's SFC English translation](https://www.romhacking.net/translations/850/)) :floppy_disk:
 * *EarthBound Beginnings/Mother*
 * *Sweet Home*
 * *Fire Emblem: Shadow Dragon and the Blade of Light* (NSW release)
@@ -91,7 +91,11 @@ All 30 curated titles spanning 10 years of the Famicom's lifespan from 1983 to 1
 * "The Games That Got Cut from New Gaze+: The Weight of Age"
 * "A Short-ish Op-Ed on Save States, Rewind, Getting Good, and Why Fun Matters"
 
-**Why isn't R.O.B featured?** As a pretty big part of the North American launch of the system, being cited as the reason retailers and families alike bought into the NES, covering Robotic Operating Buddy was unfortunately not really feasible for my current circumstances. It being reliant on physical optical flashes from a CRT, the same technology that allows the Zapper to work, makes it impossible to emulate without a real toy or a CRT which isn't something I'm able to do. I do plan to cover the Zapper and other launch accessories for the NES during the *Duck Hunt* discussion, including R.O.B from a historical angle, but I don't feel comfortable discussing the experience of using one if I don't have it to test. 
+> [!CAUTION] Why the Super Famicom version of Famicom Detective Club?
+> Unfortunately, as the Famicom Disk System version of *Part I: The Missing Heir* and *Part II: The Girl Who Stands Behind* are yet to receive a fan translation, my only recourse was either the recent Switch remake of both games or the Super Famicom remake of *The Girl Who Stands Behind*, which is the version I have chosen to discuss. I'll do what I can to compare and contrast with what I can find on the original and the Super Famicom version has a well-lauded translation and a reputation for accuracy to the aesthetic and music of the FDS game.
+
+> [!CAUTION] Why isn't R.O.B. featured?
+> As a pretty big part of the North American launch of the system, being cited as the reason retailers and families alike bought into the NES, covering Robotic Operating Buddy was unfortunately not really feasible for my current circumstances. It being reliant on physical optical flashes from a CRT, the same technology that allows the Zapper to work, makes it impossible to emulate without a real toy or a CRT which isn't something I'm able to do. I do plan to cover the Zapper and other launch accessories for the NES during the *Duck Hunt* discussion, including R.O.B from a historical angle, but I don't feel comfortable discussing the experience of using one if I don't have it to test. 
 
 ## Cadence
 My plan is to hopefully get through these once a week, but I can pretty easily see it slowing down when covering the RPGs. You can keep up with progress via [BlueSky](https://bsky.app/profile/superhylia.dev), following the sites [RSS feed](http://localhost:8080/feed.xml), or by keeping an eye on the series page you can see at the bottom of the page. It'll automatically update with the latest entries in the series and serve as navigation back and forth.
@@ -100,4 +104,3 @@ My plan is to hopefully get through these once a week, but I can pretty easily s
 [^2]: By my own definitions, search-action games (used in Japanese promotion of games like *Metroid Dread* or *Touhou Luna Nights* to describe "Metroidvanias") are games that feature **interconnected maps with gated progression**, with Metroidvanias being a *sub-genre* that **gates progression specifically by unlockable abilities found by exploring**. This distinction will be covered more in the discussion of *Metroid*, *Sweet Home*, and *Castlevania II: Simon's Quest*, during this series and is probably worth a whole other essay on its own to discuss why there's a separation, but that's the gist.
 [^SM]: *Super Metroid*. (1994)
 [^DKOE]: A limited release 2010 version of the NES port made to celebrate the 25th anniversary of *Super Mario Bros.*. It features restored animation 50m or the "cement factory" stage the original port cut due to storage limitations for closer arcade accuracy. Both versions of the game will be discussed.
-[^FDC]: Unfortunately, as the Famicom Disk System version of *Part I: The Missing Heir* and *Part II: The Girl Who Stands Behind* are yet to receive a fan translation, my only recourse was either the recent Switch remake of both games or the Super Famicom remake of *The Girl Who Stands Behind*, which is the version I have chosen to discuss. I'll do what I can to compare and contrast with what I can find on the original and the Super Famicom version has a well-lauded translation and a reputation for accuracy to the aesthetic and music of the FDS game.

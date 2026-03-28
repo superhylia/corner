@@ -1,0 +1,101 @@
+---
+# No front matter needed — data comes from the shortcode call
+---
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .root {
+    width: 1200px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: {{ ogBackground or '#12131b' }};
+    position: relative;
+    overflow: hidden;
+  }
+  .star {
+    position: absolute;
+    top: -150px;
+    left: 0;
+    width: 1096px;
+    height: 1056px;
+    opacity: 1;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 0 160px;
+    gap: 0;
+  }
+  .date {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: {{ ogText or '#f0f0f3' }};
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+  .title {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: {{ ogText or '#f0f0f3' }};
+    letter-spacing: -3px;
+    line-height: 1.05;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 160px 50px;
+  }
+  .site-url {
+    font-family: 'Atkinson Hyperlegible Next', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: {{ ogText or '#f0f0f3' }};
+    letter-spacing: -0.5px;
+  }
+  .site-name {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: {{ ogText or '#f0f0f3' }};
+    letter-spacing: -0.5px;
+  }
+</style>
+
+<div class="root">
+
+  <!-- Star graphic embedded as inline SVG -->
+  <svg class="star" viewBox="0 0 1096 1056" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M235.048 2.31017L565.808 192.455L910.285 28.026L831.43 401.258L1094.33 677.671L714.848 718.199L533.127 1053.8L377.382 705.568L2.18875 636.646L285.207 380.519L235.048 2.31017Z"
+      stroke="{{ ogText or '#f0f0f3' }}"
+      stroke-opacity="0.1"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+
+  <div class="content">
+    {% if post.date %}
+    <span class="date">{{ post.date | formatDate('DD / MM / YYYY') }}</span>
+    {% endif %}
+    <span class="title">{{ title }}</span>
+  </div>
+
+  <div class="footer">
+    <span class="site-url">{{ siteUrl }}</span>
+    <span class="site-name">{{ meta.siteName | upper }}</span>
+  </div>
+
+</div>

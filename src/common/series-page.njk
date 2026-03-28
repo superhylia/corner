@@ -8,6 +8,7 @@ pagination:
 permalink: /series/{{ seriesPosts[0].data.series | slugify }}/
 eleventyComputed:
   title: '{{ seriesPosts[0].data.series }}'
+  image: '{{ seriesMeta[seriesPosts[0].data.series].image }}'
 ---
 
 <!-- set collection to paginate -->

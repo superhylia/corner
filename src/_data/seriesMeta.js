@@ -4,11 +4,13 @@ export default {
         accentColor: "#711521",
         headerTextColor: "#f0ecdb",
         headerLogo: "/assets/images/series/ngptwoa.png",
-        headerLogoAlt: "alt"
+        headerLogoAlt: "alt",
+        image: "/posts/2026/ngp-famicom/fami-intro/intro.png",
     },
     "All Eyes on Me Game Jam": {
         description: "My experience entering the VGDO Spring 2025 Game Jam.",
         accentColor: "#f9b48a",
-        headerTextColor: "var(--color-text)"
+        headerTextColor: "var(--color-text)",
+        image: "/posts/2025/skiptrace-jam-p2/outside.jpg",
     }
 };
