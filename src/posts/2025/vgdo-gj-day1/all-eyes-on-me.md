@@ -17,7 +17,7 @@ Make a game. Even if it's small and is halfway broken, *try it*. There's no bett
 Something came up, though, an opportunity you could say. To be frank, I am a huge procrastinator (~~have you seen my backlog~~), but in another personal goal to be more present in the life that I live, I can't keep turning down things that I don't believe I'm ready for because by the time I know I am, they'll have passed me by. But as a compsci major sophomore, there's so much schoolwork to keep up with, not to mention games to study, books to read, stories to write, tournaments to run, and life to live. This could backfire terribly, like, *really* terribly.
 
 I'm entering a game jam. Let's talk about it.
-# "All Eyes on Me": Setting the Stage
+## "All Eyes on Me": Setting the Stage
 Let's try to set the stage. There's a game development club at my university called VGDO: they're pretty chill people, and I've been meaning to go since I started last fall but never really found the time to visit. After some New Year reflection, though, I strapped my coat up and decided to visit, and for once in my life, it was just in time. "Our annual game jam kicks off next week!"
 
 I sat up. This could be really fun to enter. While working on this new website and blog, while there have been challenges, it's honestly been a really cathartic experience for me to delve into a project again; this could be this month's fixation, and it's relevant to something I'd want to do.
@@ -25,7 +25,7 @@ I sat up. This could be really fun to enter. While working on this new website a
 The theme was announced today: **"all eyes on me."** Beyond a few other points mentioned during the recap (must be a student/alumni, use any engine, how scoring works, etc.), there was no other guidance. 
 
 When I found out about the jam, I had some blank scratch paper-ass ideas in mind. "What about using Pico-8 to make this and keep scope small?" "What's a good schedule to make this game?" "How cooked am I?"
-# Scratch Paper
+## Scratch Paper
 In the hours since the announcement and going off what I had posted before, I think I know what I want to do.
 * Definitely *not* a platformer or at least only a platformer. This is a genre of game I've made in test projects before, and while I could hone in and make something really good, I think it'd be way more fun to make something unique. Something unexpected that I can delve into.
 * I'll probably use [Pico-8](https://www.lexaloffle.com/pico-8.php) for this game. It could've been a good opportunity for more Godot practice, but given that I only have a month and knowing my perfectionist tendencies, it's probably for the best to keep the scale limited graphically and sonically. Plus, while it's been years since I've used Lua, I do have experience with it from the (new) Roblox Studio days, so I hope we'll be okay.
@@ -45,7 +45,7 @@ Given the theme of "all eyes on me," I immediately think of visibility, the cast
  - environment could be on a desolate planet that the player explores, similar to a metroidvania/search-action game, with holes of light from the sun poke through the planet
  - a concept to switch between light/dark environments similar to *Ikaruga*'s polarity to attack enemies
 
-# What next?
+## What next?
 I'll be keeping a devlog on here as I make progress. I can't promise daily progress updates, but it'll be at least once or twice a week. Next stop is the game design document to actually see what we can make, the scope the project will have, and whether we have the skills to take it further. 
 
 Until then, however, and while you're asking questions, I'll leave off with some answers!

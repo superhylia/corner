@@ -12,7 +12,7 @@ order: 2
 After a weekend relaxing (mostly playing *Metroid Fusion* and watching *Code Geass R2*) and thinking of ideas during the school week, it’s time to get this game planned and fleshed out. First stop is the game design doc!
 {% include "partials/toc.njk" %}
 
-# Plumbing
+## Plumbing
 
 While many are likely able to come up with a quick concept and get going, I try to be a planner, not a pantser as much as I can. [Last time we were here](/blog/next-mission-entering-a-game-jam), I laid out some ground rules on what I’d want to make and how I’d want to make it.
 
@@ -23,7 +23,7 @@ While many are likely able to come up with a quick concept and get going, I try 
 
 Having these gestate over the weekend and with some inspiration from a certain Game Boy Advance game[^1], I got a very basic idea on *Skiptrace*[^2], the name I decided to go with since it fits perfectly with the surveillance motif. But what good is just an idea if we can’t think about how it applies?
 
-# From Concept to Content
+## From Concept to Content
 
 No game is rock solid without a sound design doc, [as *Starfield* taught us](https://x.com/Winterflan/status/1740874666892562713), and while you don’t need a 500-page manifesto for a month-long game jam, it’s better to go in with a plan and strict guidelines for what you’d want to work on than come up with it on the spot as you go. It’s like building a house, except instead of crashing a market, you crash on your keyboard instead! 
 
@@ -47,7 +47,7 @@ We can break this down into a few key areas:
 
 A core concept statement should be like a thesis for a research paper: it should reflect the core ideas of what you want your game to be. Generally, I make two of them, a concept statement based off the ideas that first come to mind, and then edit it after I finish the rest of the project.
 
-## Crafting a Concept Statement
+### Crafting a Concept Statement
 
 A “concept statement” is basically the one-two sentence description you see of the game on Steam or a more enthusiastically written declarative Wikipedia sentence. This packs a lot of punch and is what would sell the game to people, so it’s important to keep it strong. We don’t have design pillars, mechanics and controls, a target audience, story, or style to go off of, so a concept statement is just based off the initial “plumbing” we have setup. Generally, for me, the basic format for a concept statement goes…
 
@@ -59,17 +59,17 @@ A “concept statement” is basically the one-two sentence description you see 
 > [Title: *Skiptrace*] is a [Genre: 2D shmup search-action] game [story: exploring rebelling planet IRIS-372], featuring [design pillars: arcade-y combat, progressing exploration], and a [style: retro 8-bit style].
 > 
 
-## Design Pillars
+### Design Pillars
 
 These are the core objectives of your game and *why* the player is engaging with the game’s mechanics and systems. A trick I come up with is to tie an objective (say, in our case, exploration) to an adjective or feeling (”delve,” “probing,” “puzzling”): this helps me know what emotions I want the player to feel when they strive for the core objectives while also adding flavor to the concept statement.
 
 *Skiptrace*’s design pillars are **progression** (”evolving”), **combat** (”twitch”)**, exploration** (”probing,” “delving”)**,** and **style** (”ritzy,” “retro”). 
 
-## Mechanics and Controls
+### Mechanics and Controls
 
 I expand from the design pillars to build out how those pillars are implemented within gameplay. An example of a fully-expanded mechanics/implementation outline for the progression pillar is below. 
 
-### Example Design Pillar: “Evolving” Progression
+#### Example Design Pillar: “Evolving” Progression
 
 - I want level design that “spirals” deeper into the planet’s core. Since I only have a limited amount of time, I thought of a “marble” planet for the map where there are 4 different quadrants that the player can use the bands/empty space in between to travel before touching down.
 - I want the player to return to past areas with new abilities for general upgrades and pickups.
@@ -78,11 +78,11 @@ I expand from the design pillars to build out how those pillars are implemented 
 - 4 pickups, 2 variants, and 1-2 upgrades/area, though this could always be scaled down.
 - I want the player to feel like they are “evolving” and “strengthening.”
 
-## Target Audience
+### Target Audience
 
 For a released game, this matters a lot more: every game has a purpose and you should know the types of players who will understand and resonate with that purpose the most. Since this is a game jam, I don’t have to spend as much time thinking about a target audience since anything can be submitted, but I’ll say my target audience are genre-fans (those who are already fans of shmups and search-action games) or those who enjoy challenging content that’s perfectible and has high replay value. 
 
-## Story and Audiovisual Style
+### Story and Audiovisual Style
 
 The main narrative of *Skiptrace* is where I insert the motifs relevant to the jam theme of “all eyes on me” in their clearest form. Not all games need fantastic writing or voice acting, but the belief that game’s don’t necessitate a story isn’t entirely true either. The core of any game making an impression on the player is *motivation* and while the game being fun is the strongest motivation you can have as a developer, how do you appeal to someone who doesn’t already enjoy the game or have the game resonate with the player when they complete it? Story and style accomplish this best, so even if it’s not grandiose, having a concrete and consistent narrative motivation for the character and thus the player to participate is essential. 
 
@@ -92,7 +92,7 @@ In terms of audio/visual style (aka aesthetic, artstyle + music/sound, etc), PIC
 
 For *Skiptrace*, the main influences in terms of artstyle are the *Zelda* Game Boy games, especially in their use of color, and *Evangelion* for bold text and eclectic visuals. I’m planning to go for an atmospheric soundtrack that builds as the player makes progress within the level: definitely influenced from the art I’ve been tapping into as of late (Boat’s *Let’s Start Here, Metroid Fusion* and *Celeste*’s soundtrack to name them), but it fits the vibe I want to give off with this game.
 
-## Project Management
+### Project Management
 
 I only have a month (now three weeks) to complete this game for the jam, so project management is going to be essential. I’ve been keeping design elements and ideas within my game dev notebook and transferring them to Notion where it’s relevant to organize. Given that spring break is up soon, that’s probably going to be an important period to make progress on this game: now that I have a solid idea of how I want to implement mechanics and style into the game, this weekend, I’ll be looking up learning PICO-8 and lay the groundwork for developing.  A basic milestone layout for my purposes would look like:
 
@@ -108,7 +108,7 @@ I only have a month (now three weeks) to complete this game for the jam, so proj
 | Implement music | 3 days |
 | Refinement | 5 days |
 
-## Refined Core Statement
+### Refined Core Statement
 
 Now that I have all of that information gathered, I can craft our refined, evocative core statement that reflects our design pillars, the mechanics that our players use to reflect them, and the emotions our players resonate with.
 
@@ -117,7 +117,7 @@ Now that I have all of that information gathered, I can craft our refined, evoca
 
 This is a decent core statement in my eyes! The game has an identity, the player reading it for the first time knows the general plot motivation and what the game will be like, and emotive design pillars communicate how players should feel playing *Skiptrace* based off the experience I’m crafting.
 
-# Drawing a Blueprint
+## Drawing a Blueprint
 
 Finally, while we can easily expand this text outline to be as large or as compact of a game design doc as we’d like, sometimes, things don’t express as well in text as they may do drawn. As a visual learner, drawing diagrams, annotations, crude drawings, or some form of visual companion to our text. The mixed blank/ruled paper notebook I use for game design and development (finally getting use out of it, hooray) helps a lot with this. Drawings and written explanations are side by side, providing important context and substance to my ideas.
 
@@ -126,7 +126,7 @@ Finally, while we can easily expand this text outline to be as large or as compa
 
 To reiterate, the core to any creative process or personal progress is finding a system that works for you. It should feel natural and logical to lay out how you work: that’s how you do it consistently and how you do it well. For me, as a visual learner who tends to work best with a basic outline that expands outwards, one-page design documents that I add more and more to side-by-side with drawings to explain how mechanics or menus work makes the most sense! 
 
-# What next?
+## What next?
 
 Next time I update, I’ll have at least *something* to show in PICO-8 now that I have this mostly fleshed out. I still got to transfer from paper to Notion, but I have a very strong idea of how *Skiptrace* will play and progress. This has been fun to think about and draw up and I’m glad I get to make a game while you lovely folks get to read about it!
 
