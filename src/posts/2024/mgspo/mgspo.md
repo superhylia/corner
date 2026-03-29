@@ -11,7 +11,7 @@ alt: 'Beautiful artwork shows Big Boss opposing Zero as the cast of Portable Ops
 credit: 'Noriyoshi Ohrai.'
 ---
 > [!WARNING] WARNING: This review is pretty old, but its worth keeping around.
-> This review is pretty old and describes my thoughts on my initial playthrough of *Metal Gear Solid: Portable Ops* that I originally made all the way back on [HowLongToBeat](https://howlongtobeat.com/user/superhylia/reviews/u-5920/1). However, given my want to archive all of my old reviews and writings on my own site, I thought I'd repost my initial review on here as well. Despite it being 2 years old, I think it still captures the gist of how I feel about the game if a little more zealously positive than hindsight would have me believe. Here's the rest of the reviews as originally written. I added fitting images to go along with my original text thanks to Metroid Recon and Database.
+> This review is pretty old and describes my thoughts on my initial playthrough of *Metal Gear Solid: Portable Ops* that I originally made all the way back on [HowLongToBeat](https://howlongtobeat.com/user/superhylia/reviews/u-5920/1). However, given my want to archive all of my old reviews and writings on my own site, I thought I'd repost my initial review on here as well. Despite it being 2 years old, I think it still captures the gist of how I feel about the game if a little more zealously positive than hindsight would have me believe. Here's the rest of the reviews as originally written. I added fitting images to go along with my original text.
 
 {% image "/posts/2024/mgspo/mpo_zero.jpg", "Snake aims his rifle at Zero as the latter pounces towards him.", "Really fun fight.", "PlayStation.com." %}
 
