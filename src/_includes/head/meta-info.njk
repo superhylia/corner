@@ -43,7 +43,7 @@
   content="{%- if discover.title -%}
     {{- discover.title -}}
   {%- elif title -%}
-    {{- title -}}
+    {{- title | safe -}}
   {%- else -%}
     {{- meta.siteName -}}
   {%- endif -%}"
@@ -53,8 +53,8 @@
 {%- elif image -%}
   <meta property="og:image" content="{{- meta.url -}}{{- image -}}"/>
 {%- else -%}
-  {% ogImage "./common/og-images.og.njk", {
-    title: title or meta.siteName,
+  {% ogImage "./common/og-images.njk", {
+    title: (title or meta.siteName) | safe,
     siteUrl: 'superhylia.dev',
     ogBackground: ogBackground or '#12131b',
     ogText: ogText or '#f0f0f3',

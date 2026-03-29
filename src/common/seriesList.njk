@@ -4,21 +4,9 @@ title: 'Browse by Series'
 description: 'A list of all series.'
 permalink: /series/index.html
 ---
-
-<div class="grid" data-layout="50-50">
-  {% for name, posts in collections.series %}
-    {# Look up the meta data for this specific series name #}
-    {% set meta = seriesMeta[name] %}
-    
-    <article class="card flow" style="--spot-color: {{ meta.accentColor or 'var(--color-primary)' }}">
-      <h3>
-        <a href="/series/{{ name | slugify }}/">{{ name }}</a>
-      </h3>
-      <p>{{ meta.description or "A collection of related posts." }}</p>
-      <p style="font-size: var(--size-step-min-1)">
-        Contains {{ posts.length }} chapters.
-      </p>
-    </article>
-  {% endfor %}
-</div>
-
+<ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% for name, posts in collections.series %} 
+      {% set meta = seriesMeta[name] %}
+      {% include "partials/card-seriesList.njk" %}
+    {% endfor %}
+  </ul>

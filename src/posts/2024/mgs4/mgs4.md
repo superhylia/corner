@@ -2,7 +2,7 @@
 title: 'Metal Gear Solid 4: Guns of the Patriots: The Petals Live On'
 description: "*Guns of the Patriots* is watching \"Metal Gear\" be at its finest: overambitious, wordy, expressive, emotional, and ever-striving to make an impression. I wish it wanted me to actually play it."
 date: 2024-01-11
-tags: ['games', 'review', 'metal-gear']
+tags: ['games', 'review', 'metal-gear', 'repost']
 image: '/posts/2024/mgs4/metal-gear-solid-4-guns-of-the-patriots-the-petals-live-on.jpg'
 alt: 'Solid Snake and Revolver Ocelot oppose each other, their stare deep in reflection and colored in a hazely, sepia tone.'
 credit: Limited Edition artwork by the legend Yoji Shinkawa.

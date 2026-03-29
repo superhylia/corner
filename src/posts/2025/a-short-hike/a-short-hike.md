@@ -5,7 +5,7 @@ discover:
   description: "The sense of curiosity all of us have, made miniature."
 date: 2025-08-02
 redirectFrom: ['/blog/ashorthike/']
-tags: ['games', 'review']
+tags: ['games', 'review', 'repost']
 image: '/posts/2025/a-short-hike/i_did_it_ash.jpg'
 alt: 'Claire overlooks a beautiful mountainscape: an aurora of blue and purple light the sky.'
 credit: My own screenshot.

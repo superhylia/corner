@@ -5,7 +5,7 @@ date: 2025-05-02
 lastEdit: 2026-01-31
 lastEditReason: to add images and fix typos.
 redirectFrom: ['/blog/spyro1r/']
-tags: ['games', 'review', 'remakes', 'spyro']
+tags: ['games', 'review', 'remakes', 'spyro', 'repost']
 image: '/posts/2025/spyro-1-reignited/sunny_flight_s1r.jpg'
 alt: 'Spyro the Dragon overlooking a pond with a chest and several colored crystals in Sunny Flight.'
 credit: 'DarkSpyro.net'

@@ -64,7 +64,14 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.rss);
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
 
+  eleventyConfig.addPlugin(plugins.postStats, {
+    debugMode: true,
+    tags: ['allPosts']
+  });
+
   eleventyConfig.addPlugin(plugins.EleventyPluginOgImage, {
+    outputDir: 'assets/og-images',
+    urlPath: '/assets/og-images',
     satoriOptions: {
       fonts: [
         {

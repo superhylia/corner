@@ -27,9 +27,10 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
     });
 </script>
 
-<div class="search-nav | mt-s-m cluster">
-  <a href="/tags/" class="button" data-button-variant="tertiary"> {% svg "misc/bookmark" %} Browse by Tags </a> 
-  <a href="/series/" class="button" data-button-variant="quaternary"> {% svg "misc/stack" %} Browse by Series </a>
+<div class="search-nav | mt-s-m cluster" style="display: flex; width: 100%; gap: var(--space-s-m); justify-content: center; flex: 1;">
+  <a href="/tags/" class="button" data-button-variant="primary"> {% svg "misc/bookmark" %} Browse by Tags </a> 
+  <a href="/series/" class="button" data-button-variant="tertiary"> {% svg "misc/stack" %} Browse by Series </a>
+  {# <a href="/blog/stats/" class="button" data-button-variant="quaternary"> {% svg "misc/printer" %} Stats </a> #}
 </div>
 
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">

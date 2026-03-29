@@ -7,6 +7,7 @@ pagination:
 permalink: /tags/{{ tag | slugify }}/
 eleventyComputed:
   title: '{{ meta.blog.tagSingle }}: {{ tag }}'
+  description: 'All blog posts under the {{ tag }} tag.'
 ---
 
 <custom-masonry layout="50-50">

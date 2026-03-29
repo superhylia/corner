@@ -1,0 +1,19 @@
+{% set headingLevel = headingLevel | default("h2") %}
+{% set definedDate = definedDate | default(item.date) %}
+{% set showTags = showTags | default(true) %}
+{% set meta = seriesMeta[name] %}
+
+<custom-card clickable>
+  <figure slot="image">
+    <img src="{{ meta.image }}" alt="{{ meta.alt }}" loading="eager" decoding="sync">
+  </figure>     
+  <{{ headingLevel }} slot="headline" class="text-step-2">
+    <a href="/series/{{ name | slugify }}/">{{ name }}</a>
+  </{{ headingLevel }}>
+  <div slot="content" webc:nokeep>{{ meta.description or "A collection of related posts." }}</div>
+  <footer slot="footer"><p style="font-size: var(--size-step-min-1)">Contains {{ posts.length }} chapters.</p></footer>
+</custom-card>
+
+{% css "local" %}
+  {% include "css/custom-card.css" %}
+{% endcss %}
