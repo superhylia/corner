@@ -1,6 +1,6 @@
 ---
 title: 'A To-Go Review of Metal Gear Solid: Portable Ops'
-description: "If it ain't broke, don't fix it but I really need to re-review this game."
+description: "Archived old review of one of *Metal Gear*''s more underrated titles."
 date: 2024-11-05
 lastEdit: 2026-03-28
 lastEditReason: to add images with this repost.

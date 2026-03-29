@@ -1,6 +1,6 @@
 ---
 title: 'A Really Short Review of Metal Gear 1 & 2'
-description: "If it ain't broke, don't fix it but I really need to re-review this game."
+description: "Initial thoughts on my least favorite Metal Gear games."
 date: 2023-01-04
 lastEdit: 2026-03-28
 lastEditReason: to add images with this repost.
