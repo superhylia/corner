@@ -1,7 +1,7 @@
 ---
 title: 'A Really Short Review of Metal Gear 1 & 2'
-description: "Initial thoughts on my least favorite Metal Gear games."
-date: 2023-01-04
+description: "Initial thoughts on my least favorite *Metal Gear* games from my old HowLongToBeat archives."
+date: 2023-11-05
 lastEdit: 2026-03-28
 lastEditReason: to add images with this repost.
 redirectFrom: ['/blog/mg12-old/']

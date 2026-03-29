@@ -1,7 +1,7 @@
 ---
 title: 'A To-Go Review of Metal Gear Solid: Portable Ops'
 description: "Archived old review of one of *Metal Gear*'s more underrated titles."
-date: 2024-11-05
+date: 2024-01-04
 lastEdit: 2026-03-28
 lastEditReason: to add images with this repost.
 redirectFrom: ['/blog/mgspo/']
