@@ -5,7 +5,7 @@ date: 2026-05-10
 redirectFrom: ['/blog/ngp-woa-dk/']
 tags: ['new-gaze-plus', 'famicom', 'weight-of-age', 'games', 'research', 'donkey-kong']
 image: '/posts/2026/ngp-famicom/dk/dk.png' 
-alt: 'Text introducing essay series New Gaze+: The Weight of Age is displayed on top. The art for Donkey Kong (1981) is displayed over a flat Famicom cartridge diagram with the essay title "Take the Game Home" as Chapter 1-1 in section Playing with Power.'
+alt: 'Text introducing essay series New Gaze+: The Weight of Age is displayed on top. The art for Donkey Kong (1981) is displayed over a flat Famicom cartridge diagram with the essay title \"Take the Game Home\" as Chapter 1-1 in section Playing with Power.'
 credit: 'My own graphic design.'
 series: "New Gaze Plus: The NES/Famicom & The Weight of Age"
 order: 2
