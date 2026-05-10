@@ -14,8 +14,7 @@ draft:
 ---
 
 > [!TIP] Level 1-1 of "Playing with Power", the first of four chapters in New Gaze+: The NES/Famicom & The Weight of Age. 
-> "Playing with Power" explores the Family Computer between 1981 to 1986, covering the systems development, launch both in Japan and overseas as the Nintendo Entertainment System, notable accessories like the Disk System and Zapper, and a selection of six of its earliest landmark titles. 
-> *What set the Famicom apart in its earlier days from the arcade landscape that inspired it and the crashing home console industry the NES saved?*
+> \"Playing with Power\" explores the Family Computer between 1981 to 1986, covering the systems development, launch both in Japan and overseas as the Nintendo Entertainment System, notable accessories like the Disk System and Zapper, and a selection of six of its earliest landmark titles. *What set the Famicom apart in its earlier days from the arcade landscape that inspired it and the crashing home console industry the NES saved?* 
 
 {% include "partials/toc.njk" %}
 
