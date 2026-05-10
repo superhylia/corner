@@ -1,16 +1,14 @@
 ---
-title: '/blogroll'
-description: 'A list of other blogs and sites I tend to read.'
-permalink: /blogroll/index.html
+title: '/vidroll'
+description: 'A list of the video creators I tend to watch.'
+permalink: /vidroll/index.html
 layout: page
-redirectFrom: ['/pageroll/index.html']
 ---
-Here's a list of blogs and sites (with a recommended post or two) that I tend to read on a decently frequent basis.
+Here's a list of video creators on YouTube or elsewhere (with a recommended video or two) that I tend to watch on a decently frequent basis.
 ## Games
 * [Kayinworks](https://kayin.moe/)
   * ["Why Do You Want To Play A Remake?"](https://kayin.moe/why-play-a-remake)
   * ["Engage with Media but don't Overthink it!!"](https://kayin.moe/cohost/engage-with-media)
-  * [Reaction Speeds in Gaming (discusses the "mental stack" in fighting games)](https://kayin.moe/reactions)
 * [Infil](https://words.infil.net/), maintainer of the incredible [Fighting Game Glossary](https://glossary.infil.net/)
   * ["Netcode"](https://words.infil.net/w02-netcode.html)
   * ["Street Fighter 6 Review"](https://words.infil.net/w04-sf6review.html)

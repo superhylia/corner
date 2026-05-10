@@ -1,7 +1,6 @@
 import Image from '@11ty/eleventy-img';
 import path from 'node:path';
-import markdownIt from 'markdown-it';
-const md = new markdownIt({html: true});
+import {markdownLib} from '../plugins/markdown.js';
 
 const stringifyAttributes = attributeMap => {
   return Object.entries(attributeMap)
@@ -89,11 +88,11 @@ const processImage = async options => {
 
   const imageMarkup = `<div class="${finalContainerClass}" style="position: relative; display: inline-block; max-width: 100%; line-height: 0;">
     ${pictureElement}
-      ${credit ? `<div class="credit">${credit}</div>` : ''}
+      ${credit ? `<div class="credit">${markdownLib.renderInline(credit)}</div>` : ''}
     </div>`;
 
   if (caption) {
-    const mdCaption = md.renderInline(caption);
+    const mdCaption = markdownLib.renderInline(caption);
     return `<figure slot="image" style="text-align: center; margin-inline: auto;">
       ${imageMarkup}
       <figcaption>${mdCaption}</figcaption>

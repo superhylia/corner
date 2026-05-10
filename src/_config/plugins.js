@@ -9,6 +9,7 @@ import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
 import embedEverything from 'eleventy-plugin-embed-everything';
 import EleventyPluginOgImage from 'eleventy-plugin-og-image';
 import postStats from 'eleventy-plugin-post-stats';
+import markdownItCopyButton from 'eleventy-plugin-code-clipboard';
 
 // custom
 import {markdownLib} from './plugins/markdown.js';
@@ -29,4 +30,5 @@ export default {
   embedEverything,
   EleventyPluginOgImage,
   postStats,
+  markdownItCopyButton,
 };

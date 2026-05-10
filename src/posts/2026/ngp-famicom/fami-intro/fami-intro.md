@@ -13,6 +13,7 @@ bskyurl: https://bsky.app/profile/superhylia.dev/post/3mfzncyz57s26
 ---
 
 {% include "partials/toc.njk" %}
+
 ## Foreword 
 I have a bit of a problem. Growing up in the early 2010s, right at the turning point between the death of the message boards and the rise of the same few creative, now corporate, social media sites we do now was an interesting time to become a fan of games. Long-form content through fandom-specific wikis and the early era of YouTube Let's Plays and essays kept me entertained for hours. My entertainment turned to fascination and fascination turned to a passion for video games as a medium. This passion became a dream to make art of my own and it drives everything I create, learn, and at least attempt to learn. For the past two years or so, I've been self-studying game design while persuing computer science as my major, trying to figure out what makes games tick. Why are they fun? What makes a game engaging? What's the difference between "boring" and "bad", "difficult" and "challenging", a win condition to master or a piece of artistry a player gets to behold? Some days, though, there's a pull to question these things, perhaps the same pull that tugs at the other end of history, its tension keeping the rope taut throughout the years; how did we get here? Other days I ask: does it matter whats at the other end of the rope?
 
@@ -55,7 +56,6 @@ All 30 curated titles spanning 10 years of the Famicom's lifespan from 1983 to 1
 * *Gradius*
 * *The Mysterious Murasame Castle* :floppy_disk:
 * *Dragon Quest*
-* *Ninja Gaiden*
 
 **B.** It's Dangerous to Go Alone: *How did the Famicom's technical limitations and expansions restrain and seed artistry amongst the libraries most influential through the lens of paratext games of this era depended on?*
 * *The Legend of Zelda* :floppy_disk:
@@ -73,6 +73,7 @@ All 30 curated titles spanning 10 years of the Famicom's lifespan from 1983 to 1
 * *Kid Icarus* :floppy_disk:
 * *Zelda II: The Adventure of Link* :floppy_disk:
 * *Contra*
+* *Ninja Gaiden*
 * *Double Dragon II: The Revenge*
 * *Castlevania III: Dracula's Curse/Akumajou Densetsu* (both US/JP)
 

@@ -18,6 +18,9 @@ _Eleventy Excellent_ aims to be conformant with [ WCAG 2.1 Level AA.](https://ww
 
 Compliance depends on how users implement and customize the starter for their specific content and use cases.
 
+## Alt Text
+I try to follow these [guidelines from the Digital Accessibility Services from Harvard's IT department](https://accessibility.huit.harvard.edu/describe-content-images) for alt text throughout this website. I plan for all images on this site to feature some sort of alt text.
+
 ## Testing
 
 [pa11y-ci](https://github.com/pa11y/pa11y-ci) is used to run automated accessibility tests, [see the Docs](/get-started/#tests).

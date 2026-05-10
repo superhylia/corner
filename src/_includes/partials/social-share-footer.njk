@@ -4,7 +4,7 @@
         BlueSky
       </a>
       <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
-        Twitter
+        X/Twitter
       </a>
       <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
         LinkedIn
@@ -13,11 +13,11 @@
         Mastodon
       </a>
       <a href="mailto:?subject={{ title | urlencode }}&body={{ title | urlencode }}%20-%20{{ description }}%0A%0ARead%20at%20{{ page.url | url | absoluteUrl(meta.url) }}" target="_blank" rel="noopener">
-        Email
+       Email
       </a>
       <span>
         <button data-footer-share-trigger data-title="{{ title }}" data-url="{{ page.url | url | absoluteUrl(meta.url) }}">
-          <u>More options...</u>
+          <u>Copy...</u>
         </button>
       </span>
 </div>
