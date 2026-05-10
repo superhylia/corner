@@ -1,6 +1,6 @@
 ---
 title: 'NG+: Donkey Kong - Take the Game Home'
-description: "A 30 game adventure to see if treasure is still in this castle."
+description: "\"When console games were popularized and presented to everyone, it felt like we were all exploring a new frontier of dreams together.\" - Masayuki Uemara"
 date: 2026-05-10
 redirectFrom: ['/blog/ngp-woa-dk/']
 tags: ['new-gaze-plus', 'famicom', 'weight-of-age', 'games', 'research', 'donkey-kong']
