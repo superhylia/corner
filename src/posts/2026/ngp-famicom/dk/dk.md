@@ -9,7 +9,7 @@ alt: 'Text introducing essay series New Gaze+: The Weight of Age is displayed on
 credit: 'My own graphic design.'
 series: "New Gaze Plus: The NES/Famicom & The Weight of Age"
 order: 2
-bskyurl: 
+bskyurl: https://bsky.app/profile/superhylia.dev/post/3mlu6ajiaas2b
 draft: 
 ---
 
