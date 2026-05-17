@@ -8,6 +8,7 @@ image: '/posts/2026/re1make/re1_ps3_crop.jpg'
 alt: 'A zombie (the 1st encountered in the game Resident Evil) stands slightly distorted in front of a raw black background, turning its eye toward the viewer.'
 credit: 'Capcom for the biohazard HD Remaster Collector''s Package.'
 bskyurl: 
+draft: yes
 
 ---
 - [Super Monkey Ball online](https://monkeyball-online.pages.dev/) 
