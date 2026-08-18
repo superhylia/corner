@@ -13,9 +13,8 @@
             <span class="visually-hidden">{{ meta.dialog.next }}</span>{% svg "misc/arrow-right" %}
           </button>
         </div>
-        {%- image item.image, item.alt, item.caption, item.credit -%}
-      </dialog>
-      <button data-index="{{ loop.index }}" class="gallery-trigger">{%- image item.image, item.alt -%}</button>
+      {%- image item.image, item.alt, item.caption, item.credit -%}
+      </dialog><button data-index="{{ loop.index }}" class="gallery-trigger">{%- image item.image, item.alt -%}</button>
     {%- endfor -%}
   </div>
 
