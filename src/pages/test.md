@@ -27,3 +27,13 @@ layout: page
 
 > [!CAUTION]
 > Negative potential consequences of an action.
+
+https://bsky.app/profile/6bghateaccount.bsky.social/post/3mrc7qdegu22f
+
+https://twitter.com/JonComms/status/1682693007638773761
+
+https://open.spotify.com/track/6GoLARmR2OZl2EldehFrsA
+
+https://www.instagram.com/p/DbrksqTEZXT/?hl=en&img_index=1
+
+https://www.twitch.tv/lifelightcafe

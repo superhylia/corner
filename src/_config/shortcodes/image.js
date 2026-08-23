@@ -86,7 +86,7 @@ const processImage = async options => {
   const finalContainerClass = containerClass ? `feature ${containerClass}` : 'feature';
   
 
-  const imageMarkup = `<div class="${finalContainerClass}" style="position: relative; display: inline-block; max-width: 100%; line-height: 0;">
+ const imageMarkup = `<div class="${finalContainerClass}"> 
     ${pictureElement}
       ${credit ? `<div class="credit">${markdownLib.renderInline(credit)}</div>` : ''}
     </div>`;
@@ -99,8 +99,7 @@ const processImage = async options => {
     </figure>`;
   }
 
-  return `<div slot="image" style="display: flex; justify-content: center; width: 100%;">${imageMarkup}</div>`;
-  }
+return `<div slot="image" class="gallery-item-wrapper">${imageMarkup}</div>`;  }
 
 
 // Positional parameters (legacy)

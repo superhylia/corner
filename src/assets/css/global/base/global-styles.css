@@ -124,16 +124,18 @@ hr {
   border: 1px solid(--color-bg);
   border-top-left-radius: 8px;
   border-radius: var(--border-radius-medium);
-  width: max-content;
+  width: auto;
   padding: 6px 12px;
   opacity: 0;
   transition: opacity 0.3s ease; 
   pointer-events: none;
 }
 
-.feature:hover .credit {
+.feature:hover .credit,
+.feature:focus-within .credit {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 figcaption {

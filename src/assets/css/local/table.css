@@ -1,6 +1,8 @@
 table {
   border: 0;
   inline-size: 100%;
+  display: block;
+  overflow-x: auto;
 }
 
 table br {
@@ -9,42 +11,40 @@ table br {
 
 thead {
   border: none;
-  clip: rect(0 0 0 0);
   block-size: 1px;
   margin: -1px;
-  overflow: hidden;
   padding: 0;
-  position: absolute;
   inline-size: 1px;
 }
 
 tr {
   border: var(--stroke);
-  display: block;
-  margin-block-end: var(--space-s);
+  margin-block-end:var(--space-s);flex-direction: column;
 }
 
 th,
 td {
   padding: var(--space-xs) var(--space-s);
   vertical-align: sub;
+  white-space: nowrap;
 }
 
 td {
   border-block-end: var(--stroke);
-  display: block;
+  display: table-cell;
   text-align: start;
 }
 
 td::before {
-  content: attr(data-label);
+  /* content: attr(data-label);
   float: start;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-bold); */
+  display: none;
 }
 
-td:last-child {
-  border-block-end: 0;
-}
+/* td:last-child {
+  /* border-block-end: 0; 
+} */
 
 @media screen(sm) {
   table {
@@ -52,6 +52,7 @@ td:last-child {
     margin: 0;
     padding: 0;
     table-layout: fixed;
+    display: table;
   }
 
   table br {
@@ -92,5 +93,6 @@ td:last-child {
     padding: var(--space-s);
     text-align: start;
     display: table-cell;
+    white-space: normal;
   }
 }

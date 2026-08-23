@@ -7,7 +7,7 @@ tags: ['games', 'resident-evil', 'remakes', 'review']
 image: '/posts/2026/re1make/re1_ps3_crop.jpg' 
 alt: 'A zombie (the 1st encountered in the game Resident Evil) stands slightly distorted in front of a raw black background, turning its eye toward the viewer.'
 credit: 'Capcom for the biohazard HD Remaster Collector''s Package.'
-bskyurl: 
+bskyurl: https://bsky.app/profile/superhylia.dev/post/3mtqa6l2i5c2i
 lastEdit: 2026-03-23
 lastEditReason: to crop screenshots to 4:3 to match in-game resolution.
 ---

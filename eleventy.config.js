@@ -12,7 +12,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // add yaml and fs  support
-import yaml from 'js-yaml';
+import {load as yamlLoad} from 'js-yaml';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -134,7 +134,7 @@ export default async function (eleventyConfig) {
 
   // 	--------------------- Library and Data
   eleventyConfig.setLibrary('md', plugins.markdownLib);
-  eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
+  eleventyConfig.addDataExtension('yaml', contents => yamlLoad(contents));
 
   // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);

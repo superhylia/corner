@@ -7,6 +7,7 @@ export const siteType = 'Person'; // schema
 export const locale = 'en_EN';
 export const lang = 'en';
 export const skipContent = 'Skip to content';
+// for the site content author, used in <head> meta and post h-card microformat
 export const author = {
   name: 'Levi Ireri', // i.e. Lene Saile - page / blog author's name. Must be set.
   avatar: '/icon-512x512.png', // path to the author's avatar. In this case just using a favicon.
