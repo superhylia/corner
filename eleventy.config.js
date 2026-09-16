@@ -185,8 +185,6 @@ export default async function (eleventyConfig) {
   if (process.env.ELEVENTY_ENV != 'test') {
     eleventyConfig.ignores.add('src/common/pa11y.njk');
   }
-}
-
 
   // ----------------------  ignore test files
   eleventyConfig.on("eleventy.after", async () => {
@@ -204,6 +202,7 @@ export default async function (eleventyConfig) {
       console.log("[11ty] No image cache found to copy.");
     }
   });
+}
 
 // https://www.11ty.dev/docs/config-shapes/#callback-function
 export const config =  {
