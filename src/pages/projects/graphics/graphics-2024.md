@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Graphics from 2024
-description: 'All my graphics'
+description: 'All my graphics from the year 2024.'
 permalink: 'graphics/2024/index.html'
 gallery:
   - image: ./src/assets/projects/graphic_design/2024/penelope.png

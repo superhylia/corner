@@ -45,10 +45,7 @@
             </h1>
             <h2><xsl:value-of select="atom:feed/atom:title"/></h2>
             <p><xsl:value-of select="atom:feed/atom:subtitle"/></p>
-            <a class="head_link" target="_blank">
-              <xsl:attribute name="href">
-                <xsl:value-of select="atom:link/@href"/>
-              </xsl:attribute>
+            <a class="head_link" target="_blank" href="https://superhylia.dev">
               Visit Website &#x2192;
             </a>
           </header>

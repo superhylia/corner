@@ -5,7 +5,7 @@ date: 2025-02-05
 lastEdit: 2026-03-28
 lastEditReason: to add images with this repost.
 redirectFrom: ['/blog/prime21st/']
-tags: ['games', 'review', 'metroid', 'repost']
+tags: ['games', 'review', 'metroid', 'metroidvania', 'search-action', 'FPS', 'repost', 'retro-studios', 'nintendo', 'gamecube', 'wii']
 image: '/posts/2025/metroid-prime-2-echoes-1st-playthrough/samusvquadraxis.jpg'
 alt: 'Samus in her Dark Suit opposing Quadraxis.'
 credit: 'Metroid Database.'

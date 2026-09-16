@@ -2,7 +2,7 @@ export const url = process.env.URL || 'http://localhost:8080';
 // Extract domain from `url`
 export const domain = new URL(url).hostname;
 export const siteName = 'Hylia\'s Corner';
-export const siteDescription = 'i talk or something';
+export const siteDescription = 'Blog and creative portfolio of Hylia/Levi I., gamedev, programmer, graphic designer, and writer.';
 export const siteType = 'Person'; // schema
 export const locale = 'en_EN';
 export const lang = 'en';
@@ -11,7 +11,7 @@ export const skipContent = 'Skip to content';
 export const author = {
   name: 'Levi Ireri', // i.e. Lene Saile - page / blog author's name. Must be set.
   avatar: '/icon-512x512.png', // path to the author's avatar. In this case just using a favicon.
-  email: 'superlevi12345@gmail.com', // i.e. hola@lenesaile.com - email of the author
+  email: 'hylia@superhylia.dev', // i.e. hola@lenesaile.com - email of the author
   website: 'https://superhylia.dev', // i.e. https.://www.lenesaile.com - the personal site of the author
 };
 export const creator = {
@@ -31,7 +31,7 @@ export const opengraph_default_alt =
 export const blog = {
   // RSS feed
   name: 'Hylia\'s Corner: A Blog',
-  description: 'Scribbles and essays about creating something in the world (and guilty pleasures).',
+  description: 'Scribbles and essays about creating something in the world and resonating with the art that inspires me. I write a lot about video games as an art form through their design, history, and development.',
   toc: 'Table of contents',
   skipToc: 'Skip table of contents',
   // feed links are looped over in the head. You may add more to the array.

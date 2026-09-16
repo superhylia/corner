@@ -1,6 +1,9 @@
+{% set currentGallery = galleryItems or gallery %}
+{# {% include "partials/gallery.njk" with { galleryItems: customName } %} #}
+
 <is-land on:idle>
   <div class="gallery | grid mt-l-xl gutter-xs">
-    {%- for item in gallery -%}
+    {%- for item in currentGallery -%}
       <dialog class="flow modal{{ loop.index }}">
         <div class="cluster justify-center flow-space-m gutter-s">
           <button data-nav="prev" class="button text-step-1" data-button-variant="primary">

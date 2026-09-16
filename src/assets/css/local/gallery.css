@@ -9,15 +9,16 @@
   all: unset;
   cursor: pointer;
   margin: 0;
-  width: 200px;
+  width: 100%;
   display: block;
 }
 
 .gallery dialog + button :is(figure, div, picture, [slot="image"]){
   margin: 0;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   display: block;
+  aspect-ratio: 1;
 }
 
 .gallery dialog + button:focus-visible {

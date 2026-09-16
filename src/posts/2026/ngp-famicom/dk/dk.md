@@ -3,7 +3,7 @@ title: 'NG+: Donkey Kong - Take the Game Home'
 description: "\"When console games were popularized and presented to everyone, it felt like we were all exploring a new frontier of dreams together.\" - Masayuki Uemara"
 date: 2026-05-10
 redirectFrom: ['/blog/ngp-woa-dk/']
-tags: ['new-gaze-plus', 'famicom', 'weight-of-age', 'games', 'research', 'donkey-kong']
+tags: ['new-gaze-plus', 'famicom', 'nes', 'weight-of-age', 'games', 'platformer', 'arcade', 'research', 'donkey-kong', 'nintendo']
 image: '/posts/2026/ngp-famicom/dk/dk.png' 
 alt: 'Text introducing essay series New Gaze+: The Weight of Age is displayed on top. The art for Donkey Kong (1981) is displayed over a flat Famicom cartridge diagram with the essay title Take the Game Home as Chapter 1-1 in section Playing with Power.'
 credit: 'My own graphic design.'

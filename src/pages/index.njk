@@ -5,7 +5,7 @@ title: 'Hylia''s Corner'
 description: 'Hylia here (real name: Levi I.), a current compsci major sophomore looking to leave something behind. This is both my personal blog, Hylia''s Corner, and my portfolio for graphic design, coding projects, and (soon-to-be) games or other creative projects.'
 blog:
   title: 'Hylia''s Corner (my blog)'
-  intro: "Scribbles and essays about creating something in the world (and guilty pleasures)."
+  intro: {{ meta.siteDescription }}
 ---
 
 <div class="wrapper">
@@ -19,7 +19,7 @@ blog:
   <article class="full | region">
     <div class="wrapper flow prose">
       <p>
-        <strong>Hylia</strong> here (real name: Levi I.), a current compsci major sophomore looking to leave something behind. This is both my <a href="blog">personal blog, Hylia's Corner,</a> and <a href="portfolio">my portfolio</a> for graphic design, coding projects, and (soon-to-be) games or other creative projects. 
+        <strong>Hylia</strong> here (real name: Levi I.), a current compsci major looking to leave something behind. This is both my <a href="blog">personal blog, Hylia's Corner,</a> and <a href="portfolio">my creative portfolio</a> for graphic design, coding projects, games, and anything else I'm inspired to make. 
       </p>
       <p>Explore the site to your heart's content, though things are still moving around. I'll update this once things are tidier, but for now, have a good one and write something today.</p>
     </div>
@@ -27,10 +27,8 @@ blog:
 
   <section class="full | region">
     <div class="wrapper flow prose">
-      <h2><a href="blog">{{ blog.title }}</a></h2>
-      {% if blog.intro %}
-        <p>{{ blog.intro }}</p>
-      {% endif %}
+      <h2><a href="blog">{{ meta.blog.name }}</a></h2>
+      <p>{{ meta.blog.description }}</p>
       <div class="feature |  region region-space-l">
         <custom-masonry layout="50-50">
           {% set itemList = collections.allPosts %}

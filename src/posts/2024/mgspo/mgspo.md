@@ -5,7 +5,7 @@ date: 2024-01-04
 lastEdit: 2026-03-28
 lastEditReason: to add images with this repost.
 redirectFrom: ['/blog/mgspo/']
-tags: ['games', 'review', 'metal-gear', 'repost']
+tags: ['games', 'review', 'metal-gear', 'stealth', 'repost', 'konami', 'psp']
 image: '/posts/2024/mgspo/mpo_ohrai.jpg'
 alt: 'Beautiful artwork shows Big Boss opposing Zero as the cast of Portable Ops surrounds them.'
 credit: 'Noriyoshi Ohrai.'

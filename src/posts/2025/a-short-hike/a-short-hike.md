@@ -7,7 +7,7 @@ date: 2025-08-02
 lastEdit: 2026-3-29
 lastEditReason: to add more images.
 redirectFrom: ['/blog/ashorthike/']
-tags: ['games', 'review', 'repost']
+tags: ['games', 'review', 'adventure', 'repost']
 image: '/posts/2025/a-short-hike/i_did_it_ash.jpg'
 alt: 'Claire overlooks a beautiful mountainscape: an aurora of blue and purple light the sky.'
 credit: My own screenshot.

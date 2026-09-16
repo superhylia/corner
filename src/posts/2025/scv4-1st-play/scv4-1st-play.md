@@ -5,7 +5,7 @@ date: 2025-01-13
 lastEdit: 2026-03-28
 lastEditReason: to add images with this repost.
 redirectFrom: ['/blog/scv1-1st-play/']
-tags: ['games', 'review', 'castlevania', 'repost']
+tags: ['games', 'review', 'castlevania', 'platformer', 'repost', 'konami', 'snes']
 image: '/posts/2025/scv4-1st-play/the_game_begins.png'
 alt: 'Simon Belmont faces the gates of Dracula''s castle.'
 credit: 'Mobygamesisreanimated.'

@@ -1,7 +1,7 @@
 ---
 layout: base
-title: Blog
-description: 'All blog posts can be found here.'
+title: "Hylia's Corner: A Blog"
+description: Scribbles and essays about creating something in the world and resonating with the art that inspires me.
 pagination:
   data: collections.allPosts
   size: 8
@@ -11,8 +11,8 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
 <div class="wrapper">
   <header class="full | section spot-color-theme-secondary">
     <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
-      <h1 class="text-center" style="color: var(--color-text);">{{ title }}</h1>
-      <h3 class="text-center" style="color: var(--color-text);">Scribbles and essays about creating something in the world (and guilty pleasures).</h3>
+      <h1 class="text-center" style="color: var(--color-text);">{{ meta.blog.name }}</h1>
+      <h3 class="text-center" style="color: var(--color-text);">{{ meta.blog.description }}</h3>
     </div>
 
     {% svg "divider/pixels", null, "divider" %}

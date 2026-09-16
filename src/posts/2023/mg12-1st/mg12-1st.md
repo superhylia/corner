@@ -5,7 +5,7 @@ date: 2023-11-05
 lastEdit: 2026-03-28
 lastEditReason: to add images with this repost.
 redirectFrom: ['/blog/mg12-old/']
-tags: ['games', 'review', 'metal-gear', 'repost']
+tags: ['games', 'review', 'metal-gear', 'repost', 'konami', 'msx', 'stealth']
 image: '/posts/2023/mg12-1st/mc_header.jpg'
 alt: 'The cover arts for both Metal Gear and Metal Gear 2: Solid Snake side by side. The former shows Snake holding his gun while the latter shows Metal Gear D trampling around Zanzibar Land.'
 credit: 'Konami for the Master Collection.'

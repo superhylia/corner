@@ -23,6 +23,9 @@ import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
 import { execSync } from 'child_process';
 
+// defines production
+const isProduction = process.env.ELEVENTY_ENV === 'production';
+
 export default async function (eleventyConfig) {
   // --------------------- Events: before build
   eleventyConfig.on('eleventy.before', async () => {
@@ -90,16 +93,47 @@ export default async function (eleventyConfig) {
   })
 
   eleventyConfig.addPlugin(plugins.embedEverything, {
-    use: ['bluesky', 'instagram', 'twitter', 'spotify', 'twitch'],
+    use: ['bluesky', 'instagram', 'twitter', 'spotify', 'twitch', 'mastodon', 'youtube'],
     twitch: {
-      parent: "superhylia.dev"
+      options: {
+        parent: isProduction ? "superhylia.dev" : "localhost"
+      }
+    },
+    youtube: {
+      options: {
+        titleOptions: {
+            download: true
+          },
+        lite: {
+          css: {
+            inline: true
+          },
+          js: {
+            inline: true
+          },
+          responsive: true
+        }
+      }
     },
     mastodon: {
-      server: 'mastodon.social'
+      options: {
+        server: 'mastodon.social'
+      }
+    },
+    instagram: {
+      options: {
+        width: '100%',
+        align: 'center'
+      }
     },
     twitter: {
-      cacheText: true,
-      theme: 'dark',
+      options: {
+        cacheText: true,
+        theme: 'dark',
+        doNotTrack: 'true',
+        cacheText: true,
+        align: "center"
+      }
     }
   });
 
