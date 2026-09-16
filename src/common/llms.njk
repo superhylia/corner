@@ -1,0 +1,27 @@
+{#-
+  Machine-readable summary of this site for LLMs and AI agents,
+  following the llms.txt convention: https://llmstxt.org/
+  Enable via meta.robots.generateLlmsTxt.
+-#}
+# {{ meta.siteName }}
+
+> {{ meta.siteDescription }}
+
+## Pages
+{% for page in collections.showInSitemap %}
+{%- if '/pages/' in page.inputPath and page.url and page.url != '/' and page.data.excludeFromSitemap != true %}
+{%- if not page.data.pagination or page.data.pagination.pageNumber == 0 %}
+- [{{ page.data.title }}]({{ meta.url }}{{ page.url }}){% if page.data.description %}: {{ page.data.description }}{% endif %}
+{%- endif %}
+{%- endif %}
+{%- endfor %}
+
+## Blog
+{% for post in collections.allPosts %}
+- [{{ post.data.title }}]({{ meta.url }}{{ post.url }}){% if post.data.description %}: {{ post.data.description }}{% endif %}
+{%- endfor %}
+
+## Optional
+
+- [Sitemap]({{ meta.url }}/sitemap.xml): XML sitemap of all pages
+- [Atom feed]({{ meta.url }}/feed.xml): The latest blog posts as a feed

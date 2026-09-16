@@ -4,7 +4,6 @@
  * Hint VS Code for eleventyConfig autocompletion.
  * © Henry Desroches - https://gist.github.com/xdesro/69583b25d281d055cd12b144381123bf
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig -
- * @returns {Object} -
  */
 
 // register dotenv for process.env.* variables to pickup
@@ -112,6 +111,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
     widths: ['auto'],
+    sharpOptions: {
+      animated: true
+    },
     cacheOptions: {
       duration: "1d",
       directory: ".cache", // This folder will store the "memory" of processed images
@@ -139,6 +141,7 @@ export default async function (eleventyConfig) {
   // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
   eleventyConfig.addFilter('formatDate', filters.formatDate);
+  eleventyConfig.addFilter('escapeHtml', filters.escapeHtml);
   eleventyConfig.addFilter('markdownFormat', filters.markdownFormat);
   eleventyConfig.addFilter('splitlines', filters.splitlines);
   eleventyConfig.addFilter('striptags', filters.striptags);
@@ -149,8 +152,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('readingTime', filters.readingTime); 
 
   // --------------------- Shortcodes
-  eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
-  eleventyConfig.addShortcode('image', shortcodes.imageShortcode);
+  eleventyConfig.addShortcode('svg', shortcodes.svgPositionalShortcode);
+  eleventyConfig.addShortcode('svgKeys', shortcodes.svgKeysShortcode);
+  eleventyConfig.addShortcode('image', shortcodes.imagePositionalShortcode);
   eleventyConfig.addShortcode('imageKeys', shortcodes.imageKeysShortcode);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
@@ -181,6 +185,7 @@ export default async function (eleventyConfig) {
   if (process.env.ELEVENTY_ENV != 'test') {
     eleventyConfig.ignores.add('src/common/pa11y.njk');
   }
+}
 
 
   // ----------------------  ignore test files
@@ -200,15 +205,14 @@ export default async function (eleventyConfig) {
     }
   });
 
-  // --------------------- general config
-  return {
-    markdownTemplateEngine: 'njk',
+// https://www.11ty.dev/docs/config-shapes/#callback-function
+return {
+  markdownTemplateEngine: 'njk',
 
-    dir: {
-      output: 'dist',
-      input: 'src',
-      includes: '_includes',
-      layouts: '_layouts'
-    }
-  };
-}
+  dir: {
+    output: 'dist',
+    input: 'src',
+    includes: '_includes',
+    layouts: '_layouts'
+  }
+};

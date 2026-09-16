@@ -8,86 +8,57 @@ Disallow: /404.html
 
 Sitemap: {{ meta.url }}/sitemap.xml
 
-# https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt
-
-User-agent: AI2Bot
-User-agent: Ai2Bot-Dolma
-User-agent: aiHitBot
-User-agent: Amazonbot
-User-agent: Andibot
-User-agent: anthropic-ai
-User-agent: Applebot
-User-agent: Applebot-Extended
-User-agent: bedrockbot
-User-agent: Brightbot 1.0
-User-agent: Bytespider
-User-agent: CCBot
-User-agent: ChatGPT-User
-User-agent: Claude-SearchBot
-User-agent: Claude-User
-User-agent: Claude-Web
-User-agent: ClaudeBot
-User-agent: cohere-ai
-User-agent: cohere-training-data-crawler
-User-agent: Cotoyogi
-User-agent: Crawlspace
-User-agent: Diffbot
-User-agent: DuckAssistBot
-User-agent: EchoboxBot
-User-agent: FacebookBot
-User-agent: facebookexternalhit
-User-agent: Factset_spyderbot
-User-agent: FirecrawlAgent
-User-agent: FriendlyCrawler
-User-agent: Google-CloudVertexBot
-User-agent: Google-Extended
-User-agent: GoogleOther
-User-agent: GoogleOther-Image
-User-agent: GoogleOther-Video
-User-agent: GPTBot
-User-agent: iaskspider/2.0
-User-agent: ICC-Crawler
-User-agent: ImagesiftBot
-User-agent: img2dataset
-User-agent: ISSCyberRiskCrawler
-User-agent: Kangaroo Bot
-User-agent: meta-externalagent
-User-agent: Meta-ExternalAgent
-User-agent: meta-externalfetcher
-User-agent: Meta-ExternalFetcher
-User-agent: MistralAI-User/1.0
-User-agent: MyCentralAIScraperBot
-User-agent: NovaAct
-User-agent: OAI-SearchBot
-User-agent: omgili
-User-agent: omgilibot
-User-agent: Operator
-User-agent: PanguBot
-User-agent: Panscient
-User-agent: panscient.com
-User-agent: Perplexity-User
-User-agent: PerplexityBot
-User-agent: PetalBot
-User-agent: PhindBot
-User-agent: Poseidon Research Crawler
-User-agent: QualifiedBot
-User-agent: QuillBot
-User-agent: quillbot.com
-User-agent: SBIntuitionsBot
-User-agent: Scrapy
-User-agent: SemrushBot
-User-agent: SemrushBot-BA
-User-agent: SemrushBot-CT
-User-agent: SemrushBot-OCOB
-User-agent: SemrushBot-SI
-User-agent: SemrushBot-SWA
-User-agent: Sidetrade indexer bot
-User-agent: TikTokSpider
-User-agent: Timpibot
-User-agent: VelenPublicWebCrawler
-User-agent: Webzio-Extended
-User-agent: wpbot
-User-agent: YandexAdditional
-User-agent: YandexAdditionalBot
-User-agent: YouBot
-Disallow: /
+{#-
+  AI bot lists from https://github.com/ai-robots-txt/ai.robots.txt
+  Toggled via meta.robots.allowAiCrawlers / allowAiAgents.
+-#}
+{%- if not meta.robots.allowAiCrawlers %}
+{%- set aiCrawlers = [
+  'AI2Bot', 'AI2Bot-DeepResearchEval', 'AIWebIndex', 'AddSearchBot', 'Ai2Bot-Dolma',
+  'Amazonbot', 'Amzn-SearchBot', 'Andibot', 'Anomura', 'ApifyBot',
+  'ApifyWebsiteContentCrawler', 'Applebot', 'Applebot-Extended', 'Aranet-SearchBot', 'Awario',
+  'AzureAI-SearchBot', 'Bravebot', 'Brightbot', 'Brightbot 1.0', 'BuddyBot',
+  'Bytespider', 'CCBot', 'Channel3Bot', 'ChatGLM-Spider', 'Claude-SearchBot',
+  'Claude-Web', 'ClaudeBot', 'CloudVertexBot', 'Cloudflare-AutoRAG', 'Cotoyogi',
+  'CragCrawler', 'Crawl4AI', 'Crawlspace', 'Datenbank Crawler', 'DeepSeekBot',
+  'Diffbot', 'DoubaoBot', 'ERNIEBot', 'Echobot Bot', 'EchoboxBot',
+  'ExaBot', 'ExaSearchBot', 'FacebookBot', 'Factset_spyderbot', 'FirecrawlAgent',
+  'FriendlyCrawler', 'GPTBot', 'Gemini-Deep-Research', 'Google-CloudVertexBot', 'Google-Extended',
+  'Google-Firebase', 'GoogleOther', 'GoogleOther-Image', 'GoogleOther-Video', 'HenkBot',
+  'ICC-Crawler', 'ISSCyberRiskCrawler', 'ImagesiftBot', 'Kangaroo Bot', 'Kimi-SearchBot',
+  'KimiBot', 'KlaviyoAIBot', 'KunatoCrawler', 'LAIONDownloader', 'LCC',
+  'Lightpanda', 'LinerBot', 'Linguee Bot', 'LinkupBot', 'Meta-ExternalAgent',
+  'MistralAI-Index', 'MistralAI-Training', 'MyCentralAIScraperBot', 'NagetBot', 'OAI-AdsBot',
+  'OAI-SearchBot', 'OpenAI', 'PanguBot', 'Panscient', 'PerplexityBot',
+  'PetalBot', 'PhindBot', 'Poggio-Citations', 'Poseidon Research Crawler', 'QualifiedBot',
+  'Querit-SearchBot', 'QueritBot', 'QuillBot', 'QwenBot', 'Reflectionbot',
+  'SBIntuitionsBot', 'Scrapy', 'SemrushBot-OCOB', 'SemrushBot-SWA', 'ShapBot',
+  'Sidetrade indexer bot', 'Spider', 'TavilyBot', 'Terra Cotta', 'TerraCotta',
+  'Thinkbot', 'TikTokSpider', 'Timpibot', 'TongyiBot', 'UseAI',
+  'VelenPublicWebCrawler', 'WARDBot', 'WRTNBot', 'Webzio-Extended', 'YaK',
+  'YandexAdditional', 'YandexAdditionalBot', 'YiyanBot', 'YouBot', 'ZanistaBot',
+  'aiHitBot', 'amazon-QBusiness', 'amazon-kendra', 'anthropic-ai', 'atlassian-bot',
+  'bedrockbot', 'bigsur.ai', 'cohere-ai', 'cohere-training-data-crawler', 'facebookexternalhit',
+  'iAskBot', 'iaskspider', 'iaskspider/2.0', 'imageSpider', 'img2dataset',
+  'laion-huggingface-processor', 'meta-externalagent', 'meta-webindexer', 'netEstate Imprint Crawler', 'newsai',
+  'omgili', 'omgilibot', 'panscient.com', 'quillbot.com', 'webzio-extended',
+  'wpbot'
+] -%}
+{%- set aiAgents = [
+  'AgentTimes', 'AmazonBuyForMe', 'Amzn-User', 'ChatGPT Agent', 'ChatGPT-User',
+  'Claude-Code', 'Claude-User', 'Code', 'Cursor', 'Devin',
+  'Diffbot-User', 'DuckAssistBot', 'GeistHaus-PageFetcher', 'Google-Agent', 'Google-Gemini-CLI',
+  'Google-NotebookLM', 'GoogleAgent-Mariner', 'GoogleAgent-URLContext', 'Kimi-User', 'Manus-User',
+  'Meta-ExternalFetcher', 'MistralAI-User', 'MistralAI-User/1.0', 'Mozilla-Tabstack', 'NotebookLM',
+  'NovaAct', 'Operator', 'Perplexity-User', 'Shap-User', 'Trae',
+  'TwinAgent', 'kagi-fetcher', 'meta-externalfetcher', 'opencode'
+] -%}
+# AI training and data scraper bots
+{% for bot in aiCrawlers %}User-agent: {{ bot }}
+{% endfor %}Disallow: /
+{% endif %}
+{%- if not meta.robots.allowAiAgents %}
+# On-demand AI assistants and browsing agents
+{% for bot in aiAgents %}User-agent: {{ bot }}
+{% endfor %}Disallow: /
+{% endif %}

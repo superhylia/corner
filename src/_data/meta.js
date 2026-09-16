@@ -93,6 +93,16 @@ export const greenweb = {
   ],
   services: [{domain: 'netlify.com', serviceType: 'cdn'}]
 };
+export const robots = {
+  // AI bot user agents live in `src/common/robots.njk` (sourced from
+  // https://github.com/ai-robots-txt/ai.robots.txt).
+  // Training / AI-search scrapers
+  allowAiCrawlers: false,
+  // On-demand assistants and browsing agents.
+  allowAiAgents: false,
+  // emit /llms.txt at build time.
+  generateLlmsTxt: false
+};
 export const tests = {
   pa11y: {
     // keep customPaths empty if you want to test all pages

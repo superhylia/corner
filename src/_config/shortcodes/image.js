@@ -45,6 +45,7 @@ const processImage = async options => {
   const metadata = await Image(src, {
     widths: [...widths],
     formats: [...formats],
+    sharpOptions: {animated: true},
     cacheOptions: {
       duration: "1d",
       directory: cacheDir,
@@ -60,7 +61,9 @@ const processImage = async options => {
     }
   });
 
-  const lowsrc = metadata.jpeg[metadata.jpeg.length - 1];
+  // fallback when jpeg was filtered out (e.g. animated sources)
+  const lowsrcFormat = metadata.jpeg || Object.values(metadata).pop();
+  const lowsrc = lowsrcFormat[lowsrcFormat.length - 1];
 
   const imageSources = Object.values(metadata)
     .map(imageFormat => {
@@ -103,7 +106,7 @@ return `<div slot="image" class="gallery-item-wrapper">${imageMarkup}</div>`;  }
 
 
 // Positional parameters (legacy)
-export const imageShortcode = async (
+export const imagePositionalShortcode = async (
   src,
   alt,
   caption,
