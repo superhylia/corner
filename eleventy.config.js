@@ -206,7 +206,7 @@ export default async function (eleventyConfig) {
   });
 
 // https://www.11ty.dev/docs/config-shapes/#callback-function
-return {
+export const config =  {
   markdownTemplateEngine: 'njk',
 
   dir: {
