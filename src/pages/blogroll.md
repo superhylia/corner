@@ -7,6 +7,8 @@ redirectFrom: ['/pageroll/index.html']
 ---
 Here's a list of blogs and sites (with a recommended post or two) that I tend to read on a decently frequent basis.
 ## Games
+* [Lakespirit](https://lakespirit.love/)
+  * [Street Fighter III: 3rd Strike - Fight for the Future](https://lakespirit.love/posts/2025-10-12-Street-Fighter-III-3S)
 * [Kayinworks](https://kayin.moe/)
   * ["Why Do You Want To Play A Remake?"](https://kayin.moe/why-play-a-remake)
   * ["Engage with Media but don't Overthink it!!"](https://kayin.moe/cohost/engage-with-media)
@@ -18,6 +20,8 @@ Here's a list of blogs and sites (with a recommended post or two) that I tend to
   * [media diary - november 2024](https://smudgebap.com/media/2024-11)
 * [It's Me, Lily V](https://itsmelilyv.com/)
   * [Tempo and Tempo Shifting in Video Games](https://itsmelilyv.com/blog/z1_tempo)
+* [Joe Wintergreen](https://www.joewintergreen.com/)
+  * [So You're Moving From Unity to Unreal](https://www.joewintergreen.com/unity-to-unreal/)
 * [Mothership](https://www.mothership.blog/)
   * ["Dear Mother: How do you write about games?"](https://www.mothership.blog/dear-mother-how-do-you-write-about-games/)
 * [Aftermath](https://aftermath.site/)
