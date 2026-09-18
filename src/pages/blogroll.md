@@ -27,7 +27,6 @@ Here's a list of blogs and sites (with a recommended post or two) that I tend to
 * [It's Me, Lily V](https://itsmelilyv.com/)
   * [Tempo and Tempo Shifting in Video Games](https://itsmelilyv.com/blog/z1_tempo)
 * Bobby Schroeder for Ponett Gazette
-  * 
   * [Video game discourse grab bag: The Game Awards 2025, Expedition 33, and Silksong](https://ponett.dog/blog/video-game-discourse-grab-bag)
 * [dreamcastaway](https://transgamerthoughts.com/)
   * [The Attempt to Escape From Pain Creates More Pain](https://transgamerthoughts.com/post/802763182951301120/the-attempt-to-escape-from-pain-creates-more-pain)
