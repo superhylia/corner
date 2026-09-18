@@ -71,6 +71,7 @@ gallery2:
 {% set galleryItems = gallery2 %}
 {% include "partials/gallery.njk" %}
 
+![Built with Eleventy animated badge](/assets/88x31.gif)
 
 https://bsky.app/profile/6bghateaccount.bsky.social/post/3mrc7qdegu22f
 
