@@ -85,6 +85,9 @@ https://www.twitch.tv/lifelightcafe
 
 https://www.youtube.com/watch?v=mWCYnRia01w
 
+<div data-gaming-blogs-widget data-gaming-blogs-widget-layout="vertical" style="min-height: 181px;"></div>
+
+
 <div class="wrapper">
   <header class="full | section" style="--spot-color: var(--color-primary)">
     <div class="section__inner flow region">

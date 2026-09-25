@@ -33,7 +33,7 @@ export default async function (eleventyConfig) {
     await events.buildAllJs();
   });
 
-  // --------------------- custom wtach targets
+  // --------------------- custom watch targets
   eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg,xsl}');
   eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc}');
 
@@ -111,7 +111,8 @@ export default async function (eleventyConfig) {
           js: {
             inline: true
           },
-          responsive: true
+          responsive: true,
+          thumbnailQuality: 'maxresdefault'
         }
       }
     },
