@@ -7,7 +7,7 @@ tags: ['games', 'marathon', 'fps', 'online', 'bungie', 'sony']
 image: '/posts/2026/marathon/pew.jpg'
 alt: 'A Vandal Shell from the 2026 game Marathon points her fingers in a gun-like motion to the camera.'
 credit: '[Bungie](https://press.bungie.com/Marathon#?tab=screenshots-1&scrollto=).'
-bskyurl:
+bskyurl: https://bsky.app/profile/superhylia.dev/post/3mwex6oypdk25
 draft:
 gallery:
   - image: ./src/posts/2026/marathon/death.png
