@@ -1,13 +1,13 @@
 ---
 title: 'Marathon (2026): Shells In The Wild'
 description: "Beauty in every death, every resurrection, every new grasp at life. A fashionably late analysis of Season 1, Season 2, Vault Breaker, and the future of a perhaps dead phoenix."
-date: 2026-09-24
+date: 2026-09-25
 redirectFrom: ['/blog/marathon']
 tags: ['games', 'marathon', 'fps', 'online', 'bungie', 'sony']
 image: '/posts/2026/marathon/pew.jpg'
 alt: 'A Vandal Shell from the 2026 game Marathon points her fingers in a gun-like motion to the camera.'
 credit: '[Bungie](https://press.bungie.com/Marathon#?tab=screenshots-1&scrollto=).'
-bskyurl:
+bskyurl: https://bsky.app/profile/superhylia.dev/post/3mwex6oypdk25
 draft:
 gallery:
   - image: ./src/posts/2026/marathon/death.png
