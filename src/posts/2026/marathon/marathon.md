@@ -11,7 +11,7 @@ bskyurl:
 draft:
 gallery:
   - image: ./src/posts/2026/marathon/death.png
-    alt: 'A screenshot of *Marathon* showing a downed Vandal shell near-death about to exfil: "MATTER TRANSFER IN 0:04".'
+    alt: 'A screenshot of *Marathon* showing a downed Vandal shell near-death about to exfil: MATTER TRANSFER IN 0:04.'
     caption: 'Downed, but never out.'
     credit: 'My own screenshot of *Marathon*.'
   - image: ./src/posts/2026/marathon/encounter.png
