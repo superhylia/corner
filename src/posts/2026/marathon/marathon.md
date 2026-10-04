@@ -98,7 +98,7 @@ It had art direction. A strange, strange world of danger, organically robotic. T
 
 {% include "partials/toc.njk" %}
 
-## Gameplay: Death is the First Step.
+## Gameplay: Death is the First Step. 
 
 {% image "/posts/2026/marathon/leap.jpg", "A Vandal Shell leaps from a high point.", null, "[Bungie](https://press.bungie.com/Marathon#?tab=screenshots-1&scrollto=)." %}
 
