@@ -10,7 +10,7 @@
 }
 
 .prose :is(figure + *, picture + *) {
-  --flow-space: var(--space-xl);
+  --flow-space: var(--space-m-l);
 }
 
 .prose :is(img, video) {
