@@ -79,6 +79,7 @@ Being the newest game in the 2D series (and now its best-selling), _Metroid Drea
 Controls are buttery smooth, the visuals are incredible, the bosses are challenging, and the game genuinely evolves the series tropes through new abilities. Full completion was even quite balanced for once, something I could never say about my (still beloved) _Fusion_. Most importantly, I found its map design to (eventually) strike a good balance between player guidance and genuine exploration and sequence breaks. _Dread_ definitely has its faults ([I find Kayin captures them well](https://kayin.moe/metroid-dread)) and I think _Super_ and _Prime_ still have stronger design overall. Despite it all, _Dread_ absolutely resonated with me and (as of writing) remains my favorite game in the entire series. I'm eager to give it yet another replay and clinch sub-4 hours in Hard Mode.
 
 {% image "/posts/2026/metroid-starter-guide/dread.jpg", "Samus in Metroid Dread runs while shooting at a flying enemy.", null, "[Official screenshot](https://www.nintendo.com/us/store/products/metroid-dread-switch/)." %}
+{% image "/posts/2026/metroid-starter-guide/dread.jpg", "Samus in Metroid Dread runs while shooting at a flying enemy.", null, "[Official screenshot](https://www.nintendo.com/us/store/products/metroid-dread-switch/)." %}
 
 _Metroid Dread_ is available on Nintendo Switch.
 
@@ -86,6 +87,7 @@ _Metroid Dread_ is available on Nintendo Switch.
 
 https://youtu.be/RGxO7z4lHOc?si=HEo2d7AxGj7ttlAx
 
+_Metroid Prime_, often confused for the mainline titles, are a phenomenal set of games and it was the original _Prime_'s reveal reception that simultaneously ended an 8 year hiatus and spurred _Fusion_'s development. Recently, _Prime 4: Beyond_’s mixed reception (relative to this series’ high standards) has caused reassessment of the _Prime_ series. While all games, especially ones so revered as the _Prime_ trilogy, eventually get their lumps, please don’t be mistaken: they're still phenomenal.
 _Metroid Prime_, often confused for the mainline titles, are a phenomenal set of games and it was the original _Prime_'s reveal reception that simultaneously ended an 8 year hiatus and spurred _Fusion_'s development. Recently, _Prime 4: Beyond_’s mixed reception (relative to this series’ high standards) has caused reassessment of the _Prime_ series. While all games, especially ones so revered as the _Prime_ trilogy, eventually get their lumps, please don’t be mistaken: they're still phenomenal.
 
 While _Prime_ lost 2D _Metroid_'s liberating mobility in the transition to 3D, I otherwise find the games to nail the appeal of the franchise. Despite being first-person shooters, combat admittedly isn't their strongest suit. Rather, they excel with incredible immersion, detailed world design, varied puzzles and platforming, and an enthralling isolation that very few games capture. 3D Metroidvanias are sadly rare, but amongst the few like my beloved _Batman: Arkham Asylum_ (2009) and _Pseudoregalia_ (2023), _Metroid Prime_ and _2: Echoes_ still carry the crown.
