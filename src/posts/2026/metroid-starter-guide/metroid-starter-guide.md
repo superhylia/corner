@@ -7,7 +7,7 @@ tags: ['games', 'metroid', 'metroidvania', 'nintendo', 'retro-studios', 'remakes
 image: '/posts/2026/metroid-starter-guide/artwork.png'
 alt: 'Samus poses in her Power Suit in front of several enemies and characters from the series.'
 credit: '[Chozo Archives in Metroid Dread.](https://breezewiki.com/metroid/wiki/File:MD_Chozo_Archives_09.jpeg).'
-bskyurl: 
+bskyurl: https://bsky.app/profile/did:plc:2pc4xllqwmuur3ch2cyoyddr/post/3mx3jqwzcks2o
 draft: 
 ---
 
@@ -74,11 +74,11 @@ _Metroid_ is available on Nintendo Entertainment System/Family Computer - Ninten
 
 {% image "/posts/2026/metroid-starter-guide/dread-kraid.jpg", "Samus in Metroid Dread fights the ginormous Kraid.", "God, this game is awesome.", "[Edited screenshots by Digital Frontiers](https://www.artstation.com/artwork/oblGlW)." %}
 
-Being the newest in the series, now its best-selling, _Metroid Dread_ is the closest game to what _Ravenous_ will become. *Dread*'s free ~30-minute demo lets you explore the opening of Artaria, evade 2 EMMI, acquire the first 3 upgrades, and fight the Corpius boss. What better place to start than free?
+Being the newest game in the 2D series (and now its best-selling), _Metroid Dread_ is the closest game to what _Ravenous_ will become. *Dread*'s free ~30-minute demo lets you explore the opening of Artaria, evade 2 EMMI, acquire the first 3 upgrades, and fight the Corpius boss. What better place to start than free?
 
 Controls are buttery smooth, the visuals are incredible, the bosses are challenging, and the game genuinely evolves the series tropes through new abilities. Full completion was even quite balanced for once, something I could never say about my (still beloved) _Fusion_. Most importantly, I found its map design to (eventually) strike a good balance between player guidance and genuine exploration and sequence breaks. _Dread_ definitely has its faults ([I find Kayin captures them well](https://kayin.moe/metroid-dread)) and I think _Super_ and _Prime_ still have stronger design overall. Despite it all, _Dread_ absolutely resonated with me and (as of writing) remains my favorite game in the entire series. I'm eager to give it yet another replay and clinch sub-4 hours in Hard Mode.
 
-{% image "/posts/2026/metroid-starter-guide/dread.jpg", "Samus in Metroid Dread runs while shooting at a flying enemy.", null, "[Official screenshot.](https://www.nintendo.com/us/store/products/metroid-dread-switch/)." %}
+{% image "/posts/2026/metroid-starter-guide/dread.jpg", "Samus in Metroid Dread runs while shooting at a flying enemy.", null, "[Official screenshot](https://www.nintendo.com/us/store/products/metroid-dread-switch/)." %}
 
 _Metroid Dread_ is available on Nintendo Switch.
 
@@ -86,7 +86,7 @@ _Metroid Dread_ is available on Nintendo Switch.
 
 https://youtu.be/RGxO7z4lHOc?si=HEo2d7AxGj7ttlAx
 
-_Metroid Prime_, often confused for the mainline titles, are a phenomenal set of games and it was the original _Prime_'s reveal reception that simultaneously ended an 8 year hiatus and spurred *_Fusion_'s development. Recently, _Prime 4: Beyond_’s mixed reception (relative to this series’ high standards) has caused reassessment of the _Prime_ series. While all games, especially ones so revered as the _Prime_ trilogy, eventually get their lumps, please don’t be mistaken: they're still phenomenal.
+_Metroid Prime_, often confused for the mainline titles, are a phenomenal set of games and it was the original _Prime_'s reveal reception that simultaneously ended an 8 year hiatus and spurred _Fusion_'s development. Recently, _Prime 4: Beyond_’s mixed reception (relative to this series’ high standards) has caused reassessment of the _Prime_ series. While all games, especially ones so revered as the _Prime_ trilogy, eventually get their lumps, please don’t be mistaken: they're still phenomenal.
 
 While _Prime_ lost 2D _Metroid_'s liberating mobility in the transition to 3D, I otherwise find the games to nail the appeal of the franchise. Despite being first-person shooters, combat admittedly isn't their strongest suit. Rather, they excel with incredible immersion, detailed world design, varied puzzles and platforming, and an enthralling isolation that very few games capture. 3D Metroidvanias are sadly rare, but amongst the few like my beloved _Batman: Arkham Asylum_ (2009) and _Pseudoregalia_ (2023), _Metroid Prime_ and _2: Echoes_ still carry the crown.
 
@@ -114,7 +114,7 @@ https://www.youtube.com/watch?v=vY7CgzISBJk
 
 You may notice that the _Metroid Prime_ sub-series is missing despite being "mainline" games. All but _Prime 4: Beyond_ take place in-between _Metroid_ and _II: Return of Samus_, for reasons the latter game explains. While certainly worth playing, _Prime_ focuses on its own story and won't really contribute to _Ravenous_ since it follows the numbered games’ story. The only mainline-relevant game I’ve yet to play, I unfortunately can’t comment on _Other M_'s role in the narrative. Easily _Metroid_'s most derided game ([for good reason as per Mothership](https://www.mothership.blog/any-objections-lady-on-linearity-subservience-and-feminine-agency-in-metroid-fusion-and-metroid-other-m/)), everyone else is likely to recommend skipping _Other M_ entirely. Once I do get around to it, I'll update this, but I can't say I've missed anything so far.
 
-{% image "/posts/2026/metroid-starter-guide/ravenous.png", "Samus' eye peers from within her green-tinted visor.", "Eat or be eaten? I am scrumptious. :eyes:", "[Screenshot from the *Ravenous* trailer.](https://youtu.be/ku-vSTDNsT8?si=sttS5PHmbYVqkyUI)." %}
+{% image "/posts/2026/metroid-starter-guide/ravenous.png", "Samus' eye peers from within her green-tinted visor.", "Eat or be eaten? I am scrumptious. :eyes:", "[Screenshot from the *Ravenous* trailer](https://youtu.be/ku-vSTDNsT8?si=sttS5PHmbYVqkyUI)." %}
 
 In terms of plot relevance, _Metroid Ravenous_ follows the arc of Samus battling her humanity established by _Fusion_ and expanded in _Dread_. Admittedly, future games do a pretty good job of recapping prior story events: _Super_ managed to do so in just 3 minutes. As such, I wouldn't worry too much about where you start if a particular game speaks to you. My play order was pretty nontraditional (starting with _Super_, _Prime_, _Dread_, then _Zero Mission_, _AM2R_, and _Fusion_) but following the story was still straightforward. With that said, in spite and _because_ of hardware restraints, _Metroid_ usually pushes boundaries to tell engaging stories. Where else can a Game Boy game be the most consequential game in its entire series? How often do games manage to be emotionally resonant and provoking with just 24 megabits of data and no words said? Your experience, informed by order and the versions you choose to play, can drastically change your outlook on the story. For this reason, if Samus' narrative is what hooks you, I seriously implore you to try the original _Metroid II_ alongside its remakes.
 
@@ -152,7 +152,7 @@ I have a question: should new fans even play original _Metroid_ and _Metroid II_
 
 First things first, its important to recognize that people probably mean well in all this. Guided by their own encounters, a fan probably want the best possible experience for someone new to _Metroid_. Some might find story to be what draws them most, others mobility, and yet more map design, and all of this can bias how someone onboards. Despite good intentions, influencing the "best possible" experience can unintentionally become sour. Any mechanical friction, any possible pain point, gets skipped over in fear that a newcomer may never make it far enough to engage with the series like they have.
 
-{% image "/posts/2026/metroid-starter-guide/riku.gif", "Samus' eye peers from within her green-tinted visor.", "\"How about it, friend? We can hate Monstro *together*.\"", "[KHSource.](https://khsource.tumblr.com/post/653562813858660352/kingdom-hearts-2002-dev-square-enix)." %}
+{% image "/posts/2026/metroid-starter-guide/riku.gif", "Samus' eye peers from within her green-tinted visor.", "\"How about it, friend? We can hate Monstro *together*.\"", "[KHSource](https://khsource.tumblr.com/post/653562813858660352/kingdom-hearts-2002-dev-square-enix)." %}
 
 I'm certainly guilty of this as well. Recently, I've put my friends on _Metal Gear_, _Castlevania_, and _Kingdom Hearts_, all 3 series with a profound impact on my appreciation of video games. Having to grapple with their experiences being different (sometimes counter) to mine has been admittedly emotional, both in reaction and reflection. When my friends didn't care for _Kingdom Hearts_' clunky platforming and level design, I instinctively just suggested to head to _Kingdom Hearts II_, my second favorite game ever made, instead. Off their first experience, I just knew they would not enjoy _Re: Chain of Memories_. Hell, outside of its narrative (which I suggested they watch in full), I loathe the game myself. When some found _Kingdom Hearts II_ to only be a mild improvement, others to cut their losses at the first game. I didn't really know how to deal.
 
