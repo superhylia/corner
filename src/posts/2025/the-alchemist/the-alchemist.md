@@ -7,8 +7,7 @@ lastEditReason: to add from Hardcover to my personal site.
 redirectFrom: ['/blog/the-alchemist']
 tags: ['books', 'repost', 'paulo-coelho', 'literature']
 image: '/posts/2025/the-alchemist/cover.jpg'
-alt: |
-  My "Special" & Complex Title: With Quotes and Colons!
+alt: "The book cover for the 25th anniversary edition of The Alchemist by Paulo Coelho, as seen on the red front cover and the spine. The backcover is blue with a crescent moon inside a larger circle. Next to the space of the moon is a quote: TO REALIZE ONE'S DESTINY IS A PERSON'S ONLY OBLIGATION."
 credit: '[Art by Jim Tierney](https://www.jim-tierney.com/#/the-alchemist/), sourced by [ThoughtCo](https://www.thoughtco.com/the-alchemist-overview-4694384).'
 bskyurl: 
 draft: 
