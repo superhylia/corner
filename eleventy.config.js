@@ -112,7 +112,7 @@ export default async function (eleventyConfig) {
             inline: true
           },
           responsive: true,
-          thumbnailQuality: 'maxresdefault'
+          thumbnailQuality: 'sddefault'
         }
       }
     },

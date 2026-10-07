@@ -3,7 +3,7 @@ title: 'Resident Evil (2002 Remake): RE-enter the Survival Horror'
 description: "Fear can't kill you. But, remade, it may take a crimson form..."
 date: 2026-03-19
 redirectFrom: ['/blog/re1make']
-tags: ['games', 'resident-evil', 'remakes', 'horror', 'survival horror', 'review', 'capcom', 'gamecube']
+tags: ['games', 'resident-evil', 'remakes', 'survival-horror', 'review', 'capcom', 'gamecube']
 image: '/posts/2026/re1make/re1_ps3_crop.jpg'
 alt: 'A zombie (the 1st encountered in the game Resident Evil) stands slightly distorted in front of a raw black background, turning its eye toward the viewer.'
 credit: 'Capcom for the biohazard HD Remaster Collector''s Package.'

@@ -23,7 +23,7 @@ class BskyComments extends HTMLElement {
   async fetchComments(postId) {
     const API_URL = "https://api.bsky.app/xrpc/app.bsky.feed.getPostThread";
     try {
-      const response = await fetch(`${API_URL}?uri=${encodeURIComponent(postId)}`);
+      const response = await fetch(`${API_URL}?uri=${encodeURIComponent(postId)}&depth=10`);
       if (!response.ok) throw new Error("Failed to fetch comments");
       return await response.json();
     } catch (error) {
@@ -32,7 +32,7 @@ class BskyComments extends HTMLElement {
     }
   }
 
-  renderEmbeds(embed) {
+  renderEmbeds(embed, postUri = "") {
     const embedBox = document.createElement("div");
     if (embed && embed.$type === "app.bsky.embed.images#view") {
     const images = embed.images;
@@ -52,6 +52,50 @@ class BskyComments extends HTMLElement {
       }
     }
     
+    else if (embed.$type === "app.bsky.embed.external#view" && embed.external) {
+      const ext = embed.external;
+      embedBox.classList.add("comment-externalbox");
+      embedBox.style = "margin-top: var(--space-xs); border: 1px solid var(--color-border, #ccc); border-radius: 8px; overflow: hidden; max-width: 500px;";
+
+      // If it's a GIF (e.g., Tenor GIF), render it directly as an image/animation
+      const isGif = ext.uri.includes(".gif") || ext.uri.includes("tenor.com") || ext.uri.includes("giphy.com") || ext.uri.includes("klipy.com");
+
+      if (isGif && ext.thumb) {
+        embedBox.innerHTML = `
+          <a href="${ext.uri}" target="_blank" style="display: block; text-decoration: none;">
+            <img src="${ext.thumb}" alt="${this.escapeHTML(ext.title || 'GIF')}" style="width: 100%; max-height: 350px; object-fit: contain; border-radius: 8px; display: block;">
+          </a>`;
+      } else {
+        // Standard Link Preview Card
+        embedBox.innerHTML = `
+          <a href="${ext.uri}" target="_blank" style="display: flex; flex-direction: column; text-decoration: none; color: inherit;">
+            ${ext.thumb ? `<img src="${ext.thumb}" alt="${this.escapeHTML(ext.title || '')}" style="width: 100%; max-height: 200px; object-fit: cover;">` : ''}
+            <div style="padding: 10px; background: rgba(0,0,0,0.03);">
+              <strong style="display: block; font-size: 0.95em; margin-bottom: 4px;">${this.escapeHTML(ext.title || ext.uri)}</strong>
+              ${ext.description ? `<p style="font-size: 0.85em; margin: 0; opacity: 0.8; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${this.escapeHTML(ext.description)}</p>` : ''}
+            </div>
+          </a>`;
+      }
+    }
+
+    else if (embed.$type === "app.bsky.embed.video#view") {
+      embedBox.classList.add("comment-videobox");
+      embedBox.style = "margin-top: var(--space-xs); max-width: 500px; position: relative;";
+      
+      const poster = embed.thumbnail || '';
+      const alt = this.escapeHTML(embed.alt || 'Video');
+
+      const videoPostUrl = postUri ? this.convertURI(postUri) : 'https://bsky.app';
+
+      embedBox.innerHTML = `
+        <a href="${videoPostUrl}" target="_blank" style="display: block; position: relative; border-radius: 8px; overflow: hidden;">
+          <img src="${poster}" alt="${alt}" style="width: 100%; display: block; border-radius: 8px;">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" style="width: 24px; height: 24px; margin-left: 3px;"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </a>`;
+    }
+
       return embedBox;
     }
 
@@ -64,11 +108,11 @@ class BskyComments extends HTMLElement {
     const embeds = comment.post?.embed ?? (comment.record?.embeds ? comment.record.embeds[0] : "");
     const uri = comment.post?.uri ?? comment.record?.uri ?? "";
 
-    if (author.displayName === this.hostAuthor) {
+    if (author.did === this.hostAuthor) {
       post.classList.add("comment-host");
     }
 
-    const embedsHTML = this.renderEmbeds(embeds)?.outerHTML || "";
+    const embedsHTML = this.renderEmbeds(embeds, uri)?.outerHTML || "";
 
     post.innerHTML = `
       <div class="comment-innerbox">
@@ -88,7 +132,7 @@ class BskyComments extends HTMLElement {
 
   renderComments(comments, container, hiddenReplies) {
     comments.forEach(reply => {
-      if (hiddenReplies.includes(reply.post.uri)) return;
+      if (!reply || !reply.post || hiddenReplies.includes(reply.post.uri)) return;
 
       const commentEl = this.renderPost(reply);
       container.appendChild(commentEl);
@@ -106,9 +150,10 @@ class BskyComments extends HTMLElement {
   async loadComments(rootPostId, options = {}) {
     const container = document.getElementById("comments-container");
     const commentData = await this.fetchComments(rootPostId);
+    console.log("Thread API Data:", commentData);
 
     if (commentData && commentData.thread) {
-      this.hostAuthor = commentData.thread.post.author.displayName;
+      this.hostAuthor = commentData.thread.post.author.did;
       const commentHidden = commentData.threadgate?.record?.hiddenReplies || [];
 
       // Render Metrics

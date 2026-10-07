@@ -43,13 +43,13 @@ gallery2:
     caption: 'Inside the Somiedo Natural Park, Asturias'
 ---
 ## Alerts
-{% svg "misc/warning" %}
+<!-- {% svg "misc/warning" %}
 {% svg "misc/caution" %}
 {% svg "misc/warning2" %}
 {% svg "misc/nuclear" %}
 {% svg "misc/remind" %}
 {% svg "misc/pin" %}
-{% svg "misc/info" %}
+{% svg "misc/info" %} -->
 
 > [!NOTE] Hey, listen!
 > Highlights information that users should take into account, even when skimming.
@@ -73,6 +73,7 @@ gallery2:
 
 ![Built with Eleventy animated badge](/assets/88x31.gif)
 
+
 https://bsky.app/profile/6bghateaccount.bsky.social/post/3mrc7qdegu22f
 
 https://twitter.com/JonComms/status/1682693007638773761
@@ -85,40 +86,19 @@ https://www.twitch.tv/lifelightcafe
 
 https://www.youtube.com/watch?v=mWCYnRia01w
 
-<div data-gaming-blogs-widget data-gaming-blogs-widget-layout="vertical" style="min-height: 181px;"></div>
+https://www.youtube.com/watch?v=glCZdc4yniQ&pp=ygUUbWV0cm9pZCAyIGNvbW1lcmNpYWw%3D
 
+<div metroidgif style="min-height: 83px; margin-left: auto; margin-right: auto">{% image "/assets/88x31.gif" %}</div>
 
-<div class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-primary)">
-    <div class="section__inner flow region">
-      <h1 class="text-center" style="color: var(--color-text);">{{ title }}</h1>
-    </div>
+<style>
+  [data-gaming-blogs-widget] a,
+  [data-gaming-blogs-widget] a::after,
+  [data-gaming-blogs-widget] a::before {
+    background-image: none !important;
+    content: none !important;
+    padding-right: 0 !important;
+  }
+</style>
 
-    {% svg "divider/waves", null, "divider" %}
-  </header>
-
-<article class="full | region">
-    <div class="wrapper flow prose">
-      <p>
-        I am <b>Levi Ireri</b>, known online as <b>Hylia</b> (superhylia), a current student at the University of Texas at Dallas to pursue a B.S. in Computer Science. I am a game developer and designer, programmer, graphic designer, and writer, among many other things. 
-      </p>
-      <p>
-        You may know me for hosting a couple of Smash and other fighting game tournaments, probably with Lifelight Cafe, the fighting game community I own and have run as head tournament organizer since 2020.
-      </p>
-      <p>         
-        If you want to know exactly how it all works, <a href="https://piccalil.li/blog/a-css-project-boilerplate/"> read this article on piccalil.li</a>.
-      </p>
-      <p>
-        The aim is to spread the idea and use of this <u>excellent</u> workflow. To work with it efficiently you should be familiar with <a href="https://cube.fyi/"> cube.fyi</a>
-      </p>
-      <p>
-        <ul>
-          <li> <a href=https://buildexcellentwebsit.es"> buildexcellentwebsit.es</a></li>
-          <li> Remix the original: https://glitch.com/edit/#!/remix/build-excellent-websites</li>
-          <li> Study the original CSS boilerplate: https://github.com/Set-Creative-Studio/cube-boilerplate/tree/main</li>
-        </ul>
-      </p>
-      <h2>These are a few of my favorite things...</h2>
-    </div>
-  </article>
-
+<div data-gaming-blogs-widget class="no-indicator" style="min-height: 83px; margin-left: auto; margin-right: auto;"></div>
+  <script src="https://www.warppoint.games/embed.js" async></script>
