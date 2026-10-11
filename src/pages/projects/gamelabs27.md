@@ -48,6 +48,8 @@ Hello, my name is Levi Ireri, a UT Dallas junior student pursuing a B.S in Compu
 
 My primary areas of interest are leading in game/systems design, programming, and level design. I also have published work for graphic design, UI/UX design, and writing as well.
 
+With my application to Game Production Lab, I am looking to get more experience in a collaborative environment while developing video games to both support and (if given the chance) lead. While my own self-study and personal projects are fulfilling and motivated, there are development realities only a class like this can provide such as team management, consistent scheduling, and scope. Even if only halfway through the development of the game, Game Production Lab can be a substantial opportunity to improve skills and create demonstrable work in my biggest focus areas of game/systems design and programming. Any engine used would be beneficial to further my understanding of, whether it be Godot, Unreal, Unity, or PICO-8 (engines I already have experience in) or something new entirely like Twine that would be a new challenge. Outside of my focus areas, I hope I can use my multidisciplinary interests in graphic design, UI/UX design, writing, and game studies as part of the course as well.
+
 {% include "partials/toc.njk" %}
 
 ## Game Jams
@@ -59,11 +61,11 @@ My primary areas of interest are leading in game/systems design, programming, an
 
 > Shattered Reflections is a hand-drawn 2D puzzle-platformer breaking the boundaries of the labryinthian Prototype. The Hero will need momentum and problem-solving to cast Mirrors throughout the strange land of the Prototype, all in hopes of finding their way back home to their own game. 
 
-I worked on this game as part of a team of 5. My contributions were: 
+I worked on this game as part of a team of 5. We won "Innovation/Most Innovative" by a unanimous vote from selected SGDA officers and UTD professors for our game "Shattered Reflections". My contributions were: 
 
 * UI/UX as the sole UI/UX designer entirely utilizing Godot's interface functions
-  * Implemented button prompts using the ["Button Prompts for Godot"](https://store.godotengine.org/asset/clive-dev/button-prompts-for-godot/) library
-  * Used Containers and Control nodes for the persistent portal counter and timer
+  * Implemented various controller/keyboard input button prompts using the ["Button Prompts for Godot"](https://store.godotengine.org/asset/clive-dev/button-prompts-for-godot/) library
+  * Used Containers and Control nodes for the persistent portal counter and timer as well as the title screen
 * Graphic design as the designer of the game's logo 
 * Game design, defining the game's core design pillars and controls
 * Level designer during development
