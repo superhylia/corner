@@ -3,7 +3,8 @@ title: 'So, You Want to Play Metroid: A Series Starter Guide'
 description: "Some advice from a fan on how to get into the Metroid series and a contrived discussion on what it's like getting others into something you love."
 date: 2026-10-04
 redirectFrom: ['/blog/metroid-starter-guide']
-tags: ['games', 'metroid', 'metroidvania', 'nintendo', 'retro-studios', 'remakes', 'starter-guide',]
+tags: ['games', 'metroid', 'metroidvania', 'nintendo', 'retro-studios', 
+'remakes', 'starter-guide',]
 image: '/posts/2026/metroid-starter-guide/artwork.png'
 alt: 'Samus poses in her Power Suit in front of several enemies and characters from the series.'
 credit: '[Chozo Archives in Metroid Dread.](https://breezewiki.com/metroid/wiki/File:MD_Chozo_Archives_09.jpeg).'
