@@ -88,7 +88,7 @@ I developed this game as a sole developer for my first public game jam. My contr
 * Sound designer on ability and interaction effects
 * Pixel artist on enemy, player, and environment sprites
 
-I also wrote a set of devlogs for the game while I established the games concept.
+I also wrote a set of devlogs for the game demonstrating my process while I established the games concept and wrote a game design document.
 
 <custom-masonry layout="50-50">
     {% set itemList = collections['all-eyes-on-me'] %}
@@ -133,7 +133,7 @@ This semester, I am also currently apart of Dr. Monica Evans' "Designing Mystery
 
 ## (Game Studies/Analysis) Blog Writing
 
-4 of my most recent pieces of writing, which also happen to be the best demonstrations of my work. I write games criticism and analysis as a personal hobby, examining games as an art form through their design, history, and development. My work has been published on [Warp Point](https://www.warppoint.games/about), "a curated directory of video game websites", and quoted in [Critical Distance](https://www.critical-distance.com/2026/09/27/september-27th-4/), a weekly newsletter and "compendium of the most incisive, thought-provoking, and remarkable discussion in and around games".
+4 of my most recent pieces of writing, which also happen to be the best demonstrations of my work. I write in-depth games criticism and analysis as a personal hobby, examining games as an art form through their design, history, and development. My work is published on [Warp Point](https://www.warppoint.games/about), "a curated directory of video game websites", and has been quoted in [Critical Distance](https://www.critical-distance.com/2026/09/27/september-27th-4/), a weekly newsletter and "compendium of the most incisive, thought-provoking, and remarkable discussion in and around games".
 
 <custom-masonry layout="50-50">
   {% set itemList = collections.allPosts %}
