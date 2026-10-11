@@ -74,7 +74,7 @@ export const navigation = {
   ariaBottom: 'Complementary',
   ariaPlatforms: 'Platforms',
   drawerNav: true,
-  subMenu: false
+  subMenu: true
 };
 export const themeSwitch = {
   title: 'Theme',

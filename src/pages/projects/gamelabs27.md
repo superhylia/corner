@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Levi Ireri - Portfolio Selection for UTD Game Production Lab (Spring 2027)
-description: 'Devlog for my VGDO Spring Jam 2025 entry, Skiptrace.'
+description: 'For UTD Game Production Lab (Spring 2027). My primary areas of interest are leading in game/systems design, programming, and level design. I also have published work for graphic design, UI/UX design, and writing as well.'
 permalink: 'portfolio/gamelabs27/index.html'
 redirectFrom: ['/gamelabs27/']
 skiptrace:
@@ -88,17 +88,17 @@ I developed this game as a sole developer for my first public game jam. My contr
 * Sound designer on ability and interaction effects
 * Pixel artist on enemy, player, and environment sprites
 
-The game can be played on [itch.io via web browser](https://superhylia.itch.io/skiptrace-vgdo-game-jam-spring-2025-ver).
+I also wrote a set of devlogs for the game while I established the games concept.
 
-#### Devlogs for Skiptrace
-
- <custom-masonry layout="50-50">
+<custom-masonry layout="50-50">
     {% set itemList = collections['all-eyes-on-me'] %}
             {% asyncEach item in itemList.slice(0, 2) %}
     {% set headingLevel = "h3" %}
                 {% include "partials/card-blog.njk" %}
             {% endeach %}
 </custom-masonry>
+
+The game can be played on [itch.io via web browser](https://superhylia.itch.io/skiptrace-vgdo-game-jam-spring-2025-ver).
 
 ## Experience
 ### (UI/UX, Programming, Project Leadership) Mentee at Blacks at Microsoft Summer Mentorship Program, Dallas
@@ -113,20 +113,23 @@ The game can be played on [itch.io via web browser](https://superhylia.itch.io/s
 * Attended 20+ full-day lectures by tenured Microsoft mentors and 5+ workshops at partner tech companies like Verizon, Cisco, and Toyota
 * Enhanced my Python skills with 20+ Replit lessons and projects
 
-## (Programming) Relevant Coursework
-
-Relevant courses include:
-* UTD: Computer Science II in C++
-* UTD: Animation and Game Fundamentals in Unreal Engine, Maya
-* UTA: Object-Oriented Programming in Git, Java
-* UTA: Intermediate Programming in C
-
-## Graphic Design
+### Graphic Design
 
 For on and off commission as well as for my own endeavors, I have 5+ years of graphic design experience using GIMP and Inkscape. A selection of my best work is below.
 
 {% set galleryItems = graphicDesign %}
 {% include "partials/gallery.njk" %}
+
+### (Programming) Relevant Coursework
+
+Relevant courses and skills developed include:
+* UTD: Computer Science II in C++
+* UTD: Animation and Game Fundamentals in Unreal Engine, Maya
+* UTA: Object-Oriented Programming in Git, Java
+* UTA: Intermediate Programming in C
+
+This semester, I am also currently apart of Dr. Monica Evans' "Designing Mystery and Detective Games (Fall 2026)" Student Working Group from September-November 2026. 
+> "Students will assist with the development of a research paper and game prototype on mystery and detective digital games. We will examine multiple digital games in the genre, create a research plan for examining how and why mystery games work, and explore mechanics and systems that best allow players to “feel like a detective” during play. We will also develop and test a prototype for an original mystery game. Students will develop skills in research analysis, game design, and narrative design."
 
 ## (Game Studies/Analysis) Blog Writing
 
