@@ -44,9 +44,7 @@ backboard:
   - image: '/assets/projects/uiux/backboard/create.png'
 ---
 
-Hello, my name is Levi Ireri, a UT Dallas junior student pursuing a B.S in Computer Science. Empathetic, active listener with tuned skills in graphic design and creative writing. Demonstrating a passion for game development through several projects and classes. 
-
-My primary areas of interest are leading in game/systems design, programming, and level design. I also have published work for graphic design, UI/UX design, and writing as well.
+Hello, my name is Levi Ireri, a UT Dallas junior student pursuing a B.S in Computer Science. My primary areas of interest are leading in game/systems design, programming, and level design. I also have published work for graphic design, UI/UX design, and game studies/analysis writing as well.
 
 With my application to Game Production Lab, I am looking to get more experience in a collaborative environment while developing video games to both support and (if given the chance) lead. While my own self-study and personal projects are fulfilling and motivated, there are development realities only a class like this can provide such as team management, consistent scheduling, and scope. Even if only halfway through the development of the game, Game Production Lab can be a substantial opportunity to improve skills and create demonstrable work in my biggest focus areas of game/systems design and programming. Any engine used would be beneficial to further my understanding of, whether it be Godot, Unreal, Unity, or PICO-8 (engines I already have experience in) or something new entirely like Twine that would be a new challenge. Outside of my focus areas, I hope I can use my multidisciplinary interests in graphic design, UI/UX design, writing, and game studies as part of the course as well.
 
@@ -122,7 +120,7 @@ For on and off commission as well as for my own endeavors, I have 5+ years of gr
 {% set galleryItems = graphicDesign %}
 {% include "partials/gallery.njk" %}
 
-### (Programming) Relevant Coursework
+### (Programming, Game Studies, Game Design) Relevant Coursework
 
 Relevant courses and skills developed include:
 * UTD: Computer Science II in C++
