@@ -1,9 +1,9 @@
 <script webc:type="render" webc:is="template">
-  const Image = require('@11ty/eleventy-img').default;
-  const {optimize} = require('svgo');
-  const slugify = require('slugify');
+  import Image from '@11ty/eleventy-img';
+  import {optimize} from 'svgo';
+  import slugify from 'slugify';
 
-  module.exports = async function () {
+  export default async function () {
     const meta = await Image(this.src, {
       formats: ['svg'],
       dryRun: true

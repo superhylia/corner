@@ -1,8 +1,8 @@
 <script webc:setup>
-  function getLinkUrl(instance, slug, start) {
+  export function getLinkUrl(instance, slug, start) {
     return `https://${instance}/w/${slug}${start ? `?start=${start}s` : ''}`;
   }
-  function getEmbedLinkUrl(instance, embedSlug, start) {
+  export function getEmbedLinkUrl(instance, embedSlug, start) {
     const startParam = start ? `start=${start}s&` : '';
     return `https://${instance}/videos/embed/${embedSlug}?${startParam}title=0&warningTitle=0`;
   }
