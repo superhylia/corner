@@ -1,1 +1,5 @@
-<script src="{% getBundleFileUrl "js", "defer" %}" type="module"></script>
+{%- js "defer" %}
+  {% include "scripts/is-land.js" %}
+{% endjs %}
+
+<script src="{% getBundleFileUrl 'js', 'defer' %}" type="module"></script>
