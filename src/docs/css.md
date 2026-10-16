@@ -30,7 +30,7 @@ All CSS files placed in `src/assets/css/components/` will be sent to the output 
 
 ### Debugging CSS
 
-In `src/assets/css/global.css` you can decomment `@import-glob 'tests/*.css';` to include CSS for debugging.
+In `src/assets/css/global.css` you can decomment `@import 'tests/*.css'` to include CSS for debugging.
 
 It makes visible when your code[ wrapped in `<is-land>` elements](https://github.com/11ty/is-land) is being hydrated, where things might overflow and many other warnings and errors [that Heydon Pickering came up with](https://heydonworks.com/article/testing-html-with-modern-css/).
 

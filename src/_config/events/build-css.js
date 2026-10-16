@@ -1,19 +1,25 @@
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 import fg from 'fast-glob';
+import {globSync} from 'node:fs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import postcss from 'postcss';
 import postcssImport from 'postcss-import';
-import postcssImportExtGlob from 'postcss-import-ext-glob';
 import tailwindcss from 'tailwindcss';
 
 const buildCss = async (inputPath, outputPaths) => {
   const inputContent = await fs.readFile(inputPath, 'utf-8');
 
   const result = await postcss([
-    postcssImportExtGlob,
-    postcssImport,
+    postcssImport({
+      resolve(id, basedir) {
+        if (!id.includes('*')) return id;
+        return globSync(id, {cwd: basedir})
+          .sort()
+          .map(file => path.join(basedir, file));
+      }
+    }),
     tailwindcss,
     autoprefixer,
     cssnano

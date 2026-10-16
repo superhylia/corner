@@ -9,11 +9,11 @@
 @import 'base/global-styles.css' layer(global);
 @import 'base/view-transitions.css' layer(global);
 
-@import-glob 'compositions/*.css' layer(compositions);
-@import-glob 'blocks/*.css' layer(blocks);
-@import-glob 'utilities/*.css' layer(utilities);
+@import 'compositions/*.css' layer(compositions);
+@import 'blocks/*.css' layer(blocks);
+@import 'utilities/*.css' layer(utilities);
 
 /* debugging */
-/* @import-glob 'tests/*.css' layer(test); */
+/* @import 'tests/*.css' layer(test); */
 
 @import 'tailwindcss/utilities' layer(tailwindUtilities);
