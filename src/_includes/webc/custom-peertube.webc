@@ -6,23 +6,19 @@
     const startParam = start ? `start=${start}s&` : '';
     return `https://${instance}/videos/embed/${embedSlug}?${startParam}title=0&warningTitle=0`;
   }
+  // PeerTube preview filenames aren't the video UUID; same opengraph helper as custom-youtube.
+  export function getPosterUrl(instance, slug) {
+    return `https://v1.opengraph.11ty.dev/${encodeURIComponent(`https://${instance}/w/${slug}`)}/auto/jpeg/`;
+  }
 </script>
 
 <style>
-  /* Hide without JS */
   is-land:not(:defined).video-wrapper {
     display: none;
   }
 
   is-land.video-wrapper {
     display: block;
-  }
-
-  custom-peertube iframe {
-    position: absolute;
-    inset: 0px;
-    width: 100%;
-    height: 100%;
   }
 
   custom-peertube .video-wrapper {
@@ -32,18 +28,57 @@
     width: 100%;
     border-radius: 0.2em;
   }
+
+  custom-peertube .pt-facade,
+  custom-peertube iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  custom-peertube .pt-facade {
+    display: grid;
+    place-items: center;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 3rem;
+    background: #111 center / cover;
+  }
+
+  is-land[ready] .pt-facade {
+    background-image: linear-gradient(rgb(0 0 0 / 0.4), rgb(0 0 0 / 0.4)), var(--pt-poster);
+  }
 </style>
 
 <custom-peertube webc:root class="flow">
-  <is-land on:visible class="video-wrapper relative">
-    <iframe
-      :title="label"
-      :src="getEmbedLinkUrl(instance,embedSlug,start)"
-      frameborder="0"
-      allowfullscreen
-      sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+  <is-land on:visible class="video-wrapper">
+    <button
+      type="button"
+      class="pt-facade"
+      :style="`--pt-poster: url('${getPosterUrl(instance, slug)}')`"
+      :data-src="getEmbedLinkUrl(instance, embedSlug, start)"
+      :aria-label="`Play${label ? `: ${label}` : ''}`"
     >
-    </iframe>
+      ▶
+    </button>
+
+    <template data-island="once" webc:raw>
+      <script type="module">
+        document.addEventListener('click', e => {
+          const btn = e.target.closest('.pt-facade');
+          if (!btn) return;
+          const iframe = document.createElement('iframe');
+          iframe.src = `${btn.dataset.src}&autoplay=1`;
+          iframe.title = btn.getAttribute('aria-label') || '';
+          iframe.allowFullscreen = true;
+          iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
+          btn.replaceWith(iframe);
+        });
+      </script>
+    </template>
   </is-land>
 </custom-peertube>
 

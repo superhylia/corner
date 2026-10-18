@@ -24,7 +24,7 @@ title: Video
 
 ### PeerTube
 
-`<custom-peertube>` is a wrapper around [PeerTube](https://joinpeertube.org/)’s embed system.
+`<custom-peertube>` is a click-to-load facade around [PeerTube](https://joinpeertube.org/)’s embed: a poster shows first, and the PeerTube player iframe loads only after you press play.
 
 `@instance` PeerTube domain hosting the video
 `@embed-slug` – The unique ID used in the embed URL.
