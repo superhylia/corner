@@ -24,22 +24,16 @@ export const buildJs = async (inputPath, outputPath, {format} = {}) => {
 export const buildAllJs = async () => {
   const tasks = [];
 
-  const inlineFiles = await fg(['src/assets/scripts/inline/**/*.js']);
-  for (const inputPath of inlineFiles) {
+  const bundleFiles = await fg(['src/assets/scripts/bundle/**/*.js']);
+  for (const inputPath of bundleFiles) {
     const baseName = path.basename(inputPath);
-    tasks.push(buildJs(inputPath, `src/_includes/scripts/${baseName}`));
-  }
-
-  const deferFiles = await fg(['src/assets/scripts/defer/**/*.js']);
-  for (const inputPath of deferFiles) {
-    const baseName = path.basename(inputPath);
-    tasks.push(buildJs(inputPath, `src/_includes/scripts/${baseName}`, {format: 'esm'}));
+    tasks.push(buildJs(inputPath, `src/_includes/scripts/${baseName}`, {format: 'iife'}));
   }
 
   const componentFiles = await fg(['src/assets/scripts/components/**/*.js']);
   for (const inputPath of componentFiles) {
     const baseName = path.basename(inputPath);
-    tasks.push(buildJs(inputPath, `dist/assets/scripts/components/${baseName}`));
+    tasks.push(buildJs(inputPath, `dist/assets/scripts/components/${baseName}`, {format: 'esm'}));
   }
 
   await Promise.all(tasks);
