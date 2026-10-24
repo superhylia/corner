@@ -40,6 +40,7 @@
     "@11ty/eleventy-plugin-webc": "^0.11.2",
     "@11ty/is-land": "^4.0.1",
     "@myxotod/eleventy-plugin-readingtime": "^2.0.0",
+    "@tailwindcss/postcss": "^4.3.3",
     "canvas-confetti": "^1.9.4",
     "eleventy-plugin-code-clipboard": "^0.2.0",
     "eleventy-plugin-embed-everything": "^1.21.1",
@@ -47,9 +48,10 @@
     "eleventy-plugin-post-stats": "^0.2.13",
     "lite-youtube-embed": "^0.3.4",
     "markdown-it-github-alerts": "^1.0.1",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "@rknightuk/eleventy-plugin-post-graph": "^1.0.8",
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.5.5",
     "colorjs.io": "^0.7.1",
@@ -72,7 +74,7 @@
     "markdown-it-prism": "^4.0.0",
     "markdown-it-toc-done-right": "^4.2.0",
     "netlify-plugin-cache": "^1.0.3",
-    "pa11y-ci": "^3.1.0",
+    "pa11y-ci": "^5.0.0",
     "postcss": "^8.5.28",
     "postcss-cli": "^12.0.0",
     "postcss-import": "^17.0.0",
@@ -89,6 +91,6 @@
   "allowScripts": {
     "esbuild@0.28.2": true,
     "sharp@0.35.4": true,
-    "puppeteer@9.1.1": true
+    "puppeteer@25.16.0": true
   }
 }

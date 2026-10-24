@@ -65,6 +65,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
   eleventyConfig.addPlugin(plugins.rss);
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
+  eleventyConfig.addPlugin(plugins.postGraph);
 
   eleventyConfig.addPlugin(plugins.postStats, {
     debugMode: true,

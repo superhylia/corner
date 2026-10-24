@@ -1,15 +1,11 @@
 ---
-layout: tags
+layout: page
 title: Blog Stats
-description: 'All blog postStats can be found here.'
+description: 'All blog statistics can be found here.'
 permalink: '/blog/stats.html'
 ---
 
 <style>
-    .post-stats strong {
-        color: var(--primary);
-    }
-
     .graph {
         margin: 20px 0;
     }
@@ -23,7 +19,7 @@ permalink: '/blog/stats.html'
     }
 
     .graph__progress {
-        background: var(--primary);
+        background: var(--color-primary);
         height: 100%;
         margin-left: 10px;
     }
@@ -38,18 +34,28 @@ permalink: '/blog/stats.html'
 </style>
 
 <span class="post-stats">
-<p>My first post was published on <strong>{{ collections.postStats.firstPostDate | formatDate('MMMM D, YYYY') }}</strong> and my most recent one was published on <strong>{{ collections.postStats.lastPostDate | formatDate('MMMM D, YYYY') }}</strong>. </p>
-
-<p>I've published <strong>{{ collections.postStats.postCount }} posts</strong> that, on average, have <strong>{{ collections.postStats.avgWordCount }} words</strong> and a gap of <strong>{{ collections.postStats.avgDays }} days</strong> between them.</p>
+    {% set latestPost = collections.posts | reverse %}
+    <p>My most recent blogpost, <a href="{{ latestPost[0].data.url }}"">"{{ latestPost[0].data.title }}"</a>, was published on <strong>{{ collections.postStats.lastPostDate | formatDate('MMMM D, YYYY') }}</strong>. 
+    My earliest post, <a href="{{ collections.posts[0].data.url }}"">"{{ collections.posts[0].data.title }}"</a>, was published on <strong>{{ collections.postStats.firstPostDate | formatDate('MMMM D, YYYY') }}</strong>.<p>
+    <br>
+    <p>I do repost work from other sites on occasion and maintain their original date, including the aforementioned earliest post. The first post <em>designated for this site</em> was <a href="/blog/next-mission-entering-a-game-jam">"Next mission: entering a game jam"</a> on <strong>February 20, 2025<strong>. </p>
+    <br>
+    <p>I've published <strong>{{ collections.postStats.postCount }} posts in total</strong> that <strong>average {{ collections.postStats.avgWordCount }} words each</strong> and a typical gap of <strong>{{ collections.postStats.avgDays }} days</strong> between them.</p>
 </span>
 
 <h3>Posts by Year</h3>
 
 <div class="graph">
+    {% set highPostCount = 0 %}
     {%- for year in collections.postStats.years | reverse %}
+        {%- for year in collections.postStats.years | reverse -%}
+            {% if year.postCount >= highPostCount %} 
+                {% set highPostCount = year.postCount %}
+                {% endif %}
+            {% endfor %}  
     <div class="graph__wrapper">
         <div class="graph__year">{{ year.year }}</div>
-        <div class="graph__progress" style="width: {{ year.postCount / collections.postStats.highPostCount * 100 }}%;">
+        <div class="graph__progress" style="width: {{ year.postCount / (highPostCount) * 100 }}%;">
         </div>
         <div class="graph__data">
             {{ year.postCount }}
@@ -57,3 +63,5 @@ permalink: '/blog/stats.html'
     </div>
     {% endfor %}
 </div>
+
+{% postGraph collections.posts %}
