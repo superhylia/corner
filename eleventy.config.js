@@ -214,7 +214,8 @@ export default async function (eleventyConfig) {
     'src/assets/pretty-feed-v3.xsl': '/assets/pretty-feed-v3.xsl',
 
     // -- node_modules
-    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`
+    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`,
+    'node_modules/@11ty/is-land/dist/is-land.min.js': `assets/components/is-land.min.js`
   });
 
   // ----------------------  ignore test files

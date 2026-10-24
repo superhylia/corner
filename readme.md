@@ -51,10 +51,6 @@ https://eleventy-excellent.netlify.app/
 
 ## Vulnerability Notes (updated 2026-08-28)
 
-### `nanoid` override
-
-`package.json` pins `nanoid` under `overrides` forcing a patched 5.x (`@11ty/webc` and `postcss` declare older ranges).
-
 ### extract-zip
 
 Chain: `pa11y-ci` --> `puppeteer` --> `@puppeteer/browsers` --> `extract-zip`. Ignored until pa11y / Puppeteer drops extract-zip.
