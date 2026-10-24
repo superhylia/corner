@@ -3,6 +3,24 @@ export const getAllPosts = collection => {
   return collection.getFilteredByGlob('./src/posts/**/*.md').reverse();
 };
 
+// By Jamesdoc implementation - https://jamesdoc.com/blog/2021/11ty-posts-by-year/ 
+function  getByDate(collection, dateFormat) {
+  let posts = collection.getFilteredByGlob('./src/posts/**/*.md').reverse();
+  posts.forEach(function (post) {
+    let day = dayjs(post.data.date).format(dateFormat);
+    if (!postsByDate[d]) {
+      postsByDate[d] = new Array();
+    } 
+    postsByDate[d].push(post);
+  });
+  return postsByDate;
+}
+
+//* Collection for all posts per year */
+export const postsByYear = collection => {
+  return getByDate(collection, "YYYY");
+}
+
 /** All relevant pages as a collection for sitemap.xml */
 export const showInSitemap = collection => {
   return collection.getFilteredByGlob('./src/**/*.{md,njk}');

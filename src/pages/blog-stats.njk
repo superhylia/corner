@@ -35,12 +35,12 @@ permalink: '/blog/stats.html'
 
 <span class="post-stats">
     {% set latestPost = collections.posts | reverse %}
-    <p>My most recent blogpost, <a href="{{ latestPost[0].data.url }}"">"{{ latestPost[0].data.title }}"</a>, was published on <strong>{{ collections.postStats.lastPostDate | formatDate('MMMM D, YYYY') }}</strong>. 
-    My earliest post, <a href="{{ collections.posts[0].data.url }}"">"{{ collections.posts[0].data.title }}"</a>, was published on <strong>{{ collections.postStats.firstPostDate | formatDate('MMMM D, YYYY') }}</strong>.<p>
+    <p>My most recent blogpost, <a href="{{ latestPost[0].url | url }}"">"{{ latestPost[0].data.title }}"</a>, was published on <strong>{{ collections.postStats.lastPostDate | formatDate('MMMM D, YYYY') }}</strong>. 
+    My earliest post, <a href="{{ collections.posts[0].data.url | url  }}"">"{{ collections.posts[0].data.title }}"</a>, was published on <strong>{{ collections.postStats.firstPostDate | formatDate('MMMM D, YYYY') }}</strong>.<p>
     <br>
     <p>I do repost work from other sites on occasion and maintain their original date, including the aforementioned earliest post. The first post <em>designated for this site</em> was <a href="/blog/next-mission-entering-a-game-jam">"Next mission: entering a game jam"</a> on <strong>February 20, 2025<strong>. </p>
     <br>
-    <p>I've published <strong>{{ collections.postStats.postCount }} posts in total</strong> that <strong>average {{ collections.postStats.avgWordCount }} words each</strong> and a typical gap of <strong>{{ collections.postStats.avgDays }} days</strong> between them.</p>
+    <p>I've published <strong>{{ collections.postStats.postCount }} posts in total</strong> that <strong>average {{ collections.postStats.avgWordCount | round }} words each</strong> and a typical gap of <strong>{{ collections.postStats.avgDays | round }} days</strong> between them.</p>
 </span>
 
 <h3>Posts by Year</h3>
