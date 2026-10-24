@@ -68,7 +68,7 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(plugins.postStats, {
     debugMode: true,
-    tags: ['allPosts']
+    tags: ['posts']
   });
 
   eleventyConfig.addPlugin(plugins.EleventyPluginOgImage, {

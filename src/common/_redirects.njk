@@ -11,6 +11,8 @@ excludeFromSitemap: true
     {%- endfor -%}
   {%- endif -%}
 {%- endfor -%}
+
+/blog/latest {{ (collections.posts | last).url | url }} 302
 # Manual redirects 
 /search/ /tags 301
 /blog/introducing-new-gaze-the-nes/famicom-and-the-weight-of-age/ /blog/introducing-new-gaze-the-nes-famicom-and-the-weight-of-age/ 301

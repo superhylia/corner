@@ -31,10 +31,6 @@ export default {
         {
           text: 'UI/UX',
           url: '/ui-ux/'
-        },
-        {
-          text: 'Game Production Lab S27',
-          url: '/portfolio/gamelabs27/'
         }
       ]
     }
